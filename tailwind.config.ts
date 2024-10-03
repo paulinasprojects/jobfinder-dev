@@ -16,6 +16,8 @@ const config: Config = {
       },
       gridTemplateColumns: {
         20: "repeat(2, 290px)",
+        30: "repeat(3, 256px)",
+        35: "repeat(3, 200px)",
         40: "repeat(2, 400px)",
         150: "repeat(2, 145px)",
       },

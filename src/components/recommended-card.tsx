@@ -16,13 +16,13 @@ const RecomendedCard = () => {
               />
               <div className='text-white flex flex-col gap-1 mt-3.5'>
                 <span className='text-[16px] font-semibold'>Product Design</span>
-                <span className='text-neutralColor text-[14px]'>Google•California, USA</span>
+                <span className='text-neutralColor text-sm'>Google•California, USA</span>
               </div>
               <div className='flex flex-col text-white ml-auto gap-1 mt-3.5'>
-                <span className='text-[14px] text-white'>$70-80
-                  <span className='text-[14px] text-neutralColor ml-0.5'>/Hr</span>
+                <span className='text-sm text-white'>$70-80
+                  <span className='text-sm text-neutralColor ml-0.5'>/Hr</span>
                 </span>
-                <span className='text-[14px] text-neutralColor'>Full-Time</span>
+                <span className='text-sm text-neutralColor'>Full-Time</span>
               </div>
             </div>
           </CardContent>
@@ -35,13 +35,13 @@ const RecomendedCard = () => {
               />
               <div className='text-white flex flex-col gap-1 mt-3.5'>
                 <span className='text-[16px] font-semibold'>Head Of Marketing</span>
-                <span className='text-neutralColor text-[14px]'>Bexon•Sylhet, BD</span>
+                <span className='text-neutralColor text-sm'>Bexon•Sylhet, BD</span>
               </div>
               <div className='flex flex-col text-white ml-auto gap-1 mt-3.5'>
-                <span className='text-[14px] text-white'>$70-80
-                  <span className='text-[14px] text-neutralColor ml-0.5'>/Hr</span>
+                <span className='text-sm text-white'>$70-80
+                  <span className='text-sm text-neutralColor ml-0.5'>/Hr</span>
                 </span>
-                <span className='text-[14px] text-neutralColor'>Full-Time</span>
+                <span className='text-sm text-neutralColor'>Full-Time</span>
               </div>
             </div>
           </CardContent>
@@ -54,13 +54,13 @@ const RecomendedCard = () => {
               />
               <div className='text-white flex flex-col gap-1 mt-3.5'>
                 <span className='text-[16px] font-semibold'>Lead UI Designer</span>
-                <span className='text-neutralColor text-[14px]'>Google•California, USA</span>
+                <span className='text-neutralColor text-sm'>Google•California, USA</span>
               </div>
               <div className='flex flex-col text-white ml-auto gap-1 mt-3.5'>
-                <span className='text-[14px] text-white'>$70-80
-                  <span className='text-[14px] text-neutralColor ml-0.5'>/Hr</span>
+                <span className='text-sm text-white'>$70-80
+                  <span className='text-sm text-neutralColor ml-0.5'>/Hr</span>
                 </span>
-                <span className='text-[14px] text-neutralColor'>Full-Time</span>
+                <span className='text-sm text-neutralColor'>Full-Time</span>
               </div>
             </div>
           </CardContent>
@@ -73,13 +73,13 @@ const RecomendedCard = () => {
               />
               <div className='text-white flex flex-col gap-1 mt-3.5'>
                 <span className='text-[16px] font-semibold'>Lead React Developer</span>
-                <span className='text-neutralColor text-[14px]'>Apple•New York, USA</span>
+                <span className='text-neutralColor text-sm'>Apple•New York, USA</span>
               </div>
               <div className='flex flex-col text-white ml-auto gap-1 mt-3.5'>
-                <span className='text-[14px] text-white'>$70-80
-                  <span className='text-[14px] text-neutralColor ml-0.5'>/Hr</span>
+                <span className='text-sm text-white'>$70-80
+                  <span className='text-sm text-neutralColor ml-0.5'>/Hr</span>
                 </span>
-                <span className='text-[14px] text-neutralColor'>Full-Time</span>
+                <span className='text-sm text-neutralColor'>Full-Time</span>
               </div>
             </div>
           </CardContent>
@@ -92,13 +92,13 @@ const RecomendedCard = () => {
               />
               <div className='text-white flex flex-col gap-1 mt-3.5'>
                 <span className='text-[16px] font-semibold'>Frontend Developer</span>
-                <span className='text-neutralColor text-[14px]'>Invision•California, USA</span>
+                <span className='text-neutralColor text-sm'>Invision•California, USA</span>
               </div>
               <div className='flex flex-col text-white ml-auto gap-1 mt-3.5'>
-                <span className='text-[14px] text-white'>$70-80
-                  <span className='text-[14px] text-neutralColor ml-0.5'>/Hr</span>
+                <span className='text-sm text-white'>$70-80
+                  <span className='text-sm text-neutralColor ml-0.5'>/Hr</span>
                 </span>
-                <span className='text-[14px] text-neutralColor'>Full-Time</span>
+                <span className='text-sm text-neutralColor'>Full-Time</span>
               </div>
             </div>
           </CardContent>

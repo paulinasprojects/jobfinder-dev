@@ -23,10 +23,10 @@ const LatestJobCard = ({ image, title, description, salary }: LatestJobCardProps
             <div className='text-white flex flex-col'>
                <span className='text-lg'>{title}</span>
              <div className='flex gap-2 mt-3'>
-              <span className='bg-[#2c2c2c] text-neutralColor text-[14px] px-2 py-1 rounded-[5px]'>PHP</span>
-              <span className='bg-[#2c2c2c] text-neutralColor text-[14px] px-2 py-1 rounded-[5px]'>Laravel</span>
-              <span className='bg-[#2c2c2c] text-neutralColor text-[14px] px-2 py-1 rounded-[5px]'>CSS</span>
-              <span className='bg-[#2c2c2c] text-neutralColor text-[14px] px-2 py-1 rounded-[5px]'>React</span>
+              <span className='bg-[#2c2c2c] text-neutralColor text-sm px-2 py-1 rounded-[5px]'>PHP</span>
+              <span className='bg-[#2c2c2c] text-neutralColor text-sm px-2 py-1 rounded-[5px]'>Laravel</span>
+              <span className='bg-[#2c2c2c] text-neutralColor text-sm px-2 py-1 rounded-[5px]'>CSS</span>
+              <span className='bg-[#2c2c2c] text-neutralColor text-sm px-2 py-1 rounded-[5px]'>React</span>
              </div>
             </div>
             <div className='ml-auto'>
@@ -39,15 +39,15 @@ const LatestJobCard = ({ image, title, description, salary }: LatestJobCardProps
             </span>
           </div>
           <div className='flex gap-2 mt-3'>
-            <span className='flex items-center gap-1.5 text-neutralColor bg-[#2c2c2c] text-[14px] px-2 py-1 rounded-[5px]'>
+            <span className='flex items-center gap-1.5 text-neutralColor bg-[#2c2c2c] text-sm px-2 py-1 rounded-[5px]'>
               <Briefcase color='#92929D' width={18} height={18} />
               Full Time
             </span>
-            <span className='flex items-center gap-1.5 text-neutralColor bg-[#2c2c2c] text-[14px] px-2 py-1 rounded-[5px]'>
+            <span className='flex items-center gap-1.5 text-neutralColor bg-[#2c2c2c] text-sm px-2 py-1 rounded-[5px]'>
               <Users color='#92929D' width={18} height={18} />
               45 applied
             </span>
-            <span className='flex items-center gap-1.5 text-neutralColor bg-[#2c2c2c] text-[14px] px-2 py-1 rounded-[5px]'>
+            <span className='flex items-center gap-1.5 text-neutralColor bg-[#2c2c2c] text-sm px-2 py-1 rounded-[5px]'>
               <Clock color='#92929D' width={18} height={18}/>
               3 days left
             </span>

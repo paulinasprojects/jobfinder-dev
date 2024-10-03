@@ -7,7 +7,11 @@ import apple from "/public/apple.svg";
 import bexon from "/public/bexon.svg";
 import invision from "/public/invision.svg";
 import netflix from "/public/netflix.svg";
+import mailchimp from "/public/mailchimp.svg";
+import appleBlack from "/public/apple-black.svg";
 import googlemeet from "/public/google-meet.svg";
+import gitlab from "/public/gitlab.svg";
+import star from "/public/star.svg";
 
 export {
   uihut,
@@ -20,4 +24,8 @@ export {
   invision,
   netflix,
   googlemeet,
+  appleBlack,
+  mailchimp,
+  gitlab,
+  star,
 };

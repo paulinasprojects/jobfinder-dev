@@ -6,6 +6,8 @@ import slack from '/public/slack.png';
 import LatestJobCard from "./latest-jobs-card";
 import RecomendedCard from "./recommended-card";
 import Schedule from "./schedule";
+import CompaniesCard from "./companies-card";
+
 
 const LatestJobPosts = () => {
   return (
@@ -44,6 +46,11 @@ const LatestJobPosts = () => {
             salary="15k-20k"
            />
           </div>
+            <div className="mt-[92px] grid grid-cols-30 gap-9 max-sm:grid-cols-2">
+              <CompaniesCard/>
+              <CompaniesCard/>
+              <CompaniesCard/>
+            </div>
         </div>
       {/* Right */}
       <div className="mr-20">
