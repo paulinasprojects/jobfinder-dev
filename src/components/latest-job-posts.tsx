@@ -1,9 +1,11 @@
 import { ChevronDown } from "lucide-react";
-import uihut from '/public/ uihut.png';
+import uihut from '/public/uihut.png';
 import microsoft from '/public/microsoft.png';
 import airbnb from '/public/airbnb.svg';
 import slack from '/public/slack.png';
 import LatestJobCard from "./latest-jobs-card";
+import RecomendedCard from "./recommended-card";
+import Schedule from "./schedule";
 
 const LatestJobPosts = () => {
   return (
@@ -44,11 +46,19 @@ const LatestJobPosts = () => {
           </div>
         </div>
       {/* Right */}
-      <div className="text-white mr-20">
-      <div className="flex xl:min-w-[400px] items-center justify-between">
-        <h4 className="text-[22px] font-bold text-white">Recomended For You</h4>
-          <span className="text-neutral3Color flex gap-2.5 items-center">See All <ChevronDown color="#808191"/></span>
-      </div>
+      <div className="mr-20">
+        <div className="flex xl:min-w-[400px] items-center justify-between">
+          <h4 className="text-[22px] font-bold text-white">Recomended For You</h4>
+            <span className="text-neutral3Color flex gap-2.5 items-center">See All <ChevronDown color="#808191"/></span>
+        </div>
+        <div className="flex xl:flex-col md:gap-11 max-sm:flex-col">
+        <div className="mt-8">
+          <RecomendedCard/>
+        </div>
+        <div className="md:mt-8 max-sm:mt-8">
+          <Schedule/>
+        </div>
+        </div>
       </div>
       </div>
     </div>

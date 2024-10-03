@@ -1,7 +1,6 @@
 import CardChart from "@/components/card-chart";
 import PageHeading from "@/components/common/page-heading";
 import LatestJobPosts from "@/components/latest-job-posts";
-import Image from "next/image";
 
 export default function Home() {
   return (
