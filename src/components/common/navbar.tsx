@@ -1,11 +1,46 @@
+"use client";
+
 import Image from "next/image"
 import Link from "next/link"
 import { Bell, ChevronDown, Mail } from "lucide-react";
 import logo from '/public/Logo.png';
 import profile from '/public/profile.png';
 import MobileNav from "./mobile-nav";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 const Navbar = () => {
+  const pathname = usePathname();
+
+  const routes = [
+    {
+      href: "/",
+      label: "Overview",
+      active: pathname === "/"
+    },
+    {
+      href: "/job-search",
+      label: "Job Search",
+      active: pathname === "/job-search"
+    },
+    {
+      href: "/talent",
+      label: "Talent",
+      active: pathname === "/talent"
+    },
+    {
+      href: "/history",
+      label: "History",
+      active: pathname === "/history"
+    },
+    {
+      href: "/events",
+      label: "Events",
+      active: pathname === "/events"
+    },
+  ]
+
+
   return (
     <div className="flex items-center p-5 ml-4">
       <Link href="/">
@@ -16,11 +51,12 @@ const Navbar = () => {
         />
       </Link>
       <div className="hidden md:flex gap-7 items-center justify-center ml-auto">
-        <Link href="/" className="text-greenButtonColor border-b-2 border-greenButtonColor p-2">Overview</Link>
-        <Link href="/" className="text-neutralColor">Job Search</Link>
-        <Link href="/" className="text-neutralColor">Talent</Link>
-        <Link href="/" className="text-neutralColor">History</Link>
-        <Link href="/" className="text-neutralColor">Events</Link>
+        {routes.map((route) => (
+        <Link href={route.href} className={cn(
+          "text-greenButtonColor",
+          route.active ? "border-b-2 border-greenButtonColor p-2" : "text-neutralColor"
+        )}>{route.label}</Link>
+        ))}
       </div>
       <div className="hidden max-sm:flex">
         <MobileNav/>

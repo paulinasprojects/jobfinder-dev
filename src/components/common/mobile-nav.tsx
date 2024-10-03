@@ -10,7 +10,6 @@ import {
   SheetTitle,
   SheetTrigger
 } from '@/components/ui/sheet';
-import { Button } from '@/components/ui/button';
 
 const MobileNav = () => {
   return (
@@ -25,11 +24,11 @@ const MobileNav = () => {
           </SheetTitle>
           <SheetDescription>
             <div className='flex flex-col gap-8 mt-11'>
-              <Link href="/" className='text-[20px] text-greenButtonColor font-bold'>Overview</Link>
-              <Link href="/" className='text-[20px] text-greenButtonColor font-bold'>Job Search</Link>
-              <Link href="/" className='text-[20px] text-greenButtonColor font-bold'>Talent</Link>
-              <Link href="/" className='text-[20px] text-greenButtonColor font-bold'>History</Link>
-              <Link href="/" className='text-[20px] text-greenButtonColor font-bold'>Events</Link>
+              <Link href="/" className='text-[20px] text-greenButtonColor font-bold hover:text-neutralColor'>Overview</Link>
+              <Link href="/job-search" className='text-[20px] text-greenButtonColor font-bold hover:text-neutralColor'>Job Search</Link>
+              <Link href="/talent" className='text-[20px] text-greenButtonColor font-bold hover:text-neutralColor'>Talent</Link>
+              <Link href="/history" className='text-[20px] text-greenButtonColor font-bold hover:text-neutralColor'>History</Link>
+              <Link href="/events" className='text-[20px] text-greenButtonColor font-bold hover:text-neutralColor'>Events</Link>
             </div>
           </SheetDescription>
         </SheetHeader>
