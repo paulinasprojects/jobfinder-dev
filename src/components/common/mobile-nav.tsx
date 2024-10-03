@@ -16,7 +16,7 @@ const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger><Menu color="#92929D"/></SheetTrigger>
-      <SheetContent side="left" className='bg-[#13131A]'>
+      <SheetContent side="left" className='bg-[#13131A] border-[#13131a]'>
         <SheetHeader>
           <SheetTitle>
             <Link href="/">

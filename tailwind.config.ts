@@ -16,6 +16,7 @@ const config: Config = {
       },
       gridTemplateColumns: {
         20: "repeat(2, 290px)",
+        40: "repeat(2, 400px)",
         150: "repeat(2, 145px)",
       },
       borderRadius: {
@@ -70,6 +71,7 @@ const config: Config = {
         pinkCard: "#FFBBD7",
         greenButtonColor: "#0BAB7C",
         neutralColor: "#92929D",
+        neutral3Color: "#696974",
         neutralWhite: "#F5F5F8",
       },
     },

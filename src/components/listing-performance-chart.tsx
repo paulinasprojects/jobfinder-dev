@@ -1,7 +1,6 @@
 "use client"
 
-import { TrendingUp } from "lucide-react"
-import { Bar, BarChart, CartesianGrid, ResponsiveContainer, XAxis } from "recharts"
+import { Bar, BarChart, XAxis } from "recharts"
 
 import {
   Card,
@@ -22,11 +21,11 @@ export const description = "A multiple bar chart"
 
 const chartData = [
   { day: "Mon", Applications: 186, Views: 80 },
-  { day: "Tue", Applications: 305, Views: 200 },
-  { day: "Wed", Applications: 237, Views: 120 },
-  { day: "Thu", Applications: 73, Views: 190 },
-  { day: "Fri", Applications: 209, Views: 130 },
-  { day: "Sat", Applications: 214, Views: 140 },
+  { day: "Tue", Applications: 305, Views: 120 },
+  { day: "Wed", Applications: 237, Views: 60 },
+  { day: "Thu", Applications: 190, Views: 100 },
+  { day: "Fri", Applications: 209, Views: 70 },
+  { day: "Sat", Applications: 214, Views: 110 },
   { day: "Sun", Applications: 214, Views: 90 },
 ]
 
@@ -41,11 +40,11 @@ const chartConfig = {
   },
 } satisfies ChartConfig
 
-export function Chart() {
+export function ListingPerformanceChart() {
   return (
-    <Card className=" bg-[#1c1c24] xl:w-[620px] xl:h-[332px] max-sm:w-[350px] md:w-[620px]">
+    <Card className=" bg-[#1c1c24] border-[#1c1c24] xl:w-[620px] xl:h-[332px] max-sm:w-[350px] md:w-[620px]">
       <CardHeader>
-        <CardTitle className="text-white mb-2">Listing Performance</CardTitle>
+        <CardTitle className="text-white mb-2 text-[22px] font-bold">Listing Performance</CardTitle>
         <div className="flex gap-9 items-center">
           <span className="text-white flex gap-1 items-center text-[13px]">
             <div className="w-2.5 h-2.5 rounded-full bg-yellowCard"/>
@@ -72,8 +71,8 @@ export function Chart() {
               cursor={false}
               content={<ChartTooltipContent indicator="dashed" />}
             />
-            <Bar dataKey="Views" fill="#0BAB7C" radius={4}  />
-            <Bar dataKey="Applications" fill="#FDDD8C" radius={4}/>
+            <Bar dataKey="Applications" fill="#0BAB7C" radius={4}  />
+            <Bar dataKey="Views" fill="#FDDD8C" radius={4}/>
           </BarChart>
           {/* </ResponsiveContainer> */}
         </ChartContainer>

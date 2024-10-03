@@ -1,6 +1,6 @@
 import { Briefcase, Users, FileText, TrendingUp, TrendingDown } from 'lucide-react'
 import JobCard from './common/jobs-card'
-import { Chart } from './chart'
+import { ListingPerformanceChart } from './listing-performance-chart'
 
 const CardChart = () => {
   return (
@@ -42,8 +42,8 @@ const CardChart = () => {
           />
         </div>
         {/* Right */}
-        <div className='text-white'>
-          <Chart/>
+        <div>
+          <ListingPerformanceChart/>
         </div>
       </div>
     </div>
