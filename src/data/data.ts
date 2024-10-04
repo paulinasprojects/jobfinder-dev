@@ -41,11 +41,6 @@ export const typeOfEmploymentCheckboxData = [
     checkboxJobs: "142",
   },
   {
-    checkboxName: "Remote",
-    checkboxId: "remote",
-    checkboxJobs: "142",
-  },
-  {
     checkboxName: "Co-founder",
     checkboxId: "co-founder",
     checkboxJobs: "142",
@@ -90,7 +85,7 @@ export const experienceLevelData = [
   },
   {
     seniorityLevel: "Contract",
-    checkboxId: "contract",
+    checkboxId: "contract-experience",
     checkboxJobs: "142",
   },
 ];

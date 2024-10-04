@@ -12,6 +12,7 @@ import appleBlack from "/public/apple-black.svg";
 import googlemeet from "/public/google-meet.svg";
 import gitlab from "/public/gitlab.svg";
 import star from "/public/star.svg";
+import behance from "/public/behance.svg";
 
 export {
   uihut,
@@ -28,4 +29,5 @@ export {
   mailchimp,
   gitlab,
   star,
+  behance,
 };

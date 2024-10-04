@@ -6,7 +6,7 @@ import React from 'react'
 
 const JobSearch = () => {
   return (
-    <div>
+    <div className=''>
       <PageHeading
         title="Let's Find Your Dream Job"
         text='Wednesday, 13 July 2024'
@@ -15,7 +15,7 @@ const JobSearch = () => {
       <div>
         <div className='flex gap-[77px]'>
           {/* Left */}
-          <div className='ml-20 mt-[52px]'>
+          <div className='ml-20 mt-[52px] max-sm:hidden'>
             <LeftContainer/>
           </div>
           {/* Right */}

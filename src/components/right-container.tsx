@@ -1,8 +1,11 @@
 import React from 'react'
+import JobSearchCard from './job-search-card'
 
 const RightContainer = () => {
   return (
-    <div className='text-white'>RightContainer</div>
+    <div>
+      <JobSearchCard/>
+    </div>
   )
 }
 

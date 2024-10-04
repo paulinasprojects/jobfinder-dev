@@ -1,0 +1,9 @@
+const JobSearchMessageButton = () => {
+  return (
+    <button className='w-[125px] h-12 bg-[#21212b] text-neutral3Color rounded-[10px] text-[15px] font-semibold'>
+       Message 
+    </button>
+  )
+}
+
+export default JobSearchMessageButton

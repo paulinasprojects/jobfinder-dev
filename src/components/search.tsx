@@ -8,11 +8,11 @@ const Search = () => {
     <div className="flex lg:flex-row  ml-20 mt-7 max-sm:flex-col max-sm:ml-15">
       <div className="relative">
           <SearchIcon color="#92929d" className="absolute top-7 left-2.5"/>
-         <Input className="lg:w-[383px] lg:h-[80px] max-sm:w-[295px] max-sm:h-[52px] bg-[#1c1c24] rounded-tl-[20px] border-none text-neutralColor p-10 text-[14px] font-bold " placeholder="Job Title, Company or Keywords"/>
+         <Input className="xl:w-[383px] lg:h-[80px] max-sm:w-[295px] max-sm:h-[52px] bg-[#1c1c24] rounded-tl-[20px] border-none text-neutralColor p-10 text-[14px] font-bold " placeholder="Job Title, Company or Keywords"/>
       </div>
       <div className="relative">
         <MapPin color="#92929d" className="absolute top-7 left-1 max-sm:left-2"/>
-      <Input className="lg:w-[360px] lg:h-[80px] max-sm:w-[295px] max-sm:h-[52px] bg-[#1c1c24]  border-none text-neutralColor p-10 text-[14px] font-bold" placeholder="Select Location"/>
+      <Input className="xl:w-[360px] lg:h-[80px] max-sm:w-[295px] max-sm:h-[52px] bg-[#1c1c24]  border-none text-neutralColor p-10 text-[14px] font-bold" placeholder="Select Location"/>
       </div>
       <div className="relative">
         <Briefcase color="#92929d" className="absolute top-7 left-1 max-sm:left-2"/>
