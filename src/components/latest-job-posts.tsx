@@ -1,3 +1,4 @@
+import { appleBlack, gitlab, mailchimp, star } from "@/lib/images";
 import { ChevronDown } from "lucide-react";
 import uihut from '/public/uihut.png';
 import microsoft from '/public/microsoft.png';
@@ -47,9 +48,27 @@ const LatestJobPosts = () => {
            />
           </div>
             <div className="mt-[92px] grid grid-cols-30 gap-9 max-sm:grid-cols-2">
-              <CompaniesCard/>
-              <CompaniesCard/>
-              <CompaniesCard/>
+              <CompaniesCard
+                image={appleBlack}
+                star={star}
+                title="Apple Inc."
+                location="New York, USA"
+                jobVacancy="05 Job Vacancy"
+              />
+              <CompaniesCard
+                image={mailchimp}
+                star={star}
+                title="Mailchimp"
+                location="San Francisco, USA"
+                jobVacancy="12 Job Vacancy"
+              />
+              <CompaniesCard
+                image={gitlab}
+                title="Gitlab"
+                star={star}
+                location="San Francisco, USA"
+                jobVacancy="21 Job Vacancy"
+              />
             </div>
         </div>
       {/* Right */}

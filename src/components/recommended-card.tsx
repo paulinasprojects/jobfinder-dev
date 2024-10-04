@@ -13,6 +13,7 @@ const RecomendedCard = () => {
                 src={google}
                 alt='google'
                 width={34}
+                className='mt-3'
               />
               <div className='text-white flex flex-col gap-1 mt-3.5'>
                 <span className='text-[16px] font-semibold'>Product Design</span>
@@ -32,6 +33,7 @@ const RecomendedCard = () => {
                 src={bexon}
                 alt='google'
                 width={34}
+                className='mt-3'
               />
               <div className='text-white flex flex-col gap-1 mt-3.5'>
                 <span className='text-[16px] font-semibold'>Head Of Marketing</span>
@@ -51,6 +53,7 @@ const RecomendedCard = () => {
                 src={netflix}
                 alt='google'
                 width={34}
+                className='mt-3'
               />
               <div className='text-white flex flex-col gap-1 mt-3.5'>
                 <span className='text-[16px] font-semibold'>Lead UI Designer</span>
@@ -70,6 +73,7 @@ const RecomendedCard = () => {
                 src={apple}
                 alt='google'
                 width={34}
+                className='mt-3'
               />
               <div className='text-white flex flex-col gap-1 mt-3.5'>
                 <span className='text-[16px] font-semibold'>Lead React Developer</span>
@@ -89,6 +93,7 @@ const RecomendedCard = () => {
                 src={invision}
                 alt='google'
                 width={34}
+                className='mt-3'
               />
               <div className='text-white flex flex-col gap-1 mt-3.5'>
                 <span className='text-[16px] font-semibold'>Frontend Developer</span>

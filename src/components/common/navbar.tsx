@@ -52,7 +52,7 @@ const Navbar = () => {
       </Link>
       <div className="hidden md:flex gap-7 items-center justify-center ml-auto">
         {routes.map((route) => (
-        <Link href={route.href} className={cn(
+        <Link key={route.href} href={route.href} className={cn(
           "text-greenButtonColor",
           route.active ? "border-b-2 border-greenButtonColor p-2" : "text-neutralColor"
         )}>{route.label}</Link>

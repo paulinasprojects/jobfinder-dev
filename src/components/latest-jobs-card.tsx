@@ -40,15 +40,15 @@ const LatestJobCard = ({ image, title, description, salary }: LatestJobCardProps
           </div>
           <div className='flex gap-2 mt-3'>
             <span className='flex items-center gap-1.5 text-neutralColor bg-[#2c2c2c] text-sm px-2 py-1 rounded-[5px]'>
-              <Briefcase color='#92929D' width={18} height={18} />
+              <Briefcase color='#92929D' width={14} height={14} />
               Full Time
             </span>
             <span className='flex items-center gap-1.5 text-neutralColor bg-[#2c2c2c] text-sm px-2 py-1 rounded-[5px]'>
-              <Users color='#92929D' width={18} height={18} />
+              <Users color='#92929D' width={14} height={14} />
               45 applied
             </span>
             <span className='flex items-center gap-1.5 text-neutralColor bg-[#2c2c2c] text-sm px-2 py-1 rounded-[5px]'>
-              <Clock color='#92929D' width={18} height={18}/>
+              <Clock color='#92929D' width={14} height={14}/>
               3 days left
             </span>
           </div>
