@@ -1,10 +1,4 @@
-import {
-  Briefcase,
-  Users,
-  FileText,
-  TrendingUp,
-  TrendingDown,
-} from "lucide-react";
+import { uihut, microsoft, slack, behance, invision } from "@/lib/images";
 
 export const jobCardData = [
   {
@@ -120,5 +114,53 @@ export const salaryRangeData = [
     salary: "$1000 Above",
     checkboxId: "$1000-above",
     checkboxJobs: "142",
+  },
+];
+
+export const jobSearchCardData = [
+  {
+    image: uihut,
+    title: "React Developer",
+    jobLocation: "UIHUT Technologies LLC • Sylhet, BD • 3 days ago",
+    jobDescription:
+      "Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us.",
+    jobSalary: "$4k-8k",
+    appliedToJob: "54",
+  },
+  {
+    image: microsoft,
+    title: "Lead UI Designer",
+    jobLocation: "Microsoft Corporation • Washington, USA • 2 days ago",
+    jobDescription:
+      "Here at Microsoft, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us.",
+    jobSalary: "$5k-10k",
+    appliedToJob: "105",
+  },
+  {
+    image: slack,
+    title: "UX Researcher",
+    jobLocation: "Slack Technologies LLC • California, USA • 1 day ago",
+    jobDescription:
+      "Here at Slack, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us.",
+    jobSalary: "$6k-12k",
+    appliedToJob: "41",
+  },
+  {
+    image: behance,
+    title: "Product Designer",
+    jobLocation: "Behance • New York, USA • 14 hours ago",
+    jobDescription:
+      "Here at Behance, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us.",
+    jobSalary: "$8k-15k",
+    appliedToJob: "35",
+  },
+  {
+    image: invision,
+    title: "Junior UI Designer",
+    jobLocation: "Invision • New York, USA • 8 hour ago",
+    jobDescription:
+      "Here at Invision, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us.",
+    jobSalary: "$5k-9k",
+    appliedToJob: "25",
   },
 ];
