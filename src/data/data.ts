@@ -164,3 +164,24 @@ export const jobSearchCardData = [
     appliedToJob: "25",
   },
 ];
+
+export const scheduleCardData = [
+  {
+    date: "20",
+    day: "Tue",
+    taskTitle: "UIHUT Job Interview",
+    time: "09.00-10.00",
+  },
+  {
+    date: "25",
+    day: "Mon",
+    taskTitle: "Meeting With Thomas L.",
+    time: "08.00-9.30",
+  },
+  {
+    date: "31",
+    day: "Wed",
+    taskTitle: "Job Interview",
+    time: "08.00-9.00",
+  },
+];

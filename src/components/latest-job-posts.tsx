@@ -22,26 +22,26 @@ const LatestJobPosts = () => {
             title="React Developer"
             description=" Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us."
             image={uihut}
-            salary="15k-20k"
+            salary="5k-8k"
 
            />
            <LatestJobCard
             title="Web Developer"
-            description="Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us."
+            description="Here at Microsoft, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us."
             image={microsoft}
-            salary="15k-20k"
+            salary="6k-10k"
            />
            <LatestJobCard
             title="Junior UI Designer"
-            description="Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us."
+            description="Here at Airbnb, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us."
             image={airbnb}
-            salary="15k-20k"
+            salary="5k-9k"
            />
            <LatestJobCard
             title="UX Researcher"
-            description="Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us."
+            description="Here at Slack, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us."
             image={slack}
-            salary="15k-20k"
+            salary="4k-5k"
            />
           </div>
             <div className="mt-[92px] grid grid-cols-30 gap-9 max-sm:grid-cols-2">
