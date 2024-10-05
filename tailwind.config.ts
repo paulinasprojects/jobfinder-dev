@@ -14,6 +14,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontSize: {
+        md: "16px",
+        xxs: "13px",
+      },
       gridTemplateColumns: {
         20: "repeat(2, 290px)",
         30: "repeat(3, 256px)",
@@ -75,6 +79,7 @@ const config: Config = {
         neutralColor: "#92929D",
         neutral3Color: "#696974",
         neutralWhite: "#F5F5F8",
+        cardColor: "#1c1c24",
       },
     },
   },

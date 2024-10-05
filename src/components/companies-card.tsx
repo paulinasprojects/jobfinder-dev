@@ -14,7 +14,7 @@ interface CompaniesCardProps {
 const CompaniesCard = ({ image,  star, title, location, jobVacancy}: CompaniesCardProps) => {
   return (
     <div className="">
-      <Card className="bg-[#1c1c24] border-[#1c1c24]">
+      <Card className="bg-cardColor border-cardColor">
         <CardContent>
           <div className="flex mt-5 gap-3.5">
             <Image

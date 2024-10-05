@@ -6,6 +6,21 @@ body {
   background-color: #13131A;
 }
 
+@layer components {
+  .tech-stack {
+    @apply bg-[#21212b] text-neutralColor text-sm px-2 py-1 rounded-[5px];
+  }
+  .latest-job-tech-stack {
+    @apply bg-[#2c2c2c] text-neutralColor text-sm px-2 py-1 rounded-[5px];
+  }
+  .icon-flex {
+    @apply flex items-center gap-1.5 text-neutralColor bg-[#2c2c2c] text-sm px-2 py-1 rounded-[5px];
+  }
+  .search-job-title {
+    @apply xl:w-[383px] lg:h-[80px] max-sm:w-[295px] max-sm:h-[52px] bg-cardColor rounded-tl-[20px] border-none text-neutralColor p-10 text-sm font-bold;
+  }
+}
+
 
 :root {
   --foreground-rgb: 0, 0, 0;

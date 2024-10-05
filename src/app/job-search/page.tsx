@@ -13,7 +13,7 @@ const JobSearch = () => {
       />
       <Search/>
       <div>
-        <div className='flex gap-[77px]'>
+        <div className='flex gap-[77px] lg:gap-[50px]'>
           {/* Left */}
           <div className='ml-20 mt-[52px] max-sm:hidden'>
             <LeftContainer/>

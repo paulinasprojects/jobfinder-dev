@@ -5,8 +5,6 @@ import { Bar, BarChart, XAxis } from "recharts"
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
@@ -42,15 +40,15 @@ const chartConfig = {
 
 export function ListingPerformanceChart() {
   return (
-    <Card className=" bg-[#1c1c24] border-[#1c1c24] xl:w-[620px] xl:h-[332px] max-sm:w-[350px] md:w-[620px]">
+    <Card className=" bg-cardColor border-cardColor xl:w-[620px] xl:h-[332px] max-sm:w-[350px] md:w-[620px]">
       <CardHeader>
         <CardTitle className="text-white mb-2 text-[22px] font-bold">Listing Performance</CardTitle>
         <div className="flex gap-9 items-center">
-          <span className="text-white flex gap-1 items-center text-[13px]">
+          <span className="text-white flex gap-1 items-center text-xxs">
             <div className="w-2.5 h-2.5 rounded-full bg-yellowCard"/>
             Views
           </span>
-          <span className="text-white flex gap-1 items-center text-[13px]">
+          <span className="text-white flex gap-1 items-center text-xxs">
             <div className="w-2.5 h-2.5 rounded-full bg-greenButtonColor"/>
             Applications
             </span>
@@ -58,7 +56,6 @@ export function ListingPerformanceChart() {
       </CardHeader>
       <CardContent className="]">
         <ChartContainer config={chartConfig} className="xl:w-[561px] xl:h-[198px]">
-          {/* <ResponsiveContainer minWidth={350} height={350}> */}
           <BarChart accessibilityLayer data={chartData} barSize={5}>
             <XAxis
               dataKey="day"
@@ -74,7 +71,6 @@ export function ListingPerformanceChart() {
             <Bar dataKey="Applications" fill="#0BAB7C" radius={4}  />
             <Bar dataKey="Views" fill="#FDDD8C" radius={4}/>
           </BarChart>
-          {/* </ResponsiveContainer> */}
         </ChartContainer>
       </CardContent>
     </Card>

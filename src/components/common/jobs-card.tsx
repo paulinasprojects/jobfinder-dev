@@ -22,9 +22,9 @@ const JobCard = ({ icon, title, description, percent, arrow, className }: JobCar
             </div>
             <span className='text-2xl font-bold mt-3.5'>{title}</span>
             <div className='flex gap-8 items-center justify-between'>
-              <span className='text-[16px]'>{description}</span>
+              <span className='text-md'>{description}</span>
               <div className='flex gap-1.5 items-center'>
-              <span className='text-[16px]'>{percent}</span>
+              <span className='text-md'>{percent}</span>
                 {arrow}
               </div>
             </div>

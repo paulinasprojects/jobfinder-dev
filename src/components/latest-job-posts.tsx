@@ -1,9 +1,6 @@
 import { appleBlack, gitlab, mailchimp, star } from "@/lib/images";
 import { ChevronDown } from "lucide-react";
-import uihut from '/public/uihut.png';
-import microsoft from '/public/microsoft.png';
-import airbnb from '/public/airbnb.svg';
-import slack from '/public/slack.png';
+import { uihut, microsoft, airbnb, slack } from "@/lib/images";
 import LatestJobCard from "./latest-jobs-card";
 import RecomendedCard from "./recommended-card";
 import Schedule from "./schedule";

@@ -5,7 +5,7 @@ import Image from 'next/image';
 const RecomendedCard = () => {
   return (
     <div>
-      <Card className='bg-[#1c1c24] border-[#1c1c24] w-[400px]'>
+      <Card className='bg-cardColor border-cardColor w-[400px]'>
         <div>
           <CardContent className='bg-[#21212b] m-5 rounded-[10px]'>
             <div className='flex items-center gap-2.5 mt-5'>
@@ -16,7 +16,7 @@ const RecomendedCard = () => {
                 className='mt-3'
               />
               <div className='text-white flex flex-col gap-1 mt-3.5'>
-                <span className='text-[16px] font-semibold'>Product Design</span>
+                <span className='text-md font-semibold'>Product Design</span>
                 <span className='text-neutralColor text-sm'>Google•California, USA</span>
               </div>
               <div className='flex flex-col text-white ml-auto gap-1 mt-3.5'>
@@ -36,7 +36,7 @@ const RecomendedCard = () => {
                 className='mt-3'
               />
               <div className='text-white flex flex-col gap-1 mt-3.5'>
-                <span className='text-[16px] font-semibold'>Head Of Marketing</span>
+                <span className='text-md font-semibold'>Head Of Marketing</span>
                 <span className='text-neutralColor text-sm'>Bexon•Sylhet, BD</span>
               </div>
               <div className='flex flex-col text-white ml-auto gap-1 mt-3.5'>
@@ -56,7 +56,7 @@ const RecomendedCard = () => {
                 className='mt-3'
               />
               <div className='text-white flex flex-col gap-1 mt-3.5'>
-                <span className='text-[16px] font-semibold'>Lead UI Designer</span>
+                <span className='text-md font-semibold'>Lead UI Designer</span>
                 <span className='text-neutralColor text-sm'>Google•California, USA</span>
               </div>
               <div className='flex flex-col text-white ml-auto gap-1 mt-3.5'>
@@ -76,7 +76,7 @@ const RecomendedCard = () => {
                 className='mt-3'
               />
               <div className='text-white flex flex-col gap-1 mt-3.5'>
-                <span className='text-[16px] font-semibold'>Lead React Developer</span>
+                <span className='text-md font-semibold'>Lead React Developer</span>
                 <span className='text-neutralColor text-sm'>Apple•New York, USA</span>
               </div>
               <div className='flex flex-col text-white ml-auto gap-1 mt-3.5'>
@@ -96,7 +96,7 @@ const RecomendedCard = () => {
                 className='mt-3'
               />
               <div className='text-white flex flex-col gap-1 mt-3.5'>
-                <span className='text-[16px] font-semibold'>Frontend Developer</span>
+                <span className='text-md font-semibold'>Frontend Developer</span>
                 <span className='text-neutralColor text-sm'>Invision•California, USA</span>
               </div>
               <div className='flex flex-col text-white ml-auto gap-1 mt-3.5'>

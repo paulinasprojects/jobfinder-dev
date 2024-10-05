@@ -14,7 +14,7 @@ interface LatestJobCardProps {
 const LatestJobCard = ({ image, title, description, salary }: LatestJobCardProps) => {
   return (
     <div className=''>
-      <Card className='w-[400px] bg-[#1c1c24] border-[#1c1c24]'>
+      <Card className='w-[400px] bg-cardColor border-cardColor'>
         <CardContent>
           <div className='flex gap-[15px] mt-5'>
               <div className='bg-[#2c2c2c] w-[64px] h-[64px] rounded-[10px] flex items-center justify-center'>
@@ -23,10 +23,10 @@ const LatestJobCard = ({ image, title, description, salary }: LatestJobCardProps
             <div className='text-white flex flex-col'>
                <span className='text-lg'>{title}</span>
              <div className='flex gap-2 mt-3'>
-              <span className='bg-[#2c2c2c] text-neutralColor text-sm px-2 py-1 rounded-[5px]'>PHP</span>
-              <span className='bg-[#2c2c2c] text-neutralColor text-sm px-2 py-1 rounded-[5px]'>Laravel</span>
-              <span className='bg-[#2c2c2c] text-neutralColor text-sm px-2 py-1 rounded-[5px]'>CSS</span>
-              <span className='bg-[#2c2c2c] text-neutralColor text-sm px-2 py-1 rounded-[5px]'>React</span>
+              <span className='latest-job-tech-stack'>PHP</span>
+              <span className='latest-job-tech-stack'>Laravel</span>
+              <span className='latest-job-tech-stack'>CSS</span>
+              <span className='latest-job-tech-stack'>React</span>
              </div>
             </div>
             <div className='ml-auto'>
@@ -34,20 +34,20 @@ const LatestJobCard = ({ image, title, description, salary }: LatestJobCardProps
             </div>
           </div>
           <div className='mt-8'>
-            <span className='text-neutralColor text-[16px]'>
+            <span className='text-neutralColor text-md'>
               {description}
             </span>
           </div>
           <div className='flex gap-2 mt-3'>
-            <span className='flex items-center gap-1.5 text-neutralColor bg-[#2c2c2c] text-sm px-2 py-1 rounded-[5px]'>
+            <span className='icon-flex'>
               <Briefcase color='#92929D' width={14} height={14} />
               Full Time
             </span>
-            <span className='flex items-center gap-1.5 text-neutralColor bg-[#2c2c2c] text-sm px-2 py-1 rounded-[5px]'>
+            <span className='icon-flex'>
               <Users color='#92929D' width={14} height={14} />
               45 applied
             </span>
-            <span className='flex items-center gap-1.5 text-neutralColor bg-[#2c2c2c] text-sm px-2 py-1 rounded-[5px]'>
+            <span className='icon-flex'>
               <Clock color='#92929D' width={14} height={14}/>
               3 days left
             </span>
