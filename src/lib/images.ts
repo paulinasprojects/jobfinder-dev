@@ -12,7 +12,15 @@ import appleBlack from "/public/apple-black.svg";
 import googlemeet from "/public/google-meet.svg";
 import gitlab from "/public/gitlab.svg";
 import star from "/public/star.svg";
+import jobdetailsimage from "/public/job-details-image.png";
 import behance from "/public/behance.svg";
+import jobdetails from "/public/job-details.svg";
+import mobileCover from "/public/mobile-cover.png";
+import profile from "/public/profile.png";
+import logo from "/public/Logo.png";
+import spotify from "/public/spotify.svg";
+import twitch from "/public/twitch.svg";
+import notion from "/public/notion.svg";
 
 export {
   uihut,
@@ -30,4 +38,12 @@ export {
   gitlab,
   star,
   behance,
+  jobdetailsimage,
+  jobdetails,
+  mobileCover,
+  profile,
+  logo,
+  spotify,
+  notion,
+  twitch,
 };

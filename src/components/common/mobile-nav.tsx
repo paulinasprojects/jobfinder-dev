@@ -14,7 +14,7 @@ import {
 const MobileNav = () => {
   return (
     <Sheet>
-      <SheetTrigger><Menu color="#92929D"/></SheetTrigger>
+      <SheetTrigger><Menu className='text-neutralColor'/></SheetTrigger>
       <SheetContent side="left" className='bg-[#13131A] border-[#13131a]'>
         <SheetHeader>
           <SheetTitle>

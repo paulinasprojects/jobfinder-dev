@@ -24,6 +24,7 @@ const config: Config = {
         35: "repeat(3, 200px)",
         40: "repeat(2, 400px)",
         150: "repeat(2, 145px)",
+        160: "repeat(2, 110px)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -79,7 +80,9 @@ const config: Config = {
         neutralColor: "#92929D",
         neutral3Color: "#696974",
         neutralWhite: "#F5F5F8",
+        neutralWhite200: "#E2E2EA",
         cardColor: "#1c1c24",
+        cardColorTwo: "#21212b",
       },
     },
   },

@@ -1,4 +1,17 @@
-import { uihut, microsoft, slack, behance, invision } from "@/lib/images";
+import {
+  uihut,
+  microsoft,
+  slack,
+  behance,
+  invision,
+  netflix,
+  spotify,
+  twitch,
+  apple,
+  mailchimp,
+  notion,
+  airbnb,
+} from "@/lib/images";
 
 export const jobCardData = [
   {
@@ -183,5 +196,133 @@ export const scheduleCardData = [
     day: "Wed",
     taskTitle: "Job Interview",
     time: "08.00-9.00",
+  },
+];
+
+export const similarJobData = [
+  {
+    icon: behance,
+    jobPosition: "UI Designer",
+    jobLocation: "San Francisco, US",
+    jobTimeLeft: "2 days left",
+    jobSalaryHour: "30",
+  },
+  {
+    icon: invision,
+    jobPosition: "Lead Visual Designer",
+    jobLocation: "New York, US",
+    jobTimeLeft: "3 days left",
+    jobSalaryHour: "22",
+  },
+  {
+    icon: netflix,
+    jobPosition: "UI/UX Designer",
+    jobLocation: "Los Angeles, US",
+    jobTimeLeft: "4 days left",
+    jobSalaryHour: "28",
+  },
+  {
+    icon: spotify,
+    jobPosition: "Marketing Strategist",
+    jobLocation: "San Francisco, US",
+    jobTimeLeft: "5 days left",
+    jobSalaryHour: "35",
+  },
+  {
+    icon: twitch,
+    jobPosition: "React Developer",
+    jobLocation: "San Francisco, US",
+    jobTimeLeft: "6 days left",
+    jobSalaryHour: "35",
+  },
+  {
+    icon: apple,
+    jobPosition: "iOS Developer Mobile",
+    jobLocation: "San Francisco, US",
+    jobTimeLeft: "1 Week left",
+    jobSalaryHour: "29",
+  },
+  {
+    icon: airbnb,
+    jobPosition: "HR Manager",
+    jobLocation: "Silicon Valley, US",
+    jobTimeLeft: "1 Week left",
+    jobSalaryHour: "25",
+  },
+  {
+    icon: mailchimp,
+    jobPosition: "Lead Developer",
+    jobLocation: "Boston, US",
+    jobTimeLeft: "5 days left",
+    jobSalaryHour: "35",
+  },
+  {
+    icon: notion,
+    jobPosition: "Backend Developer",
+    jobLocation: "New York, US",
+    jobTimeLeft: "1 Week left",
+    jobSalaryHour: "30",
+  },
+];
+
+export const responsibilites = [
+  {
+    id: 1,
+    responsibility:
+      "Design, build, test, and deploy software applications and features",
+  },
+  {
+    id: 2,
+    responsibility:
+      "Carry software products through the software development life cycle (SDLC)",
+  },
+  {
+    id: 3,
+    responsibility: "Write clean, concise, and efficient code",
+  },
+  {
+    id: 4,
+    responsibility: "Manage code documentation and version control",
+  },
+  {
+    id: 5,
+    responsibility: "Troubleshoot and debug software",
+  },
+  {
+    id: 5,
+    responsibility:
+      "Participate in on-call rotation to respond to production issues",
+  },
+];
+export const qualifications = [
+  {
+    id: 6,
+    qualification: "3+ years of professional experience working on this field",
+  },
+  {
+    id: 7,
+    qualification:
+      "Bachelor's degree in computer science, software engineering, or related field",
+  },
+  {
+    id: 8,
+    qualification:
+      "Proficiency in at least one programming language (e.g., Java, C#, C++)",
+  },
+  {
+    id: 9,
+    qualification: "Strong problem-solving and communication skills",
+  },
+  {
+    id: 10,
+    qualification: "Experience with build tools such as Gradle and Maven",
+  },
+  {
+    id: 11,
+    qualification: "Good working knowledge of the Linux operating system",
+  },
+  {
+    id: 12,
+    qualification: "Back-end development expertise",
   },
 ];

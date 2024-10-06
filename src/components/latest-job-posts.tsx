@@ -15,7 +15,7 @@ const LatestJobPosts = () => {
         <div>
           <div className="flex justify-between xl:justify-between items-center xl:min-w-[840px] md:min-w-[350px] md:justify-around">
             <h4 className="text-[22px] font-bold text-white">Latest Job Posts</h4>
-              <span className="text-neutral3Color flex gap-2.5 items-center">See All <ChevronDown color="#808191"/></span>
+              <span className="text-neutral3Color flex gap-2.5 items-center">See All <ChevronDown className="text-neutralColor cursor-pointer"/></span>
           </div>
           <div className="mt-8 grid grid-cols-40 gap-10 max-sm:grid-cols-1">
            <LatestJobCard
@@ -72,7 +72,7 @@ const LatestJobPosts = () => {
       <div className="mr-20">
         <div className="flex xl:min-w-[400px] items-center justify-between">
           <h4 className="text-[22px] font-bold text-white">Recomended For You</h4>
-            <span className="text-neutral3Color flex gap-2.5 items-center">See All <ChevronDown color="#808191"/></span>
+            <span className="text-neutral3Color flex gap-2.5 items-center">See All <ChevronDown className="text-neutralColor cursor-pointer"/></span>
         </div>
         <div className="flex xl:flex-col md:gap-11 max-sm:flex-col">
         <div className="mt-8">
