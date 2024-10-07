@@ -21,6 +21,7 @@ import logo from "/public/Logo.png";
 import spotify from "/public/spotify.svg";
 import twitch from "/public/twitch.svg";
 import notion from "/public/notion.svg";
+import linkedin from "/public/linkedin.svg";
 
 export {
   uihut,
@@ -45,5 +46,6 @@ export {
   logo,
   spotify,
   notion,
+  linkedin,
   twitch,
 };

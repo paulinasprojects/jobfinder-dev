@@ -5,10 +5,10 @@ import { useRouter } from 'next/navigation';
 import { Bookmark, ChevronLeft, EllipsisVertical, Plus } from 'lucide-react'
 import { jobdetailsimage, jobdetails, mobileCover, uihut } from '@/lib/images'
 import { responsibilites, qualifications  } from '@/data/data';
-import { Card, CardContent } from '@/components/ui/card'
-import JobSearchApplyNowButton from '@/components/job-search-apply-now-button'
-import JobSearchMessageButton from '@/components/job-search-message-button'
-import GreenCircle from '@/components/ui/green-circle'
+import { Card, CardContent } from '@/components/ui/card';
+import JobSearchApplyNowButton from '@/components/job-search-apply-now-button';
+import JobSearchMessageButton from '@/components/job-search-message-button';
+import GreenCircle from '@/components/ui/green-circle';
 
 const JobDetailsCard = () => {
   const router = useRouter();
@@ -47,7 +47,7 @@ const JobDetailsCard = () => {
                 <span className='text-neutral3Color text-md'>UIHUT Technologies LLC • Sylhet, BD • 3 days ago</span>
               </div>
               <div className='flex items-center gap-3.5 max-sm:ml-0'>
-                  <JobSearchApplyNowButton className='w-[119px] h-[44px]'/>
+                  <JobSearchApplyNowButton className='w-[119px] h-[44px]' onClick={() => router.push('/job/1/submit-your-application')}/>
                   <JobSearchMessageButton className='border border-white w-[99px] h-[44px]'/>
                   <EllipsisVertical className='cursor-pointer text-neutralColor'/>
               </div>
@@ -109,7 +109,7 @@ const JobDetailsCard = () => {
                 <button className='border border-greenButtonColor rounded-[10px] text-greenButtonColor flex items-center justify-center gap-1.5 p-1.5 text-xxs'><Plus width={18} height={18} className='cursor-pointer'/>Follow</button>
               </div>
               <div className='mt-7'>
-                <span className='text-neutralWhite200'>UIHUT is a design and coding resources platform for designers, developers and entrepreneurs. We're building a digital marketplace to simplify the creation of websites, apps and software on any device. UIHUT is based in New York City and is privately funded by some of the industry's leading investors.</span>
+                <span className='text-neutralWhite200'>UIHUT is a design and coding resources platform for designers, developers and entrepreneurs. We&apos;re building a digital marketplace to simplify the creation of websites, apps and software on any device. UIHUT is based in New York City and is privately funded by some of the industry&apos;s leading investors.</span>
               </div>
             </div>
           </CardContent>
@@ -119,4 +119,4 @@ const JobDetailsCard = () => {
   )
 }
 
-export default JobDetailsCard
+export default JobDetailsCard;

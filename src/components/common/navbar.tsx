@@ -20,7 +20,7 @@ const Navbar = () => {
     {
       href: "/job-search",
       label: "Job Search",
-      active: pathname === "/job-search"
+      active: pathname.startsWith("/job")
     },
     {
       href: "/talent",

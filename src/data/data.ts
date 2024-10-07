@@ -289,40 +289,40 @@ export const responsibilites = [
     responsibility: "Troubleshoot and debug software",
   },
   {
-    id: 5,
+    id: 6,
     responsibility:
       "Participate in on-call rotation to respond to production issues",
   },
 ];
 export const qualifications = [
   {
-    id: 6,
-    qualification: "3+ years of professional experience working on this field",
-  },
-  {
     id: 7,
-    qualification:
-      "Bachelor's degree in computer science, software engineering, or related field",
+    qualification: "3+ years of professional experience working on this field",
   },
   {
     id: 8,
     qualification:
-      "Proficiency in at least one programming language (e.g., Java, C#, C++)",
+      "Bachelor's degree in computer science, software engineering, or related field",
   },
   {
     id: 9,
-    qualification: "Strong problem-solving and communication skills",
+    qualification:
+      "Proficiency in at least one programming language (e.g., Java, C#, C++)",
   },
   {
     id: 10,
-    qualification: "Experience with build tools such as Gradle and Maven",
+    qualification: "Strong problem-solving and communication skills",
   },
   {
     id: 11,
-    qualification: "Good working knowledge of the Linux operating system",
+    qualification: "Experience with build tools such as Gradle and Maven",
   },
   {
     id: 12,
+    qualification: "Good working knowledge of the Linux operating system",
+  },
+  {
+    id: 13,
     qualification: "Back-end development expertise",
   },
 ];
