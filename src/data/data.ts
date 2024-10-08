@@ -13,6 +13,13 @@ import {
   airbnb,
   autodesk,
   github,
+  talentImage,
+  talentImageTwo,
+  talentImageThree,
+  talentImageFour,
+  talentImageFive,
+  talentImageSix,
+  talentImageSeven,
 } from "@/lib/images";
 
 export const jobCardData = [
@@ -129,6 +136,37 @@ export const salaryRangeData = [
     salary: "$1000 Above",
     checkboxId: "$1000-above",
     checkboxJobs: "142",
+  },
+];
+
+export const SkillsCheckbox = [
+  {
+    skill: "All",
+    checkboxPeople: "103",
+  },
+  {
+    skill: "Product Designer",
+    checkboxPeople: "142",
+  },
+  {
+    skill: "Web Developer",
+    checkboxPeople: "142",
+  },
+  {
+    skill: "App Developer",
+    checkboxPeople: "142",
+  },
+  {
+    skill: "Frontend Developer",
+    checkboxPeople: "142",
+  },
+  {
+    skill: "Backend Developer",
+    checkboxPeople: "142",
+  },
+  {
+    skill: "UX Researcher",
+    checkboxPeople: "142",
   },
 ];
 
@@ -369,5 +407,57 @@ export const similarCompanies = [
     image: mailchimp,
     company: "Mailchimp",
     companyName: "Mailchimp",
+  },
+];
+
+export const Talents = [
+  {
+    image: talentImage,
+    name: "Thomas L. Fletcher",
+    twitter: "@thomas",
+    position: "Fontend Developer",
+    location: "Washington, United States",
+  },
+  {
+    image: talentImageTwo,
+    name: "Paul M. Smith",
+    twitter: "@paul",
+    position: "Fontend Developer",
+    location: "Washington, United States",
+  },
+  {
+    image: talentImageThree,
+    name: "John S. Doe",
+    twitter: "@john",
+    position: "Fontend Developer",
+    location: "Washington, United States",
+  },
+  {
+    image: talentImageFour,
+    name: "James D. Thomas",
+    twitter: "@james",
+    position: "Fontend Developer",
+    location: "Washington, United States",
+  },
+  {
+    image: talentImageFive,
+    name: "Jack T. Willson",
+    twitter: "@james",
+    position: "Fontend Developer",
+    location: "Washington, United States",
+  },
+  {
+    image: talentImageSix,
+    name: "William M. Davidson",
+    twitter: "@james",
+    position: "Fontend Developer",
+    location: "Washington, United States",
+  },
+  {
+    image: talentImageSeven,
+    name: "David J. Trump",
+    twitter: "@james",
+    position: "Fontend Developer",
+    location: "Washington, United States",
   },
 ];

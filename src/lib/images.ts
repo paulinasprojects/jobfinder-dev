@@ -32,6 +32,13 @@ import aboutImagethree from "/public/about-image-three.png";
 import aboutImagefour from "/public/about-image-four.png";
 import autodesk from "/public/autodesk.svg";
 import github from "/public/github.svg";
+import talentImage from "/public/talent-profile.png";
+import talentImageTwo from "/public/talent-profile-two.png";
+import talentImageThree from "/public/talent-profile-three.png";
+import talentImageFour from "/public/talent-profile-four.png";
+import talentImageFive from "/public/talent-profile-five.png";
+import talentImageSix from "/public/talent-profile-six.png";
+import talentImageSeven from "/public/talent-profile-seven.png";
 
 export {
   uihut,
@@ -68,4 +75,11 @@ export {
   aboutImagetwo,
   autodesk,
   github,
+  talentImage,
+  talentImageTwo,
+  talentImageThree,
+  talentImageFour,
+  talentImageFive,
+  talentImageSix,
+  talentImageSeven,
 };
