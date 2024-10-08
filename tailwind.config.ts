@@ -23,8 +23,10 @@ const config: Config = {
         30: "repeat(3, 256px)",
         35: "repeat(3, 200px)",
         40: "repeat(2, 400px)",
+        45: "repeat(3, 105px)",
         150: "repeat(2, 145px)",
         160: "repeat(2, 110px)",
+        170: "repeat(6, 110px)",
       },
       borderRadius: {
         lg: "var(--radius)",

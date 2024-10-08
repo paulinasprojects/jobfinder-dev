@@ -22,6 +22,16 @@ import spotify from "/public/spotify.svg";
 import twitch from "/public/twitch.svg";
 import notion from "/public/notion.svg";
 import linkedin from "/public/linkedin.svg";
+import companyFollower from "/public/company-follower.png";
+import companyFollowerTwo from "/public/company-follower-two.png";
+import companyFollowerThree from "/public/company-follower-three.png";
+import thirtyFour from "/public/+34.png";
+import aboutImage from "/public/about-image.png";
+import aboutImagetwo from "/public/about-image-two.png";
+import aboutImagethree from "/public/about-image-three.png";
+import aboutImagefour from "/public/about-image-four.png";
+import autodesk from "/public/autodesk.svg";
+import github from "/public/github.svg";
 
 export {
   uihut,
@@ -48,4 +58,14 @@ export {
   notion,
   linkedin,
   twitch,
+  companyFollower,
+  companyFollowerTwo,
+  companyFollowerThree,
+  thirtyFour,
+  aboutImage,
+  aboutImagefour,
+  aboutImagethree,
+  aboutImagetwo,
+  autodesk,
+  github,
 };

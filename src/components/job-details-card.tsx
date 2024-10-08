@@ -97,7 +97,7 @@ const JobDetailsCard = () => {
             </div>
             <div className='mt-[60px] ml-10 flex flex-col gap-3 max-sm:ml-0'>
               <span className='text-lg font-bold text-white'>About The Company</span>
-              <div className='flex items-center justify-between gap-5'>
+              <div className='flex items-center justify-between gap-5 cursor-pointer'  onClick={() => router.push('/company/1')}>
                 <Image
                   src={uihut}
                   alt='company-logo'

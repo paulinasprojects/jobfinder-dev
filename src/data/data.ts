@@ -11,6 +11,8 @@ import {
   mailchimp,
   notion,
   airbnb,
+  autodesk,
+  github,
 } from "@/lib/images";
 
 export const jobCardData = [
@@ -324,5 +326,48 @@ export const qualifications = [
   {
     id: 13,
     qualification: "Back-end development expertise",
+  },
+];
+
+export const similarCompanies = [
+  {
+    image: apple,
+    company: "Apple",
+    companyName: "Apple LLC",
+  },
+  {
+    image: autodesk,
+    company: "Autodesk",
+    companyName: "Autodesk Inc",
+  },
+  {
+    image: behance,
+    company: "Behance",
+    companyName: "Behance",
+  },
+  {
+    image: invision,
+    company: "Invision",
+    companyName: "Invision",
+  },
+  {
+    image: spotify,
+    company: "Spotify",
+    companyName: "Spotify",
+  },
+  {
+    image: microsoft,
+    company: "Microsoft",
+    companyName: "Microsoft",
+  },
+  {
+    image: github,
+    company: "Github",
+    companyName: "Github",
+  },
+  {
+    image: mailchimp,
+    company: "Mailchimp",
+    companyName: "Mailchimp",
   },
 ];
