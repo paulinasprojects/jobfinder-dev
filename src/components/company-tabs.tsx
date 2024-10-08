@@ -1,8 +1,10 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import { aboutImage, aboutImagetwo, aboutImagefour, aboutImagethree } from "@/lib/images";
+import { aboutImage, aboutImagetwo, aboutImagefour, aboutImagethree, uihut } from "@/lib/images";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { Card, CardContent } from "./ui/card";
+import { Search, Bell, Ellipsis } from "lucide-react";
+import { Button } from "./ui/button";
 
 const Map = dynamic(() => import("@/components/map"), {
   ssr: false,
@@ -83,6 +85,132 @@ const CompanyTabs = () => {
           </Card>
         </TabsContent>
         {/*  */}
+        <TabsContent value="jobs" className="mt-[50px] max-sm:mt-[80px]">
+          <Card className="w-[816px] h-full max-sm:w-[350px] bg-cardColor border-cardColorTwo">
+            <CardContent>
+              <div>
+              <div className="flex justify-between items-center max-sm:flex-col">
+                <div className="mt-5 relative">
+                  <input type="text" placeholder="Search Job title or Keyword" className="w-[440px] max-sm:w-[200px] h-[58px] rounded-[16px] text-neutralColor text-sm bg-cardColorTwo pl-10" />
+                  <Search className="text-neutralColor absolute top-5 left-3" width={18} height={18}/>
+                  <Button className="bg-greenButtonColor ml-5">Search</Button>
+                </div>
+                <div className="mt-5">
+                  <button className="flex items-center justify-center gap-[12px] text-neutralColor text-xxs border border-neutralColor rounded-[10px] w-[165px] h-[42px]">
+                    <Bell className="text-neutralColor" width={16} height={17}/>
+                    Create Job Alert
+                  </button>
+                </div>
+              </div>
+                <div className="mt-10 mb-5">
+                  <span className="text-white text-lg font-bold">Recently Posted Job</span>
+                </div>
+                <div className="grid grid-cols-15 gap-[30px] max-sm:grid-cols-17">
+                <div className="bg-cardColorTwo  h-[259px] rounded-[10px]">
+                  <div className="flex items-center ml-5">
+                    <Image
+                      src={uihut}
+                      alt="uihut"
+                      className="mt-5"
+                    />
+                    <div className="flex flex-col items-center mt-5 ml-5">
+                      <span className="text-white text-lg font-semibold">Junior UI Designer</span>
+                      <div className='flex gap-2'>
+                        <span className='tech-stack'>PHP</span>
+                        <span className='tech-stack'>Laravel</span>
+                        <span className='tech-stack'>CSS</span>
+                    </div>
+                    </div>
+                    <Ellipsis className="text-neutralColor ml-auto mr-5"/>
+                  </div>
+                  <div className="mt-[22px] lg:ml-5">
+                    <span className="text-neutralColor text-md font-normal max-sm:text-sm">Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve.</span>
+                  </div>
+                  <div className="mt-7 flex justify-between items-center max-sm:mt-5">
+                    <span className="ml-5 text-white">$15k-20k <span className="text-neutralColor">/month</span></span>
+                    <button className="text-greenButtonColor mr-5 rounded-[10px] w-[103px] h-[40px] bg-[#1f2f33]">Apply now</button>
+                  </div>
+                </div>
+                <div className="bg-cardColorTwo  h-[259px] rounded-[10px]">
+                  <div className="flex items-center ml-5">
+                    <Image
+                      src={uihut}
+                      alt="uihut"
+                      className="mt-5"
+                    />
+                    <div className="flex flex-col items-center mt-5 ml-5">
+                      <span className="text-white text-lg font-semibold">Junior UI Designer</span>
+                      <div className='flex gap-2'>
+                        <span className='tech-stack'>PHP</span>
+                        <span className='tech-stack'>Laravel</span>
+                        <span className='tech-stack'>CSS</span>
+                    </div>
+                    </div>
+                    <Ellipsis className="text-neutralColor ml-auto mr-5"/>
+                  </div>
+                  <div className="mt-[22px] lg:ml-5">
+                    <span className="text-neutralColor text-md font-normal max-sm:text-sm">Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve.</span>
+                  </div>
+                  <div className="mt-7 flex justify-between items-center max-sm:mt-5">
+                    <span className="ml-5 text-white">$15k-20k <span className="text-neutralColor">/month</span></span>
+                    <button className="text-greenButtonColor mr-5 rounded-[10px] w-[103px] h-[40px] bg-[#1f2f33]">Apply now</button>
+                  </div>
+                </div>
+                <div className="bg-cardColorTwo  h-[259px] rounded-[10px]">
+                  <div className="flex items-center ml-5">
+                    <Image
+                      src={uihut}
+                      alt="uihut"
+                      className="mt-5"
+                    />
+                    <div className="flex flex-col items-center mt-5 ml-5">
+                      <span className="text-white text-lg font-semibold">Junior UI Designer</span>
+                      <div className='flex gap-2'>
+                        <span className='tech-stack'>PHP</span>
+                        <span className='tech-stack'>Laravel</span>
+                        <span className='tech-stack'>CSS</span>
+                    </div>
+                    </div>
+                    <Ellipsis className="text-neutralColor ml-auto mr-5"/>
+                  </div>
+                  <div className="mt-[22px] lg:ml-5">
+                    <span className="text-neutralColor text-md font-normal max-sm:text-sm">Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve.</span>
+                  </div>
+                  <div className="mt-7 flex justify-between items-center max-sm:mt-5">
+                    <span className="ml-5 text-white">$15k-20k <span className="text-neutralColor">/month</span></span>
+                    <button className="text-greenButtonColor mr-5 rounded-[10px] w-[103px] h-[40px] bg-[#1f2f33]">Apply now</button>
+                  </div>
+                </div>
+                <div className="bg-cardColorTwo  h-[259px] rounded-[10px]">
+                  <div className="flex items-center ml-5">
+                    <Image
+                      src={uihut}
+                      alt="uihut"
+                      className="mt-5"
+                    />
+                    <div className="flex flex-col items-center mt-5 ml-5">
+                      <span className="text-white text-lg font-semibold">Junior UI Designer</span>
+                      <div className='flex gap-2'>
+                        <span className='tech-stack'>PHP</span>
+                        <span className='tech-stack'>Laravel</span>
+                        <span className='tech-stack'>CSS</span>
+                    </div>
+                    </div>
+                    <Ellipsis className="text-neutralColor ml-auto mr-5"/>
+                  </div>
+                  <div className="mt-[22px] lg:ml-5">
+                    <span className="text-neutralColor text-md font-normal max-sm:text-sm">Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve.</span>
+                  </div>
+                  <div className="mt-7 flex justify-between items-center max-sm:mt-5">
+                    <span className="ml-5 text-white">$15k-20k <span className="text-neutralColor">/month</span></span>
+                    <button className="text-greenButtonColor mr-5 rounded-[10px] w-[103px] h-[40px] bg-[#1f2f33]">Apply now</button>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
       </Tabs>
     </div>
   )
