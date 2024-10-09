@@ -10,7 +10,7 @@ const ProfileIdPage = () => {
           <TalentInformation/>
         </div>
         {/* Right */}
-        <div>
+        <div className='lg:mr-10'>
           <RecommendedTalents/>
         </div>
       </div>
