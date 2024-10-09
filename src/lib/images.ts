@@ -39,8 +39,35 @@ import talentImageFour from "/public/talent-profile-four.png";
 import talentImageFive from "/public/talent-profile-five.png";
 import talentImageSix from "/public/talent-profile-six.png";
 import talentImageSeven from "/public/talent-profile-seven.png";
+import talencover from "/public/talent-cover.png";
+import talentimage from "/public/talent-image.png";
+import talencovermobile from "/public/talent-cover-mobile.png";
+import portfolioImage from "/public/portfolio-image.png";
+import portfolioImageTwo from "/public/portfolio-image-two.png";
+import portfolioImageThree from "/public/portfolio-image-three.png";
+import portfolioImageFour from "/public/portfolio-image-four.png";
+import devon from "/public/devon.png";
+import kathryn from "/public/kathryn.png";
+import marvin from "/public/marvin.png";
+import bessie from "/public/bessie.png";
+import ronald from "/public/ronald.png";
+import darlene from "/public/darlene.png";
+import invisionTwo from "/public/invision-two.svg";
+import figma from "/public/figma.svg";
+import photoshop from "/public/adobe-photoshop.svg";
+import illustrator from "/public/adobe-illustrator.svg";
+import sketch from "/public/sketch.svg";
+import adobexd from "/public/adobe-xd.svg";
+import googletwo from "/public/google.svg";
+import educationImage from "/public/education-image.png";
 
 export {
+  invisionTwo,
+  figma,
+  photoshop,
+  illustrator,
+  sketch,
+  adobexd,
   uihut,
   microsoft,
   airbnb,
@@ -82,4 +109,19 @@ export {
   talentImageFive,
   talentImageSix,
   talentImageSeven,
+  talencover,
+  talencovermobile,
+  talentimage,
+  portfolioImage,
+  portfolioImageTwo,
+  portfolioImageThree,
+  portfolioImageFour,
+  devon,
+  marvin,
+  kathryn,
+  bessie,
+  ronald,
+  darlene,
+  googletwo,
+  educationImage,
 };

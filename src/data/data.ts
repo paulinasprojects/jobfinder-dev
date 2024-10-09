@@ -20,6 +20,16 @@ import {
   talentImageFive,
   talentImageSix,
   talentImageSeven,
+  portfolioImage,
+  portfolioImageTwo,
+  portfolioImageThree,
+  portfolioImageFour,
+  darlene,
+  devon,
+  bessie,
+  marvin,
+  ronald,
+  kathryn,
 } from "@/lib/images";
 
 export const jobCardData = [
@@ -459,5 +469,111 @@ export const Talents = [
     twitter: "@james",
     position: "Fontend Developer",
     location: "Washington, United States",
+  },
+];
+
+export const TalentInformationData = [
+  {
+    name: "Thomas L. Fletcher",
+    position: "UX Researcher",
+    location: "Washington, United States",
+    connection: "765",
+    email: "thomasfletcher@mail.com",
+    homeAddress: "6391 Elgin St. Celina, Delaware 10299",
+    phoneNumber: "(209) 555-0104",
+    portfolioWebsite: "dribbble.com/brettdarke",
+    biography:
+      "I’m a UX leader, design thinker, product designer, experience strategist, generative artist & human-loving introvert.'Over the last decade, I’ve collaborated with a diverse group of product teams including IBM, Walmart, AT&T and Visa to create insight led, human-centred products. I approach design and leadership with a focus on people, establishing empathy for both the people who make and the people who use the products I help bring to life. I’m currently a Service Design Director and Senior Manager on the Digital Customer Experience team at TD Bank.",
+    experience: [
+      {
+        position: "User Experience Designer",
+        company: "Google LLC",
+        companyAddress: "Mountain View, CA 94043, US",
+        duration: "Apr 2020 - Apr 2022",
+        durationInYears: "2 Yrs 1 Mth",
+        jobDescription:
+          "Google User Experience (UX) is made up of multi-disciplinary teams of UX Designers, Researchers, Writers, Content Strategists, Program Managers, and Engineers: we care deeply about the people who use our products. The UX team plays an integral part in gathering insights about the needs, attitudes, emotions, and behaviors of people who use our products to inspire and inform design. We collaborate closely with each other and with engineering and product management to create industry-leading products that deliver value for the people who use them, and for Google’s businesses.",
+      },
+    ],
+    education: [
+      {
+        college: "Bachelor of Communications, Information Design",
+        collegeAddress: "Mount Royal University, Calgary AB",
+        duration: "2010 - 2014",
+        collegeDescription:
+          "I didn’t know what he meant by “user experience” but it sounded interesting and I was intrigued. My dad’s friend had been working as a usability consultant since the early 90s and held a highly credentialed background in ergonomics and human-computer interaction and had worked with top Fortune 500 tech companies throughout his high profile career.",
+      },
+    ],
+    portfolio: [
+      {
+        portfolioDescription:
+          "After five years of designing digital products and experiences, I shifted my focus to research and strategy because I wanted to facilitate greater impact through active empathy building and evidence-based decision making. I find my purpose in understanding and representing human needs, from ensuring that participants are protected by ethical research practices to prioritizing the end-user’s experience in design decisions. ",
+        portfolioImages: [
+          {
+            portfolioimage: portfolioImage,
+            portfolioimagetwo: portfolioImageTwo,
+            portfolioimagethree: portfolioImageThree,
+            portfolioimagefour: portfolioImageFour,
+          },
+        ],
+      },
+    ],
+  },
+];
+
+export const recommendedTalents = [
+  {
+    image: devon,
+    name: "Devon Lane",
+    desiredPosition: "UI Designer",
+    yearsExperience: "2 Yrs",
+    level: "Mid",
+    type: "Part Time",
+    salary: "120",
+  },
+  {
+    image: kathryn,
+    name: "Kathryn Murphy",
+    desiredPosition: "Frontend Developer",
+    yearsExperience: "1 Yrs",
+    level: "Mid",
+    type: "Full Time",
+    salary: "150",
+  },
+  {
+    image: marvin,
+    name: "Marvin McKinney",
+    desiredPosition: "Backend Developer",
+    yearsExperience: "4 Yrs",
+    level: "Senior",
+    type: "Full Time",
+    salary: "250",
+  },
+  {
+    image: bessie,
+    name: "Bessie Cooper",
+    desiredPosition: "UX Researcher",
+    yearsExperience: "2.5 Yrs",
+    level: "Mid",
+    type: "Part Time",
+    salary: "130",
+  },
+  {
+    image: ronald,
+    name: "Ronald Richards",
+    desiredPosition: "FullStack Developer",
+    yearsExperience: "5 Yrs",
+    level: "Senior",
+    type: "Full Time",
+    salary: "210",
+  },
+  {
+    image: darlene,
+    name: "Darlene Robertson",
+    desiredPosition: "Web Developer",
+    yearsExperience: "3 Yrs",
+    level: "Mid",
+    type: "Part Time",
+    salary: "175",
   },
 ];

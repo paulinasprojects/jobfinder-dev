@@ -25,7 +25,7 @@ const Navbar = () => {
     {
       href: "/talent",
       label: "Talent",
-      active: pathname === "/talent"
+      active: pathname.startsWith("/talent")
     },
     {
       href: "/history",
