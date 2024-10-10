@@ -30,6 +30,9 @@ import {
   marvin,
   ronald,
   kathryn,
+  google,
+  vimeo,
+  shopify,
 } from "@/lib/images";
 
 export const jobCardData = [
@@ -575,5 +578,167 @@ export const recommendedTalents = [
     level: "Mid",
     type: "Part Time",
     salary: "175",
+  },
+];
+
+export const appliedJobsData = [
+  {
+    image: invision,
+    title: "User Experience Designer",
+    company: "Invisionapp",
+    location: "New York, USA",
+    jobType: "Full Time",
+    whenApplied: "8 hours ago",
+    filesUploaded: "3",
+  },
+  {
+    image: behance,
+    title: "UI Designer",
+    company: "Behance",
+    location: "New York, USA",
+    jobType: "Part Time",
+    whenApplied: "7 hours ago",
+    filesUploaded: "2",
+  },
+  {
+    image: spotify,
+    title: "Frontend Developer",
+    company: "Spotify",
+    location: "Stockholm, Sweden",
+    jobType: "Full Time",
+    whenApplied: "6 hours ago",
+    filesUploaded: "1",
+  },
+  {
+    image: google,
+    title: "Backend Developer",
+    company: "Google LLC",
+    location: "Mountain View, CA",
+    jobType: "Full Time",
+    whenApplied: "5 hours ago",
+    filesUploaded: "3",
+  },
+  {
+    image: airbnb,
+    title: "Brand Strategist",
+    company: "Airbnb",
+    location: "San Francisco, CA",
+    jobType: "Part Time",
+    whenApplied: "4 hours ago",
+    filesUploaded: "2",
+  },
+  {
+    image: mailchimp,
+    title: "Head Of Design",
+    company: "Mailchimp",
+    location: "Atlanta, GA",
+    jobType: "Full Time",
+    whenApplied: "3 hours ago",
+    filesUploaded: "1",
+  },
+];
+
+export const savedJobsData = [
+  {
+    image: spotify,
+    title: "Web Developer",
+    company: "Spotify",
+    location: "Stockholm, Sweden",
+  },
+  {
+    image: autodesk,
+    title: "Junior Web Designer",
+    company: "Autodesk",
+    location: "San Rafael, CA",
+  },
+  {
+    image: vimeo,
+    title: "Web App Designer",
+    company: "Vimeo",
+    location: "New York, NY",
+  },
+  {
+    image: github,
+    title: "Head of Product Design",
+    company: "Github",
+    location: "San Francisco, CA",
+  },
+  {
+    image: notion,
+    title: "Head of Marketing",
+    company: "Notion",
+    location: "New York, USA",
+  },
+  {
+    image: shopify,
+    title: "Marketing Strategiest",
+    company: "Shopify",
+    location: "Ottawa, Canada",
+  },
+];
+
+export const offersReceived = [
+  {
+    image: behance,
+    company: "Behance",
+    location: "New York, USA",
+    contractDuration: "3 Months",
+    offerSalary: "$1050,0",
+    role: "Junior UI Designer",
+  },
+  {
+    image: autodesk,
+    company: "Autodesk",
+    location: "San Rafael, CA",
+    contractDuration: "12 Months",
+    offerSalary: "$1250,0",
+    role: "Mid UI Designer",
+  },
+  {
+    image: vimeo,
+    company: "Vimeo",
+    location: "New York, NY",
+    contractDuration: "6 Months",
+    offerSalary: "$1150,0",
+    role: "Web App Designer",
+  },
+  {
+    image: airbnb,
+    company: "Airbnb",
+    location: "San Francisco, CA",
+    contractDuration: "6 Months",
+    offerSalary: "$1150,0",
+    role: "Frontend Web Developer",
+  },
+];
+
+export const interviewCardData = [
+  {
+    image: devon,
+    name: "Jane Cooper",
+    location: "New York, USA",
+    date: "Sat, 08 June",
+    time: "10 am - 12 pm",
+  },
+  {
+    image: ronald,
+    name: "Ronald Richards",
+    location: "San Francisco, CA",
+    date: "Sun, 09 June",
+    time: "9 am - 11 pm",
+  },
+  {
+    image: marvin,
+    name: "Marvin Jacobs",
+    location: "Los Angeles, CA",
+    date: "Mon, 10 June",
+    time: "8 am - 10 pm",
+  },
+  {
+    image: darlene,
+    name: "Darlene Jackson",
+    location: "Atlanta, GA",
+    date: "Tue, 11 June",
+    time: "10 am - 12 pm",
   },
 ];

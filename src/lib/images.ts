@@ -60,6 +60,8 @@ import sketch from "/public/sketch.svg";
 import adobexd from "/public/adobe-xd.svg";
 import googletwo from "/public/google.svg";
 import educationImage from "/public/education-image.png";
+import vimeo from "/public/vimeo.svg";
+import shopify from "/public/shopify.svg";
 
 export {
   invisionTwo,
@@ -124,4 +126,6 @@ export {
   darlene,
   googletwo,
   educationImage,
+  vimeo,
+  shopify,
 };
