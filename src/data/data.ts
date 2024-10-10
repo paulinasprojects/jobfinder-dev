@@ -33,6 +33,7 @@ import {
   google,
   vimeo,
   shopify,
+  bexon,
 } from "@/lib/images";
 
 export const jobCardData = [
@@ -740,5 +741,43 @@ export const interviewCardData = [
     location: "Atlanta, GA",
     date: "Tue, 11 June",
     time: "10 am - 12 pm",
+  },
+];
+
+export const recommendedCardData = [
+  {
+    image: google,
+    position: "Product Designer",
+    location: "Google•California, USA",
+    salaryHour: "$70-80",
+    type: "Full-Time",
+  },
+  {
+    image: bexon,
+    position: "Head Of Marketing",
+    location: "Bexon•Sylhet, BD",
+    salaryHour: "$50-70",
+    type: "Part-Time",
+  },
+  {
+    image: netflix,
+    position: "Lead UI Designer",
+    location: "Google•California, USA",
+    salaryHour: "$60-90",
+    type: "Full-Time",
+  },
+  {
+    image: apple,
+    position: "Lead React Developer",
+    location: "Apple•New York, USA",
+    salaryHour: "$70-80",
+    type: "Full-Time",
+  },
+  {
+    image: invision,
+    position: "Frontend Developer",
+    location: "Invision•California, USA",
+    salaryHour: "$50-70",
+    type: "Full-Time",
   },
 ];
