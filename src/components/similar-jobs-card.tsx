@@ -1,4 +1,3 @@
-import React from 'react'
 import SimilarJobCard from './similar-job-card'
 
 const SimilarJobsCard = () => {

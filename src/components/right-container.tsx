@@ -1,4 +1,3 @@
-import React from 'react'
 import JobSearchCard from './job-search-card'
 
 const RightContainer = () => {

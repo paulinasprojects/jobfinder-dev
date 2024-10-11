@@ -1,5 +1,4 @@
 import { ChevronUp, Search } from 'lucide-react'
-import React from 'react'
 
 const CountriesSearch = () => {
   return (

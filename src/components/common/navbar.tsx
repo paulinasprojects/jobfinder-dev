@@ -41,12 +41,12 @@ const Navbar = () => {
 
 
   return (
-    <div className="flex items-center p-5 ml-4">
+    <div className="flex items-center p-5 border-b border-b-cardColorTwo">
       <Link href="/">
         <Image
           src={logo}
           alt="logo"
-          className="hidden lg:flex"
+          className="hidden lg:flex ml-4"
         />
       </Link>
       <div className="hidden md:flex gap-7 items-center justify-center ml-auto">

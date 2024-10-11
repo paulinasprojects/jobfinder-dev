@@ -1,5 +1,4 @@
 import PageHeading from '@/components/common/page-heading';
-import LeftContainer from '@/components/left-container';
 import TalentCard from '@/components/talent-card';
 import TalentLeftContainer from '@/components/talent-left-container';
 import TalentSearch from '@/components/talent-search';

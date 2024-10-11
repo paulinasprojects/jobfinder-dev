@@ -1,4 +1,3 @@
-import React from 'react'
 import CreateJobAlertCard from './create-job-alert-card'
 import ChecboxCard from './checkbox-card' 
 import ExperienceLevelChecbox from './experience-level-checkbox'

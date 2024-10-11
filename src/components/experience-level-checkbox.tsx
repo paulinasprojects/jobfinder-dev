@@ -1,4 +1,3 @@
-import React from 'react'
 import { Checkbox } from './ui/checkbox'
 import { ChevronUp } from 'lucide-react'
 import { experienceLevelData } from '@/data/data'

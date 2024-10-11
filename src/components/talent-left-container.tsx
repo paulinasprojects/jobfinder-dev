@@ -1,4 +1,3 @@
-import React from 'react'
 import SalaryRangeCard from './salary-range-card'
 import ClosedChecboxMenu from './closed-checkbox-menu'
 import SkillsCheckboxCard from './skills-checkbox-card'

@@ -13,7 +13,7 @@ const TalentInformation = () => {
 
   return (
     <div>
-        <div className="ml-28 max-sm:ml-5">
+        <div className="ml-28 max-sm:ml-5 mt-4">
         <button className="max-sm:hidden md:flex p-2.5 bg-cardColorTwo  items-center gap-1.5 rounded-[10px] text-neutralColor text-xxs font-medium" onClick={() => router.push("/talent")}>
           <ChevronLeft width={18} height={18}/>
           Back

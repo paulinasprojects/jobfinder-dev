@@ -2,7 +2,6 @@ import PageHeading from '@/components/common/page-heading'
 import LeftContainer from '@/components/left-container'
 import RightContainer from '@/components/right-container'
 import Search from '@/components/search'
-import React from 'react'
 
 const JobSearch = () => {
   return (
