@@ -12,7 +12,7 @@ const signUpFormSchema = z.object({
   firstName: z.string().min(1, {message: "First name is required"}),
   lastName: z.string().min(1, { message: "Last name is required" }),
   email: z.string().min(1, {message: "Email is required"}).email({ message: "Invalid email" }),
-  password: z.string().min(1, {message: "Password is requred"}),
+  password: z.string().min(1, {message: "Password is requred"}).min(8, {message: "Password must have at least 8 characters"}),
 })
 
 const SignUpForm = () => {
