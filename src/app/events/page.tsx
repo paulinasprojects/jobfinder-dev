@@ -12,7 +12,7 @@ const EventsPage = () => {
       <div className="mt-10 ml-20 mr-20 flex items-center justify-between max-sm:ml-10">
         <h1 className="text-white text-3xl font-bold">Events</h1>
         <div className="flex items-center gap-1">
-          <span className="text-neutralColor text-sm font-semibold">Sort by:</span>
+          <span className="text-neutralColor text-sm font-semibold max-sm:hidden">Sort by:</span>
           <span className="text-white text-sm font-bold flex items-center gap-[23px]">
             Relevance
             <ChevronDown className="text-neutralColor"/>
@@ -47,7 +47,7 @@ const EventsPage = () => {
         />
         </div>
         {/* Right */}
-        <div className="text-white grid xl:grid-cols-25 lg:grid-cols-2 gap-10">
+        <div className="text-white grid xl:grid-cols-25 lg:grid-cols-2 max-sm:grid-cols-31 gap-10">
           {eventsData.map((event) => (
             <EventCard
               key={event.id}

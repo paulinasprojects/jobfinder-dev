@@ -20,7 +20,7 @@ const EventCard = ({ image, title, eventBy, time, dateMonth, dateDay }: EventCar
             <Image
               src={image}
               alt='event image'
-              className='w-[258px] h-[158px]'
+              className='w-[258px] h-[158px] max-sm:w-[295px]'
             />
           </div>
           <div className='flex items-center justify-between mt-2'>
@@ -29,7 +29,7 @@ const EventCard = ({ image, title, eventBy, time, dateMonth, dateDay }: EventCar
             <span className='text-[12px] text-neutral3Color font-medium'>Event By: {eventBy}</span>
             <span className='text-neutralColor text-[12px] font-normal'>{time}</span>
             </div>
-            <div className='flex flex-col items-center gap-0.5'>
+            <div className='flex flex-col items-center gap-0.5 max-sm:mr-5'>
               <span className='uppercase text-neutralColor text-sm font-medium'>{dateMonth}</span>
               <span className='text-greenButtonColor text-lg font-semibold'>{dateDay}</span>
             </div>
@@ -58,7 +58,7 @@ const EventCard = ({ image, title, eventBy, time, dateMonth, dateDay }: EventCar
           <span className='ml-2 text-[12px] text-neutralColor'>Interested</span>
         </div>
         <div className='mt-5 flex items-center'>
-          <button className='text-greenButtonColor bg-[#1b2a2d] w-[258px] h-[48px] rounded-[10px] text-[15px] font-semibold'>Attend</button>
+          <button className='text-greenButtonColor bg-[#1b2a2d] w-[258px] max-sm:w-[295px] h-[48px] rounded-[10px] text-[15px] font-semibold'>Attend</button>
         </div>
         </CardContent>
       </Card>
