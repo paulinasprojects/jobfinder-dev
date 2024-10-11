@@ -62,6 +62,14 @@ import googletwo from "/public/google.svg";
 import educationImage from "/public/education-image.png";
 import vimeo from "/public/vimeo.svg";
 import shopify from "/public/shopify.svg";
+import eventImage from "/public/event-image.png";
+import eventImageTwo from "/public/event-image-two.png";
+import eventImageThree from "/public/event-image-three.png";
+import eventImageFour from "/public/event-image-four.png";
+import eventImageFive from "/public/event-image-five.png";
+import eventImageSix from "/public/event-image-six.png";
+import eventImageSeven from "/public/event-image-seven.png";
+import eventImageEight from "/public/event-image-eight.png";
 
 export {
   invisionTwo,
@@ -128,4 +136,12 @@ export {
   educationImage,
   vimeo,
   shopify,
+  eventImage,
+  eventImageTwo,
+  eventImageThree,
+  eventImageFour,
+  eventImageFive,
+  eventImageSix,
+  eventImageSeven,
+  eventImageEight,
 };

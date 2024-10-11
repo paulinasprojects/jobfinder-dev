@@ -18,11 +18,11 @@ const SignInPage = () => {
             <div className="flex gap-5 max-sm:flex-col">
               <button className="text-white text-[15px] flex items-center justify-center gap-2.5 bg-greenButtonColor rounded-[10px] px-5 py-2 max-sm:w-[283px]">
                 <FaGoogle className="w-[24px] h-[24px]"/>
-                Sign up with Google
+                Sign in with Google
               </button>
               <button className="text-white text-[15px] flex items-center justify-center gap-2.5 bg-cardColorTwo rounded-[10px] px-5 py-2 max-sm:w-[283px]">
                 <TiSocialLinkedinCircular className="w-[24px] h-[24px]"/>
-                Sign up with Linkedin
+                Sign in with Linkedin
               </button>
             </div>
             <div className="mt-[42px] flex items-center gap-5">
