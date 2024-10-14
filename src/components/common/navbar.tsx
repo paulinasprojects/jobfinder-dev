@@ -1,7 +1,7 @@
 "use client";
 
 import { Bell, ChevronDown, Mail } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link"
 import Image from "next/image"
 import { cn } from "@/lib/utils";
@@ -10,6 +10,7 @@ import MobileNav from "./mobile-nav";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const router = useRouter();
 
   const routes = [
     {
@@ -61,7 +62,7 @@ const Navbar = () => {
         <MobileNav/>
       </div>
       <div className="ml-auto flex items-center gap-11 mr-9 max-sm:gap-6 max-sm:mr-0">
-        <button className="w-[99px] h-[34px] rounded-[10px] text-greenButtonColor bg-[#122224]">Post Job</button>
+        <button className="w-[99px] h-[34px] rounded-[10px] text-greenButtonColor bg-[#122224]" onClick={() => router.push("/add-job")}>Post Job</button>
         <Bell className="cursor-pointer text-neutralColor"/>
         <Mail className="cursor-pointer text-neutralColor"/>
         <div className="flex items-center gap-2">
