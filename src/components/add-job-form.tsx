@@ -21,7 +21,7 @@ import { Departments, HiringManagers, JobFormType, JobFormLocation } from '@/lib
 const addJobFormSchema = z.object({
   role: z.string().min(1, { message: "Role is required" }),
   jobDescription: z.string().min(1, { message: "Please fill the job description" }).max(2000, {message: "Maximum 2000 Words"}),
-  experience: z.string().min(1, {message: "Experience is required"}),
+  experience: z.string().array().min(1, {message: "Experience is required"}),
   skillsSets: z.string().min(1, {message: "Skill Sets are required"}),
   salary: z.coerce.number().min(1, { message: "Salary is required" }),
   recruitmentPeriod: z.string().date(),
@@ -38,7 +38,7 @@ const AddJobForm = () => {
     defaultValues: {
       role: "",
       jobDescription: "",
-      experience: "",
+      experience: [],
       skillsSets: "",
       salary: undefined,
       recruitmentQuota: "",
