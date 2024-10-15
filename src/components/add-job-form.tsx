@@ -1,10 +1,12 @@
 "use client";
 
-import imageicon from '/public/image-icon.png'
 import Image from "next/image";
 import { z } from "zod"
+import { X } from 'lucide-react';
+import imageicon from '/public/image-icon.png'
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
+import { Departments, HiringManagers, JobFormType, JobFormLocation } from '@/lib/job-form-data';
 import { Form, FormControl, FormField, FormItem, FormMessage, FormLabel } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -15,8 +17,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { X } from 'lucide-react';
-import { Departments, HiringManagers, JobFormType, JobFormLocation } from '@/lib/job-form-data';
 
 const addJobFormSchema = z.object({
   role: z.string().min(1, { message: "Role is required" }),
@@ -52,6 +52,7 @@ const AddJobForm = () => {
 
   const onSubmit = async (values: z.infer<typeof addJobFormSchema>) => {
     console.log(values);
+    form.reset();
   };
 
 

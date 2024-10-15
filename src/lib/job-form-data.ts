@@ -29,3 +29,25 @@ export enum JobFormLocation {
   Boston = "Boston, USA",
   Ottawa = "Ottawa, Canada",
 }
+
+export enum skillLevelData {
+  Intern = "Intern",
+  Junior = "Junior",
+  Mid = "Mid",
+  Senior = "Senior",
+  CTO = "CTO",
+}
+
+export enum companyNames {
+  UIHUT = "UIHUT LLC",
+  GOOGLE = "Google LLC",
+  MICROSOFT = "Microsoft Corporation",
+  SLACK = "Slack LLC",
+}
+
+export enum DegreesData {
+  Associate = "Associate Degree",
+  Bachelor = "Bachelor Degree",
+  Masters = "Masters Degree",
+  Graduate = "Graduate Degree",
+}

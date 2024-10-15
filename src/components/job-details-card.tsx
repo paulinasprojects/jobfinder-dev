@@ -9,6 +9,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import JobSearchApplyNowButton from '@/components/job-search-apply-now-button';
 import JobSearchMessageButton from '@/components/job-search-message-button';
 import GreenCircle from '@/components/ui/green-circle';
+import ImageComponent from './image-component';
 
 const JobDetailsCard = () => {
   const router = useRouter();
@@ -24,21 +25,12 @@ const JobDetailsCard = () => {
       <div className='mt-5'>
         <Card className='w-[860px] h-[1560px] max-sm:w-[327px] max-sm:h-[2314px] bg-cardColor border-cardColor rounded-[10px]'>
           <div className=''>
-            <Image
-              src={jobdetailsimage}
-              alt='job details image'
-              className='ml-5 mt-5 hidden lg:block'
-            />
-            <Image
-              src={mobileCover}
-              alt='mobile cover'
-              className='block lg:hidden max-sm:ml-3.5 max-sm:mt-5'
-            />
-            <Image
-              src={jobdetails}
-              alt='job'
-              className='ml-10 -mt-5'
-            />
+          <ImageComponent
+            coverImage={jobdetailsimage}
+            mobileCoverImage={mobileCover}
+            profileImage={jobdetails}
+            className='ml-10 -mt-5'
+          />
           </div>
           <CardContent>
             <div className='flex justify-between max-sm:flex-col max-sm:gap-4'>

@@ -7,6 +7,7 @@ import {  talencover, talencovermobile, talentimage, sketch, adobexd, figma, pho
 import { TalentInformationData } from '@/data/data';
 import { Separator } from '@/components/ui/separator';
 import SkillLevel from '@/components/skill-level';
+import ImageComponent from './image-component';
 
 const TalentInformation = () => {
   const router = useRouter();
@@ -21,20 +22,11 @@ const TalentInformation = () => {
       </div>
       <div>
         <div className='ml-20 max-sm:ml-5'>
-        <Image
-            src={talencover}
-            alt="job details image"
-            className="ml-5 mt-5 hidden lg:block"
-          />
-          <Image
-            src={talencovermobile}
-            alt="mobile cover image"
-            className="block lg:hidden max-sm:ml-10 max-sm:mt-5"
-          />
-          <Image
-            src={talentimage}
-            alt="company logo image"
-            className="ml-10 -mt-5 max-sm:ml-16"
+          <ImageComponent
+            coverImage={talencover}
+            mobileCoverImage={talencovermobile}
+            profileImage={talentimage}
+            className='ml-10 -mt-5 max-sm:ml-16'
           />
         </div>
         {TalentInformationData.map((info) => (

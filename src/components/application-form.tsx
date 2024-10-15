@@ -1,13 +1,13 @@
+import Image from "next/image";
 import { z } from "zod"
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "./ui/form";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
-import Image from "next/image";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { linkedin } from "@/lib/images";
-import { Separator } from "./ui/separator";
-import { Checkbox } from "./ui/checkbox";
+import { Separator } from "@/components/ui/separator";
+import { Checkbox } from "@/components/ui/checkbox";
 
 const applicationSchema = z.object({
   firstName: z.string().min(1, {message: "First name is required"}),
@@ -32,7 +32,8 @@ const ApplicationForm = () => {
   });
 
   const onSubmit = async (values: z.infer<typeof applicationSchema>) => {
-    console.log(values)
+    console.log(values);
+    form.reset();
   };
 
   return (
@@ -94,7 +95,7 @@ const ApplicationForm = () => {
                 name="phoneNumber"
                 render={({field}) => (
                   <FormItem>
-                    <FormLabel className="text-neutralColor text-sm">First Name</FormLabel>
+                    <FormLabel className="text-neutralColor text-sm">Phone Number</FormLabel>
                     <FormControl>
                       <Input {...field} placeholder="Phone" className="w-[374px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor" type="number"/>
                     </FormControl>
@@ -107,7 +108,7 @@ const ApplicationForm = () => {
                 name="country"
                 render={({field}) => (
                   <FormItem>
-                    <FormLabel className="text-neutralColor text-sm">Last Name</FormLabel>
+                    <FormLabel className="text-neutralColor text-sm">Country</FormLabel>
                     <FormControl>
                       <Input {...field} placeholder="Country" className="w-[374px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>

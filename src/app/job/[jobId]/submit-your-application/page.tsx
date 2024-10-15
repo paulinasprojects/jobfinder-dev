@@ -6,6 +6,7 @@ import { ChevronLeft } from "lucide-react";
 import { jobdetails, jobdetailsimage, mobileCover } from "@/lib/images";
 import { Separator } from "@/components/ui/separator";
 import ApplicationForm from "@/components/application-form";
+import ImageComponent from "@/components/image-component";
 
 const SubmitYourApplicationPage = () => {
   const router = useRouter();
@@ -23,20 +24,11 @@ const SubmitYourApplicationPage = () => {
       </div>
       <div className="flex flex-col items-center justify-center">
         <div className="">
-          <Image
-            src={jobdetailsimage}
-            alt="job details image"
-            className="ml-5 mt-5 hidden lg:block"
-          />
-          <Image
-            src={mobileCover}
-            alt="mobile cover image"
-            className="block lg:hidden max-sm:ml-10 max-sm:mt-5"
-          />
-          <Image
-            src={jobdetails}
-            alt="company logo image"
-            className="ml-10 -mt-5 max-sm:ml-16"
+          <ImageComponent
+            coverImage={jobdetailsimage}
+            mobileCoverImage={mobileCover}
+            profileImage={jobdetails}
+            className='ml-10 -mt-5 max-sm:ml-16'
           />
           <div className="flex flex-col ml-10 mt-7 gap-3">
             <span className="text-white text-3xl font-bold">React Developer</span>

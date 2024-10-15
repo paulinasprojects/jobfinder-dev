@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { ChevronLeft, Plus } from 'lucide-react'
 import { jobdetails, jobdetailsimage, mobileCover, companyFollower, companyFollowerThree, companyFollowerTwo, thirtyFour } from '@/lib/images'
 import CompanyTabs from './company-tabs'
+import ImageComponent from './image-component'
 
 
 const CompanyDetailsCard = () => {
@@ -15,19 +16,10 @@ const CompanyDetailsCard = () => {
       </div>
       <div className='mt-5'>
       <div>
-        <Image
-          src={jobdetailsimage}
-          alt='job details image'
-          className='ml-5 mt-5 hidden lg:block'
-        />
-        <Image
-          src={mobileCover}
-          alt='mobile cover'
-          className='block lg:hidden max-sm:ml-3.5 max-sm:mt-5'
-        />
-        <Image
-          src={jobdetails}
-          alt='job'
+        <ImageComponent
+          coverImage={jobdetailsimage}
+          mobileCoverImage={mobileCover}
+          profileImage={jobdetails}
           className='ml-10 -mt-5'
         />
       </div>

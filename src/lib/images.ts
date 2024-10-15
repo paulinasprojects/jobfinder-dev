@@ -70,6 +70,8 @@ import eventImageFive from "/public/event-image-five.png";
 import eventImageSix from "/public/event-image-six.png";
 import eventImageSeven from "/public/event-image-seven.png";
 import eventImageEight from "/public/event-image-eight.png";
+import talentcircle from "/public/talent-circle.png";
+import profileCover from "/public/profile-cover.png";
 
 export {
   invisionTwo,
@@ -144,4 +146,6 @@ export {
   eventImageSix,
   eventImageSeven,
   eventImageEight,
+  talentcircle,
+  profileCover,
 };
