@@ -5,9 +5,9 @@ import { ListingPerformanceChart } from './listing-performance-chart'
 const CardChart = () => {
   return (
     <div>
-      <div className='flex xl:flex-row gap-10 mt-10 ml-20 md:flex-col max-sm:flex-col max-sm:ml-10'>
+      <div className='flex xl:flex-row gap-10 mt-10 ml-20 md:flex-col max-sm:flex-col max-sm:ml-[24px]'>
         {/* Left */}
-        <div className='grid grid-cols-20 md:gap-y-10 max-sm:gap-y-10 gap-x-10 max-sm:grid-cols-1'>
+        <div className='grid xl:grid-cols-20 lg:grid-cols-2 md:gap-y-10 max-sm:gap-y-10 gap-x-10  max-sm:grid-cols-19'>
           <JobCard
             className='bg-[#C7F4C2]'
             icon={<Briefcase color='#C7F4C2'/>}

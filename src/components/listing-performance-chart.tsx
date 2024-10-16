@@ -40,7 +40,7 @@ const chartConfig = {
 
 export function ListingPerformanceChart() {
   return (
-    <Card className=" bg-cardColor border-cardColor xl:w-[620px] xl:h-[332px] max-sm:w-[350px] md:w-[620px]">
+    <Card className=" bg-cardColor border-cardColor xl:w-[620px] lg:w-[790px] xl:h-[332px] max-sm:w-[370px] md:w-[620px]">
       <CardHeader>
         <CardTitle className="text-white mb-2 text-[22px] font-bold">Listing Performance</CardTitle>
         <div className="flex gap-9 items-center">

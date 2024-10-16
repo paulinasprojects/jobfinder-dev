@@ -22,6 +22,8 @@ const config: Config = {
         111: "repeat(3, 92px)",
         15: "repeat(2, 373px)",
         17: "repeat(1, 300px)",
+        18: "repeat(1, 327px)",
+        19: "repeat(1, 370px)",
         20: "repeat(2, 290px)",
         31: "repeat(1, 327px)",
         25: "repeat(3, 290px)",

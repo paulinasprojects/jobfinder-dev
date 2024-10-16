@@ -14,7 +14,7 @@ interface JobCardProps {
 const JobCard = ({ icon, title, description, percent, arrow, className }: JobCardProps) => {
   return (
     <div className=''>
-      <Card className={cn("'bg-[#C7F4C2] w-[290px] outline-none border-none'", className)}>
+      <Card className={cn("'bg-[#C7F4C2] w-[290px] max-sm:w-[370px] outline-none border-none'", className)}>
         <CardContent>
           <div className='flex flex-col'>
             <div className='bg-black w-10 h-10 rounded-full flex items-center justify-center mt-4'>

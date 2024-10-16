@@ -14,7 +14,7 @@ interface CompaniesCardProps {
 const CompaniesCard = ({ image,  star, title, location, jobVacancy}: CompaniesCardProps) => {
   return (
     <div className="">
-      <Card className="bg-cardColor border-cardColor">
+      <Card className="bg-cardColor border-cardColor max-sm:w-[370px]">
         <CardContent>
           <div className="flex mt-5 gap-3.5">
             <Image
@@ -32,8 +32,8 @@ const CompaniesCard = ({ image,  star, title, location, jobVacancy}: CompaniesCa
               </div>
             </div>
           </div>
-          <div className="mt-6">
-            <span className="flex text-neutralColor text-sm gap-2.5 items-center mb-2">
+          <div className="mt-6 max-sm:flex max-sm:items-center max-sm:gap-3 max-sm:whitespace-nowrap">
+            <span className="flex text-neutralColor text-sm gap-2.5 items-center mb-2 max-sm:mb-0">
               <MapPin width={16} height={16}/>
              {location}
             </span>
@@ -43,7 +43,7 @@ const CompaniesCard = ({ image,  star, title, location, jobVacancy}: CompaniesCa
             </span>
           </div>
             <div className="flex items-center justify-center mt-6">
-              <button className="text-neutralColor w-[216px] h-[44px] rounded-[10px] text-sm bg-[#21212b]">See all</button>
+              <button className="text-neutralColor w-[216px] max-sm:w-[287px] h-[44px] rounded-[10px] text-sm bg-[#21212b]">See all</button>
             </div>
         </CardContent>
       </Card>

@@ -6,15 +6,16 @@ interface ImageComponentProps {
   mobileCoverImage: string | StaticImageData;
   profileImage: string | StaticImageData;
   className?: string;
+  className2?: string;
 }
 
-const ImageComponent = ({coverImage, mobileCoverImage, profileImage, className}: ImageComponentProps) => {
+const ImageComponent = ({coverImage, mobileCoverImage, profileImage, className, className2}: ImageComponentProps) => {
   return (
     <>
        <Image
           src={coverImage}
           alt="job details image"
-          className="ml-5 mt-5 hidden lg:block"
+          className={cn("ml-5 mt-5 hidden lg:block", className2)}
         />
         <Image
           src={mobileCoverImage}

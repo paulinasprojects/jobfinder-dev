@@ -9,6 +9,7 @@ const TalentPage = () => {
       <PageHeading
         title="Let's Find You a Talent"
         text="Wednesday, 13 July 2024"
+         className='max-sm:ml-[26px] lg:ml-20'
       />
       <TalentSearch/>
       <div className='mt-[60px]'>

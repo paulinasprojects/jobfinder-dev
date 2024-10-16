@@ -12,7 +12,7 @@ const JobSearchCard = () => {
   const router = useRouter();
 
   return (
-    <div className='text-white max-sm:ml-14'>
+    <div className='text-white max-sm:ml-[24px]'>
       <div className='mt-[59px] flex items-center justify-between mb-8'>
         <div className='flex gap-2 items-center'>
           <span className='text-neutralColor text-lg'>Showing:</span>
@@ -25,7 +25,7 @@ const JobSearchCard = () => {
       </div>
       <div className='flex flex-col gap-[22px]'>
         {jobSearchCardData.map((job) => (
-        <Card className=' bg-cardColor border-cardColor max-sm:w-[327px] cursor-pointer' onClick={() => router.push(`/job/1`)} key={job.title}>
+        <Card className=' bg-cardColor border-cardColor max-sm:w-[370px] cursor-pointer' onClick={() => router.push(`/job/1`)} key={job.title}>
           <CardContent>
             <div className='flex mt-5 justify-between'>
               <div className='flex gap-5'>

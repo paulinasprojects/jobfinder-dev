@@ -20,7 +20,7 @@ const EventCard = ({ image, title, eventBy, time, dateMonth, dateDay }: EventCar
             <Image
               src={image}
               alt='event image'
-              className='w-[258px] h-[158px] max-sm:w-[295px]'
+              className='w-[258px] h-[158px] max-sm:w-[320px]'
             />
           </div>
           <div className='flex items-center justify-between mt-2'>
@@ -58,7 +58,7 @@ const EventCard = ({ image, title, eventBy, time, dateMonth, dateDay }: EventCar
           <span className='ml-2 text-[12px] text-neutralColor'>Interested</span>
         </div>
         <div className='mt-5 flex items-center'>
-          <button className='text-greenButtonColor bg-[#1b2a2d] w-[258px] max-sm:w-[295px] h-[48px] rounded-[10px] text-[15px] font-semibold'>Attend</button>
+          <button className='text-greenButtonColor bg-[#1b2a2d] w-[258px] max-sm:w-[370px] h-[48px] rounded-[10px] text-[15px] font-semibold'>Attend</button>
         </div>
         </CardContent>
       </Card>

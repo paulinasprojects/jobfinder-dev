@@ -22,8 +22,8 @@ const TalentCard = () => {
       </div>
       <div>
         {Talents.map((talent) => (
-          <div key={talent.name} className="mt-2.5 max-sm:ml-10">
-        <Card className="xl:w-[950px] h-[118px] bg-cardColor border-cardColor lg:w-[550px] max-sm:w-[327px] max-sm:h-[154px] cursor-pointer" onClick={() => router.push("/talent/profile/1")}>
+          <div key={talent.name} className="mt-2.5 max-sm:ml-[24px]">
+        <Card className="xl:w-[950px] h-[118px] bg-cardColor border-cardColor lg:w-[550px] max-sm:w-[370px] max-sm:h-[154px] cursor-pointer" onClick={() => router.push("/talent/profile/1")}>
           <CardContent>
             <div className="flex lg:flex-row items-center lg:justify-between gap-5 mt-5 max-sm:justify-normal">
               <div>

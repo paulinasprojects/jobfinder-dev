@@ -31,13 +31,13 @@ const TalentInformation = () => {
         </div>
         {TalentInformationData.map((info) => (
           <div key={info.name}>
-            <div className='flex xl:justify-between items-center lg:justify-normal lg:gap-10 xl:gap-0'>
+            <div className='flex xl:justify-between xl:flex-row lg:flex-col xl:items-center lg:justify-normal lg:gap-10 xl:gap-0'>
               <div className='flex flex-col ml-[104px] mt-7 gap-2 max-sm:ml-20'>
                 <span className='text-3xl text-white font-bold max-sm:text-xl'>{info.name}</span>
                 <span className='text-neutralColor text-lg'>{info.position}</span>
                 <span className='text-neutralColor text-sm'>{info.location} • {info.connection} Connections</span>
               </div>
-              <div className='flex gap-[18px] mb-12 max-sm:hidden'>
+              <div className='flex gap-[18px] mb-12 max-sm:hidden lg:ml-24'>
                 <button className='text-neutralColor bg-[#1C1C24] px-3 py-2 rounded-[10px] text-[15px] font-semibold'>Message</button>
                 <button className='text-white bg-greenButtonColor px-3 py-2 rounded-[10px] text-[15px] font-semibold'>Connect</button>
               </div>
