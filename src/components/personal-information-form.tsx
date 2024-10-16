@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { z } from "zod";
-import { Plus, X, CloudUpload } from "lucide-react";
+import { Plus, CloudUpload } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { adobexd, figma, illustrator, invisionTwo, photoshop, portfolioImage, portfolioImageFour, portfolioImageThree, portfolioImageTwo, sketch } from "@/lib/images";
@@ -19,12 +19,12 @@ import {
 } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 
 
 const personalInfoSchema = z.object({
-  firstName: z.string().min(1, {message: "First name is required"}),
-  lastName: z.string().min(1, {message: "Last name is requred"}),
+  firstName: z.string().min(1, { message: "First name is required" }),
+  lastName: z.string().min(1, { message: "Last name is requred" }),
   role: z.string().min(1, { message: "Role is required" }),
   bio: z.string().min(1, {message: "Please fill your bio"}),
   skillLevel: z.nativeEnum(skillLevelData),
@@ -34,13 +34,13 @@ const personalInfoSchema = z.object({
   locations: z.nativeEnum(JobFormLocation),
   startDate: z.string().date(),
   endYear: z.coerce.number().min(1,{ message: "End year is required"}),
-  description: z.string().min(1, { message: "Description is required" }).max(500, {message: "Max 2000 characters"}),
-  university: z.string().min(1, {message: "University is required"}),
+  description: z.string().min(1, { message: "Description is required" }).max(500, { message: "Max 2000 characters" }),
+  university: z.string().min(1, { message: "University is required" }),
   degree: z.nativeEnum(DegreesData),
   fieldOfStudy: z.string().min(1, { message: "Field of study is required" }),
   universityStartDate: z.string().date(),
   unversityEndYear: z.coerce.number().min(1, { message: "End year is required"}),
-  universityDescription: z.string().min(1, {message: "University Description is requred"}).max(500, {message: "Max 2000 characters"}),
+  universityDescription: z.string().min(1, { message: "University Description is requred" }).max(500, { message: "Max 2000 characters" }),
 })
 
 const PersonalInformationForm = () => {
@@ -442,6 +442,7 @@ const PersonalInformationForm = () => {
             <label htmlFor="inputField">
                <CloudUpload className="size-6 text-neutralColor max-sm:size-3"/>
               </label>
+              <input type="file" title=" " style={{display: "none"}} id="inputField"/>
               <span className="text-neutralColor text-sm max-sm:text-[8px]">Add Your Protfolio</span>
             </div>
               <Image

@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
-import "../globals.css";
 import Navbar from "@/components/common/navbar";
 
-const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "JobIt - Job Finder App",
@@ -16,11 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={manrope.className}>
-        <Navbar/>
-        {children}
-      </body>
-    </html>
+    <div>
+    <Navbar/>
+    {children}
+     </div>
   );
 }

@@ -6,7 +6,6 @@ import ImageComponent from "@/components/image-component"
 import { ArrowLeft } from "@/components/icons";
 import { Separator } from "@/components/ui/separator";
 import PersonalInformationForm from "@/components/personal-information-form";
-import ExperienceForm from "@/components/experience-form";
 
   const AccountSettingsPage = () => {
     const router = useRouter();
@@ -42,7 +41,6 @@ import ExperienceForm from "@/components/experience-form";
       <div>
         <PersonalInformationForm/>
       </div>
-     
     </div>
   )
 }
