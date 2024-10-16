@@ -45,7 +45,7 @@ const TalentInformation = () => {
             <div className='mt-8'>
               <Separator className='w-[792px] bg-[#21212B] ml-20 max-sm:ml-10 max-sm:w-[295px]'/>
             </div>
-            <div className='flex gap-10 items-center mt-7 ml-[104px] max-sm:flex-col max-sm:justify-center max-sm:ml-10'>
+            <div className='flex gap-10 items-center mt-7 ml-[104px] max-sm:flex-col max-sm:justify-center max-sm:ml-0'>
               <div className='flex flex-col max-sm:items-center max-sm:justify-center'>
                 <span className='text-neutralColor text-xxs font-medium'>Email Address</span>
                 <span className='text-neutralColor text-xxs font-medium'>{info.email}</span>

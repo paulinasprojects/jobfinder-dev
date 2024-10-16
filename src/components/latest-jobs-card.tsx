@@ -1,3 +1,6 @@
+"use client";
+
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { Ellipsis, Briefcase, Users, Clock } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
@@ -12,6 +15,7 @@ interface LatestJobCardProps {
 }
 
 const LatestJobCard = ({ image, title, description, salary }: LatestJobCardProps) => {
+  const router = useRouter();
   return (
     <div className=''>
       <Card className='w-[400px] bg-cardColor border-cardColor'>
@@ -58,7 +62,7 @@ const LatestJobCard = ({ image, title, description, salary }: LatestJobCardProps
               <span className='text-[#696974] text-lg'>/month</span>
             </span>
            </div>
-           <Button size="green" color='#FFF' className='text-white bg-greenButtonColor'>Apply Now</Button>
+           <Button size="green" color='#FFF' className='text-white bg-greenButtonColor' onClick={() => router.push("/job/1/submit-your-application")}>Apply Now</Button>
           </div>
         </CardContent>
       </Card>
