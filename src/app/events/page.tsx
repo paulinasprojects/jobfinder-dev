@@ -8,7 +8,7 @@ import { ChevronDown } from "lucide-react"
 
 const EventsPage = () => {
   return (
-    <div>
+    <div className="mb-10">
       <div className="mt-10 xl:ml-20 lg:ml-10 md:ml-10 mr-20 flex items-center justify-between max-sm:ml-[26px]">
         <h1 className="text-white text-3xl font-bold">Events</h1>
         <div className="flex items-center gap-1">

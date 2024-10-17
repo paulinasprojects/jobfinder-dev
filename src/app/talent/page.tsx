@@ -5,7 +5,7 @@ import TalentSearch from '@/components/talent-search';
 
 const TalentPage = () => {
   return (
-    <div>
+    <div className='mb-10'>
       <PageHeading
         title="Let's Find You a Talent"
         text="Wednesday, 13 July 2024"

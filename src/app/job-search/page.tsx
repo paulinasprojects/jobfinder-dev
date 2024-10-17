@@ -5,7 +5,7 @@ import Search from '@/components/search'
 
 const JobSearch = () => {
   return (
-    <div className=''>
+    <div className='mb-10'>
       <PageHeading
         title="Let's Find Your Dream Job"
         text='Wednesday, 13 July 2024'

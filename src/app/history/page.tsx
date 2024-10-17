@@ -5,7 +5,7 @@ import SavedJobsCard from "@/components/saved-jobs-card"
 
 const HistoryPage = () => {
   return (
-    <div>
+    <div className="mb-10">
       <div className="mt-10 mx-20 flex items-center justify-between max-sm:mx-[24px] max-sm:justify-evenly max-sm:gap-[79px]">
       <div>
         <h1 className="text-white text-3xl font-bold">History</h1>

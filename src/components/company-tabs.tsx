@@ -15,7 +15,7 @@ const CompanyTabs = () => {
   return (
     <div className="">
       <Tabs defaultValue="about">
-        <TabsList className="grid grid-cols-170 max-sm:grid-cols-45 max-sm:gap-4">
+        <TabsList className="lg:grid lg:grid-cols-170 md:grid md:grid-cols-50 md:items-center md:justify-center  max-sm:grid-cols-45 max-sm:gap-4">
           <TabsTrigger value="about">About</TabsTrigger>
           <TabsTrigger value="jobs">Jobs</TabsTrigger>
           <TabsTrigger value="products">Products</TabsTrigger>
@@ -23,8 +23,8 @@ const CompanyTabs = () => {
           <TabsTrigger value="locations">Locations</TabsTrigger>
           <TabsTrigger value="reviews">Reviews</TabsTrigger>
         </TabsList>
-        <TabsContent value="about" className="mt-[50px] max-sm:mt-[80px]">
-          <Card className="w-[816px] h-full max-sm:w-[350px] bg-cardColor border-cardColorTwo">
+        <TabsContent value="about" className="lg:mt-[50px] md:mt-[80px] max-sm:mt-[80px]">
+          <Card className="lg:w-[816px] md:w-[700px] h-full max-sm:w-[350px] bg-cardColor border-cardColorTwo">
            <CardContent>
            <div>
               <div className="mt-5 ml-5 flex flex-col gap-2.5">

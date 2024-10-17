@@ -9,7 +9,7 @@ const SimilarCompanyCard = () => {
     <>
       {similarCompanies.map((company) => (
       <div className="mt-5" key={company.company}>
-        <Card className="w-[400px] h-[90px] bg-cardColor border-cardColor">
+        <Card className="max-sm:w-[400px] md:w-[350px] lg:w-[400px] h-[90px] bg-cardColor border-cardColor">
           <CardContent>
             <div className="flex items-center mt-5 gap-[18px]">
               <Image

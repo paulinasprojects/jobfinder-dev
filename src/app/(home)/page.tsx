@@ -4,7 +4,7 @@ import LatestJobPosts from "@/components/latest-job-posts";
 
 export default function Home() {
   return (
-   <div>
+   <div className="mb-10">
     <PageHeading
       title="Welcome, Jubed"
       text="Wednesday, 13 July 2024"
