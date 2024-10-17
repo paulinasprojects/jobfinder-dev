@@ -52,7 +52,7 @@ const Navbar = () => {
           className="hidden lg:flex ml-4"
         />
       </Link>
-      <div className="hidden md:flex gap-7 items-center justify-center ml-auto">
+      <div className="hidden lg:flex gap-7 items-center justify-center ml-auto">
         {routes.map((route) => (
         <Link key={route.href} href={route.href} className={cn(
           "text-greenButtonColor",
@@ -60,7 +60,7 @@ const Navbar = () => {
         )}>{route.label}</Link>
         ))}
       </div>
-      <div className="hidden max-sm:flex">
+      <div className="max-sm:flex lg:hidden">
         <MobileNav/>
       </div>
       <div className="ml-auto flex items-center gap-11 mr-9 max-sm:gap-6 max-sm:mr-0">
@@ -76,7 +76,7 @@ const Navbar = () => {
           <DropdownMenuTrigger>
             <ChevronDown className="text-neutralColor cursor-pointer" />
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="bg-cardColor border-none rounded-[16px] w-[280px] h-[467px] mr-[76px] max-sm:mr-[24px] text-white">
+          <DropdownMenuContent className="bg-cardColor border-none rounded-[16px] pb-4 lg:mr-[76px] md:mr-[24px] max-sm:mr-[24px] text-white">
             <DropdownMenuItem className="focus:bg-transparent">
               <div className="flex items-center gap-[12px] mt-[16px] ml-[16px]">
                 <Image

@@ -8,7 +8,7 @@ export default function Home() {
     <PageHeading
       title="Welcome, Jubed"
       text="Wednesday, 13 July 2024"
-      className="max-sm:ml-[26px] lg:ml-20"
+      className="max-sm:ml-[26px] md:ml-20 lg:ml-20"
     />
     <CardChart/>
     <LatestJobPosts/>

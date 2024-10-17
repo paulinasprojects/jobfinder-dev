@@ -15,7 +15,7 @@ const JobSearch = () => {
       <div>
         <div className='flex gap-[77px] lg:gap-[50px]'>
           {/* Left */}
-          <div className='xl:ml-20 mt-[52px] max-sm:hidden lg:ml-[26px]'>
+          <div className='xl:ml-20 mt-[52px] md:hidden lg:block max-sm:hidden lg:ml-[26px]'>
             <LeftContainer/>
           </div>
           {/* Right */}

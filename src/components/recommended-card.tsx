@@ -5,7 +5,7 @@ import { Card, CardContent } from './ui/card';
 const RecomendedCard = () => {
   return (
     <div>
-      <Card className='bg-cardColor border-cardColor w-[400px]'>
+      <Card className='bg-cardColor border-cardColor max-sm:w-[400px]'>
         <div>
           {recommendedCardData.map((data) => (
           <CardContent className='bg-[#21212b] m-5 rounded-[10px]' key={data.position}>

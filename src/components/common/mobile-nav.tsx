@@ -22,16 +22,14 @@ const MobileNav = () => {
               <Image src={logo} alt='logo'/>
             </Link>
           </SheetTitle>
-          <SheetDescription>
-            <div className='flex flex-col gap-8 mt-11'>
+        </SheetHeader>
+            <div className='flex flex-col gap-8 mt-11 md:items-center max-sm:items-center'>
               <Link href="/" className='text-[20px] text-greenButtonColor font-bold hover:text-neutralColor'>Overview</Link>
               <Link href="/job-search" className='text-[20px] text-greenButtonColor font-bold hover:text-neutralColor'>Job Search</Link>
               <Link href="/talent" className='text-[20px] text-greenButtonColor font-bold hover:text-neutralColor'>Talent</Link>
               <Link href="/history" className='text-[20px] text-greenButtonColor font-bold hover:text-neutralColor'>History</Link>
               <Link href="/events" className='text-[20px] text-greenButtonColor font-bold hover:text-neutralColor'>Events</Link>
             </div>
-          </SheetDescription>
-        </SheetHeader>
       </SheetContent>
     </Sheet>
   )

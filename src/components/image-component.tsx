@@ -15,12 +15,12 @@ const ImageComponent = ({coverImage, mobileCoverImage, profileImage, className, 
        <Image
           src={coverImage}
           alt="job details image"
-          className={cn("ml-5 mt-5 hidden lg:block", className2)}
+          className={cn("ml-5 mt-5 hidden md:block lg:block", className2)}
         />
         <Image
           src={mobileCoverImage}
           alt="mobile cover image"
-          className="block lg:hidden max-sm:ml-[24px] max-sm:mt-5"
+          className={cn("block lg:hidden md:hidden max-sm:ml-[24px] max-sm:mt-5")}
         />
         <Image
           src={profileImage}

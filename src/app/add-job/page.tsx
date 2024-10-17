@@ -2,8 +2,8 @@ import AddJobForm from "@/components/add-job-form"
 
 const AddJobPage = () => {
   return (
-    <div>
-      <div className="mt-10 ml-20">
+    <div className="mb-5">
+      <div className="mt-10 lg:ml-20 md:ml-10 max-sm:ml-6">
         <h1 className="text-white text-3xl font-bold">Add New Jobs</h1>
       </div>
       <div>

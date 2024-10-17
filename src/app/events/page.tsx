@@ -9,7 +9,7 @@ import { ChevronDown } from "lucide-react"
 const EventsPage = () => {
   return (
     <div>
-      <div className="mt-10 ml-20 mr-20 flex items-center justify-between max-sm:ml-[26px]">
+      <div className="mt-10 xl:ml-20 lg:ml-10 md:ml-10 mr-20 flex items-center justify-between max-sm:ml-[26px]">
         <h1 className="text-white text-3xl font-bold">Events</h1>
         <div className="flex items-center gap-1">
           <span className="text-neutralColor text-sm font-semibold max-sm:hidden">Sort by:</span>
@@ -19,9 +19,9 @@ const EventsPage = () => {
           </span>
         </div>
       </div>
-      <div className="flex gap-[60px] ml-20 mt-10 mb-10 max-sm:ml-[26px]">
+      <div className="flex gap-[60px] xl:ml-20 md:ml-10 lg:ml-10 mt-10 mb-10 max-sm:ml-[26px]">
         {/* Left */}
-        <div className="flex flex-col gap-7 max-sm:hidden">
+        <div className="lg:flex lg:flex-col gap-7 max-sm:hidden md:hidden">
         <OpenedCheckMenu
           title="Categories"
           placeholder="Search from List"
@@ -47,7 +47,7 @@ const EventsPage = () => {
         />
         </div>
         {/* Right */}
-        <div className="text-white grid xl:grid-cols-25 lg:grid-cols-2 max-sm:grid-cols-19 gap-10">
+        <div className="text-white grid xl:grid-cols-25 lg:grid-cols-2 md:grid-cols-2 max-sm:grid-cols-19 gap-10">
           {eventsData.map((event) => (
             <EventCard
               key={event.id}

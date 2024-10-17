@@ -86,7 +86,7 @@ const PersonalInformationForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-sm">First Name</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="First name" className="max-sm:w-[327px] xl:w-[565px] lg:w-[400px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input {...field} placeholder="First name" className="max-sm:w-[327px] xl:w-[565px] lg:w-[400px] md:w-[327px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -99,7 +99,7 @@ const PersonalInformationForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-sm">Last Name</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Last name" className="max-sm:w-[327px] xl:w-[565px] lg:w-[400px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input {...field} placeholder="Last name" className="max-sm:w-[327px] xl:w-[565px] lg:w-[400px] md:w-[327px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -113,7 +113,7 @@ const PersonalInformationForm = () => {
                 <FormItem className="lg:ml-[26px] max-sm:ml-[26px] xl:ml-[135px] flex flex-col mt-[32px]">
                   <FormLabel className="text-neutralColor text-sm">Role</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="Senior Designer" className="max-sm:w-[327px] xl:w-[1170px] lg:w-[840px] h-[48px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                    <Input {...field} placeholder="Senior Designer" className="max-sm:w-[327px] xl:w-[1170px] lg:w-[840px] md:w-full h-[48px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                   </FormControl>
                   <FormMessage/>
                 </FormItem>
@@ -126,14 +126,14 @@ const PersonalInformationForm = () => {
                   <FormItem className="lg:ml-[26px] max-sm:ml-[26px] xl:ml-[135px] flex flex-col mt-[32px]">
                     <FormLabel className="text-neutralColor text-sm">Biography</FormLabel>
                     <FormControl>
-                     <Textarea {...field} className="resize-none xl:w-[1170px] lg:w-[840px] h-[190px] max-sm:w-[327px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                     <Textarea {...field} className="resize-none xl:w-[1170px] lg:w-[840px] md:w-full h-[190px] max-sm:w-[327px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
                 )}
               />
           <div className="mt-14 mb-8 flex items-center justify-center">
-            <Separator className="bg-[#21212B] xl:w-[1170px] max-sm:w-[327px] lg:w-[840px]"/>
+            <Separator className="bg-[#21212B] xl:w-[1170px] max-sm:w-[327px] lg:w-[840px] md:w-[420px]"/>
           </div>
           <div className="flex flex-row lg:items-center xl:justify-between lg:justify-normal max-sm:ml-[24px] max-sm:mr-[24px] xl:mr-[135px] xl:ml-[135px] lg:ml-[26px] max-sm:flex-col gap-10">
           <FormField
@@ -144,7 +144,7 @@ const PersonalInformationForm = () => {
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Skill Level</FormLabel>
                     <Select onValueChange={field.onChange} defaultValue={field.value}>
                       <FormControl>
-                        <SelectTrigger className="xl:w-[565px] lg:w-[400px] h-[48px] max-sm:w-[327px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
+                        <SelectTrigger className="xl:w-[565px] lg:w-[400px] h-[48px] max-sm:w-[327px] md:w-[327px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
                           <SelectValue placeholder="Senior Designer"/>
                         </SelectTrigger>
                       </FormControl>
@@ -177,7 +177,7 @@ const PersonalInformationForm = () => {
               </div>
           </div>
           <div className="mt-14 mb-8 flex items-center justify-center">
-            <Separator className="bg-[#21212B] xl:w-[1170px] lg:w-[840px] max-sm:w-[327px]"/>
+            <Separator className="bg-[#21212B] xl:w-[1170px] lg:w-[840px] max-sm:w-[327px] md:w-[420px]"/>
           </div>
           <div className="flex xl:flex-row xl:items-center xl:justify-center lg:justify-normal max-sm:flex-col max-sm:ml-[24px] xl:ml-0 lg:ml-[26px] max-sm:mr-[24px] gap-10">
           <FormField
@@ -187,7 +187,7 @@ const PersonalInformationForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-sm">Job Title</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Co-Founder" className="max-sm:w-[327px] xl:w-[565px] lg:w-[400px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input {...field} placeholder="Co-Founder" className="max-sm:w-[327px] xl:w-[565px] lg:w-[400px] md:w-[327px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -201,7 +201,7 @@ const PersonalInformationForm = () => {
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Employment Type</FormLabel>
                     <Select onValueChange={field.onChange} defaultValue={field.value}>
                       <FormControl>
-                        <SelectTrigger className="xl:w-[565px] lg:w-[400px] max-sm:w-[327px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
+                        <SelectTrigger className="xl:w-[565px] lg:w-[400px] max-sm:w-[327px] md:w-[327px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
                           <SelectValue placeholder="Full Time"/>
                         </SelectTrigger>
                       </FormControl>
@@ -228,7 +228,7 @@ const PersonalInformationForm = () => {
                     <FormLabel className="text-neutralColor text-sm">Company Name</FormLabel>
                     <Select onValueChange={field.onChange} defaultValue={field.value}>
                       <FormControl>
-                        <SelectTrigger className="xl:w-[565px] lg:w-[400px] max-sm:w-[327px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
+                        <SelectTrigger className="xl:w-[565px] lg:w-[400px] max-sm:w-[327px] h-[48px] md:w-[327px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
                           <SelectValue placeholder="UIHUT LLC"/>
                         </SelectTrigger>
                       </FormControl>
@@ -251,7 +251,7 @@ const PersonalInformationForm = () => {
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Location</FormLabel>
                     <Select onValueChange={field.onChange} defaultValue={field.value}>
                       <FormControl>
-                        <SelectTrigger className="xl:w-[565px] lg:w-[400px] max-sm:w-[327px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
+                        <SelectTrigger className="xl:w-[565px] lg:w-[400px] max-sm:w-[327px] md:w-[327px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
                           <SelectValue placeholder="New York"/>
                         </SelectTrigger>
                       </FormControl>
@@ -268,7 +268,7 @@ const PersonalInformationForm = () => {
                 )}
               />
           </div>
-          <div className="mt-[30px] flex items-center gap-2 ml-[134px] max-sm:ml-[24px]">
+          <div className="mt-[30px] flex items-center gap-2 lg:ml-[134px] md:ml-[24px] max-sm:ml-[24px]">
           <Checkbox
           />
           <label className='text-neutralColor text-sm font-semibold'>I am currently working in this role</label>
@@ -281,7 +281,7 @@ const PersonalInformationForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Start Date</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Select period" type='date' className="xl:w-[565px] lg:w-[400px] max-sm:w-[327px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input {...field} placeholder="Select period" type='date' className="xl:w-[565px] lg:w-[400px] md:w-[327px] max-sm:w-[327px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -294,7 +294,7 @@ const PersonalInformationForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Year Ended</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="2021" type='number' className="xl:w-[565px] lg:w-[400px] max-sm:w-[327px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input {...field} placeholder="2021" type='number' min={1} className="xl:w-[565px] lg:w-[400px] md:w-[327px] max-sm:w-[327px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -309,7 +309,7 @@ const PersonalInformationForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-sm">Description</FormLabel>
                     <FormControl>
-                     <Textarea {...field} className="resize-none xl:w-[1170px] lg:w-[840px] h-[112px] max-sm:w-[327px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                     <Textarea {...field} className="resize-none xl:w-[1170px] lg:w-[840px] h-[112px] max-sm:w-[327px] md:w-[700px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -323,7 +323,7 @@ const PersonalInformationForm = () => {
             </span>
           </div>
           <div className="mt-14 mb-8 flex items-center justify-center">
-            <Separator className="bg-[#21212B] xl:w-[1170px] lg:w-[840px] max-sm:w-[327px]"/>
+            <Separator className="bg-[#21212B] xl:w-[1170px] lg:w-[840px] max-sm:w-[327px] md:w-[420px]"/>
           </div>
           <div className="mt-[30px] xl:ml-[135px] lg:ml-[26px] mb-[22px] max-sm:ml-[24px]">
             <span className="text-white text-lg font-bold">Education</span>
@@ -336,7 +336,7 @@ const PersonalInformationForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-sm">University</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Harvard University" className="max-sm:w-[327px] xl:w-[565px] lg:w-[400px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input {...field} placeholder="Harvard University" className="max-sm:w-[327px] xl:w-[565px] lg:w-[400px] md:w-[327px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -350,7 +350,7 @@ const PersonalInformationForm = () => {
                     <FormLabel className="text-neutralColor text-sm">Degree</FormLabel>
                     <Select onValueChange={field.onChange} defaultValue={field.value}>
                       <FormControl>
-                        <SelectTrigger className="xl:w-[565px] lg:w-[400px] max-sm:w-[327px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
+                        <SelectTrigger className="xl:w-[565px] lg:w-[400px] max-sm:w-[327px] md:w-[327px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
                           <SelectValue placeholder="Bachelor Degree"/>
                         </SelectTrigger>
                       </FormControl>
@@ -374,11 +374,11 @@ const PersonalInformationForm = () => {
                 <FormItem>
                   <FormLabel className="text-neutralColor text-sm">Field Of Study</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="Computer Science" className="max-sm:w-[327px] lg:w-[400px] xl:w-[1170px] h-[48px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                    <Input {...field} placeholder="Computer Science" className="max-sm:w-[327px] lg:w-[400px] md:w-full xl:w-[1170px] h-[48px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                   </FormControl>
                   <FormMessage/>
                 </FormItem>
-              )}
+              )} 
             />
           </div>
           <div className="flex xl:flex-row xl:items-center xl:justify-center lg:justify-normal max-sm:flex-col max-sm:ml-[24px] lg:ml-[26px] xl:ml-0 max-sm:mr-[24px] gap-10 mt-[30px]">
@@ -389,7 +389,7 @@ const PersonalInformationForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Start Date</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Select period" type='date' className="xl:w-[565px] lg:w-[400px] max-sm:w-[327px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input {...field} placeholder="Select period" type='date' className="xl:w-[565px] lg:w-[400px] max-sm:w-[327px] md:w-[327px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -402,7 +402,7 @@ const PersonalInformationForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Year Graduated</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="2021" type='number' className="xl:w-[565px] lg:w-[400px] max-sm:w-[327px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input {...field} placeholder="2021" type='number' min={1} className="xl:w-[565px] lg:w-[400px] max-sm:w-[327px] md:w-[327px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -417,7 +417,7 @@ const PersonalInformationForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-sm">Description</FormLabel>
                     <FormControl>
-                     <Textarea {...field} className="resize-none xl:w-[1170px] lg:w-[840px] h-[112px] max-sm:w-[327px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                     <Textarea {...field} className="resize-none xl:w-[1170px] lg:w-[840px] h-[112px] max-sm:w-[327px] md:w-[700px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -435,7 +435,7 @@ const PersonalInformationForm = () => {
           <span className="text-neutralColor xl:text-[15px] lg:text-sm  font-normal max-sm:text-[10px]">
             After five years of designing digital products and experiences, I shifted my focus to research and strategy because I wanted to facilitate greater impact through active <br /> empathy building and evidence-based decision making. I find my purpose in understanding and representing human needs, from ensuring that participants are <br /> protected by ethical research practices to prioritizing the end-user’s experience in design decisions. 
           </span>
-          <div className='xl:flex gap-7 lg:flex  max-sm:grid max-sm:grid-cols-111'>
+          <div className='xl:flex gap-7 lg:flex md:grid md:grid-cols-3  max-sm:grid max-sm:grid-cols-111'>
             <div className="w-[167px] h-[125px] max-sm:w-[92px] max-sm:h-[69px] bg-cardColor rounded-[10px] outline-dotted outline-1 outline-white flex flex-col gap-1 items-center justify-center">
             <label htmlFor="inputField">
                <CloudUpload className="size-6 text-neutralColor max-sm:size-3"/>
@@ -461,8 +461,8 @@ const PersonalInformationForm = () => {
               />
             </div>
           </div>
-          <div className="flex lg:items-center lg:justify-center max-sm:ml-[24px]">
-            <Button type="submit" className="bg-greenButtonColor text-white max-sm:w-[370px] w-[565px] h-[48px]">Submit</Button>
+          <div className="flex lg:items-center lg:justify-center max-sm:ml-[24px] md:mr-[24px] lg:mr-0">
+            <Button type="submit" className="bg-greenButtonColor text-white max-sm:w-[370px] lg:w-[850px] md:w-full h-[48px]">Submit</Button>
           </div>
         </form>
       </Form>

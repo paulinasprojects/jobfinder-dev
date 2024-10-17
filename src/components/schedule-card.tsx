@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const ScheduleCard = () => {
   return (
     <div>
-      <Card className='bg-cardColor border-cardColor w-[400px]'>
+      <Card className='bg-cardColor border-cardColor max-sm:w-[400px]'>
        <CardHeader>
         <CardTitle className='text-white'>Schedule</CardTitle>
        </CardHeader>

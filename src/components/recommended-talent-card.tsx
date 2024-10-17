@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const RecommendedTalentCard = () => {
   return (
-    <div className="xl:flex xl:flex-col max-sm:flex-col max-sm:flex lg:ml-0 xl:ml-0 lg:grid lg:grid-cols-2 gap-[30px]">
+    <div className="xl:flex xl:flex-col max-sm:flex-col max-sm:flex lg:ml-0 xl:ml-0 md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 gap-[30px]">
       {recommendedTalents.map((talent) => (
         <div key={talent.name} className="">
           <Card className="xl:w-[400px] max-sm:w-[400px] lg:w-[420px] h-[220px] bg-cardColor border-cardColor">
@@ -44,7 +44,7 @@ const RecommendedTalentCard = () => {
                   </div>
               </div>
                   <div className="mt-[24px]">
-                    <button className="w-[360px] h-[40px] rounded-[10px] text-greenButtonColor bg-[#1b2228]">Connect</button>
+                    <button className="lg:w-[360px] max-sm:w-[360px] md:w-[300px] h-[40px] rounded-[10px] text-greenButtonColor bg-[#1b2228]">Connect</button>
                   </div>
             </CardContent>
           </Card>

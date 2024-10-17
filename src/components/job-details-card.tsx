@@ -16,35 +16,36 @@ const JobDetailsCard = () => {
 
   return (
     <div className=''>
-      <div>
+      <div className='md:ml-5 lg:ml-0'>
         <button className='max-sm:hidden md:flex p-2.5 bg-cardColorTwo  items-center gap-1.5 rounded-[10px] text-neutralColor text-xxs font-medium' onClick={() => router.push("/job-search")}>
           <ChevronLeft width={18} height={18}/>
           Back
         </button>
       </div>
       <div className='mt-5'>
-        <Card className='w-[860px] h-[1560px] max-sm:w-[327px] max-sm:h-[2314px] bg-cardColor border-cardColor rounded-[10px]'>
+        <Card className='lg:w-[860px] md:w-[750px] lg:h-[1560px] max-sm:w-[327px] max-sm:h-[2314px] bg-cardColor border-cardColor rounded-[10px]'>
           <div className=''>
           <ImageComponent
             coverImage={jobdetailsimage}
             mobileCoverImage={mobileCover}
             profileImage={jobdetails}
             className='ml-10 -mt-5'
+            className2="md:w-[670px] lg:w-[820px]"
           />
           </div>
           <CardContent>
-            <div className='flex justify-between max-sm:flex-col max-sm:gap-4'>
+            <div className='flex lg:flex-row md:flex-col md:gap-5 lg:gap-0 justify-between  max-sm:flex-col max-sm:gap-4'>
               <div className='flex flex-col mt-8 ml-5 gap-1.5 max-sm:ml-0'>
                 <span className='flex gap-[25px] items-center text-2xl font-bold text-white'>React Developer <Bookmark className='text-neutralColor'/></span>
                 <span className='text-neutral3Color text-md'>UIHUT Technologies LLC • Sylhet, BD • 3 days ago</span>
               </div>
-              <div className='flex items-center gap-3.5 max-sm:ml-0'>
+              <div className='flex items-center gap-3.5 md:ml-3 lg:ml-0 max-sm:ml-0'>
                   <JobSearchApplyNowButton className='w-[119px] h-[44px]' onClick={() => router.push('/job/1/submit-your-application')}/>
                   <JobSearchMessageButton className='border border-white w-[99px] h-[44px]'/>
-                  <EllipsisVertical className='cursor-pointer text-neutralColor'/>
+                  <EllipsisVertical className='cursor-pointer text-neutralColor md:hidden lg:block'/>
               </div>
             </div>
-            <div className='flex max-sm:grid max-sm:grid-cols-160 max-sm:gap-[30px] items-center justify-between px-3 py-4 mt-9 ml-10 bg-cardColorTwo  rounded-[20px] max-sm:ml-0'>
+            <div className='lg:flex max-sm:grid max-sm:grid-cols-160 max-sm:gap-[30px] md:grid md:grid-cols-2 md:gap-[30px] items-center justify-between px-3 py-4 mt-9 lg:ml-10 md:ml-5 bg-cardColorTwo  rounded-[20px] max-sm:ml-0'>
               <div className='text-white flex flex-col gap-1.5'>
                 <span className='text-sm text-neutralColor max-sm:text-xxs'>Experience</span>
                 <span className='text-md font-semibold max-sm:text-sm'>Minumum 1 Year</span>
@@ -62,13 +63,13 @@ const JobDetailsCard = () => {
                 <span className='text-md font-semibold max-sm:text-sm'>$2150,0 / M</span>
               </div>
             </div>
-            <div className='flex flex-col gap-2.5 mt-7 ml-10 max-sm:ml-0'>
+            <div className='flex flex-col gap-2.5 mt-7 lg:ml-10 md:ml-5 max-sm:ml-0'>
               <span className='text-white text-lg font-bold max-sm:text-md'>About The Job</span>
               <span className='text-neutralWhite200 font-normal text-md max-sm:text-sm'>
                 Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us. In this role, you would use various tech stacks, including Laravel, Node JS (Adonis JS), Vue JS, React JS, Nuxt JS, Redis, MySQL, MongoDB, and CSS. You will be engaged across the software development life cycle to create and modify platforms and capabilities in a collaborative and agile environment.
               </span>
             </div>
-            <div className='mt-7 ml-10 flex flex-col gap-3 max-sm:ml-0'>
+            <div className='mt-7 lg:ml-10 md:ml-5 flex flex-col gap-3 max-sm:ml-0'>
               <span className='text-lg font-bold text-white max-sm:text-md'>Responsibilities</span>
               {responsibilites.map((data) => (
               <div className='flex items-center gap-2.5' key={data.id}>
@@ -87,7 +88,7 @@ const JobDetailsCard = () => {
                 ))}
               </div>
             </div>
-            <div className='mt-[60px] ml-10 flex flex-col gap-3 max-sm:ml-0'>
+            <div className='mt-[60px] lg:ml-10 md:ml-5 flex flex-col gap-3 max-sm:ml-0'>
               <span className='text-lg font-bold text-white'>About The Company</span>
               <div className='flex items-center justify-between gap-5 cursor-pointer'  onClick={() => router.push('/company/1')}>
                 <Image

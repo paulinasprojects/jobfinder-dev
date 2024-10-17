@@ -9,11 +9,12 @@ const JobIdPage = () => {
        <PageHeading
         title="Let's Find Your Dream Job"
         text='Wednesday, 13 July 2024'
+        className="max-sm:ml-[26px] md:ml-5 lg:ml-10"
       />
       <Search/>
-      <div className="flex xl:flex-row gap-10 max-sm:flex-col lg:flex-col">
+      <div className="flex xl:flex-row gap-10 max-sm:flex-col md:flex-col lg:flex-col">
         {/* Left */}
-        <div className="ml-20 mt-[50px] max-sm:ml-0 max-sm:flex max-sm:justify-center">
+        <div className="lg:ml-20 mt-[50px] max-sm:ml-0 md:ml-[0px] max-sm:flex max-sm:justify-center">
           <JobDetailsCard/>
         </div>
         {/* Right */}

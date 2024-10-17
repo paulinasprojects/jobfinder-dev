@@ -9,13 +9,13 @@ const TalentPage = () => {
       <PageHeading
         title="Let's Find You a Talent"
         text="Wednesday, 13 July 2024"
-         className='max-sm:ml-[26px] lg:ml-20'
+         className='max-sm:ml-[26px] lg:ml-10 md:ml-[30px]'
       />
       <TalentSearch/>
       <div className='mt-[60px]'>
         <div className='flex gap-[90px]'>
           {/* Left */}
-         <div className='ml-20 max-sm:hidden'>
+         <div className='xl:ml-20 lg:ml-10 max-sm:hidden md:hidden lg:block'>
          <TalentLeftContainer/>
          </div>
          {/* Rigth */}

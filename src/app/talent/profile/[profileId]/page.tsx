@@ -3,8 +3,8 @@ import TalentInformation from '@/components/talent-information';
 
 const ProfileIdPage = () => {
   return (
-    <div>
-      <div className='flex gap-10 xl:flex-row lg:flex-col max-sm:flex-col'>
+    <div className='mb-10'>
+      <div className='flex gap-10 xl:flex-row md:flex-col lg:flex-col max-sm:flex-col'>
         {/* Left */}
         <div>
           <TalentInformation/>

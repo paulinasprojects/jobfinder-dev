@@ -18,7 +18,7 @@ const LatestJobCard = ({ image, title, description, salary }: LatestJobCardProps
   const router = useRouter();
   return (
     <div className=''>
-      <Card className='w-[400px] bg-cardColor border-cardColor'>
+      <Card className='max-sm:w-[400px]  bg-cardColor border-cardColor'>
         <CardContent>
           <div className='flex gap-[15px] mt-5'>
               <div className='bg-[#2c2c2c] w-[64px] h-[64px] rounded-[10px] flex items-center justify-center'>

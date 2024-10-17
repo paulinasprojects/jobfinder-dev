@@ -61,9 +61,9 @@ const AddJobForm = () => {
       <div>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)}>
-            <div className="ml-20 mt-10 flex flex-col max-sm:ml-5">  
+            <div className="lg:ml-20 md:ml-10 mt-10 flex flex-col max-sm:ml-5">  
             <span className="text-neutralColor text-[15px] font-semibold">Add Header Image</span>
-            <div className="mt-3.5 w-[840px] h-[112px] max-sm:w-[400px] bg-cardColor rounded-[10px] outline-dotted outline-1 outline-white flex flex-col gap-1 items-center justify-center">
+            <div className="mt-3.5 lg:w-[840px] md:w-[560px] h-[112px] max-sm:w-[400px] bg-cardColor rounded-[10px] outline-dotted outline-1 outline-white flex flex-col gap-1 items-center justify-center">
               <label htmlFor="inputField">
                 <Image
                   src={imageicon}
@@ -82,7 +82,7 @@ const AddJobForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Role</FormLabel>
                     <FormControl>
-                      <Input {...field} className="bg-cardColor w-[840px] h-[48px] max-sm:w-[400px] rounded-[10px] text-neutralColor  border border-neutralColor focus-visible:border-greenButtonColor outline-none" placeholder="Senior User Experience Designer"/>
+                      <Input {...field} className="bg-cardColor lg:w-[840px] md:w-[560px] h-[48px] max-sm:w-[400px] rounded-[10px] text-neutralColor  border border-neutralColor focus-visible:border-greenButtonColor outline-none" placeholder="Senior User Experience Designer"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -96,7 +96,7 @@ const AddJobForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Job Description</FormLabel>
                     <FormControl>
-                    <Textarea {...field} className="resize-none w-[840px] h-[190px] max-sm:w-[327px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                    <Textarea {...field} className="resize-none lg:w-[840px] md:w-[560px] h-[190px] max-sm:w-[327px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -105,7 +105,7 @@ const AddJobForm = () => {
               <span className="text-neutralColor text-xxs font-medium">Maximum 2000 Words</span>
               </div>
             </div>
-            <div className="flex flex-row max-sm:flex-col mt-[70px] gap-10">
+            <div className="flex lg:flex-row md:flex-col max-sm:flex-col mt-[70px] gap-10">
             <FormField
                 control={form.control}
                 name="department"
@@ -154,7 +154,7 @@ const AddJobForm = () => {
                 )}
               />
             </div>
-            <div className="flex flex-row max-sm:flex-col mt-[70px] gap-10">
+            <div className="flex lg:flex-row md:flex-col max-sm:flex-col mt-[70px] gap-10">
             <FormField
                 control={form.control}
                 name="recruitmentPeriod"
@@ -194,7 +194,7 @@ const AddJobForm = () => {
                 )}
               />
             </div>
-            <div className="flex flex-row max-sm:flex-col mt-[70px] gap-10">
+            <div className="flex lg:flex-row md:flex-col max-sm:flex-col mt-[70px] gap-10">
             <FormField
                 control={form.control}
                 name="recruitmentQuota"
@@ -222,7 +222,7 @@ const AddJobForm = () => {
                 )}
               />
             </div>
-            <div className="flex flex-row max-sm:flex-col mt-[70px] gap-10">
+            <div className="flex lg:flex-row md:flex-col  max-sm:flex-col mt-[70px] gap-10">
             <FormField
                 control={form.control}
                 name="salary"
