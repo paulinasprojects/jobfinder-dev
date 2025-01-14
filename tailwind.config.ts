@@ -20,6 +20,7 @@ const config: Config = {
       },
       screens: {
         xxs: "375px",
+        md: "768px",
       },
       gridTemplateColumns: {
         111: "repeat(3, 92px)",
@@ -31,6 +32,7 @@ const config: Config = {
         21: "repeat(2, 300px)",
         31: "repeat(1, 327px)",
         25: "repeat(3, 290px)",
+        26: "repeat(2, 335px)",
         30: "repeat(3, 256px)",
         35: "repeat(3, 200px)",
         40: "repeat(2, 400px)",

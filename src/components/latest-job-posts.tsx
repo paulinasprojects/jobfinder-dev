@@ -13,11 +13,11 @@ const LatestJobPosts = () => {
       <div className="flex xl:flex-row gap-10 mt-[63px] lg:ml-20 md:flex-col md:ml-5 max-sm:flex-col max-sm:ml-4">
         {/* Left */}
         <div>
-          <div className="flex  xl:justify-between items-center md:justify-between max-sm:justify-normal max-sm:gap-[54px] max-sm:ml-[24px]">
+          <div className="flex  xl:justify-between items-center md:justify-between md:mx-10 max-sm:justify-normal max-sm:gap-[54px] max-sm:ml-[24px]">
             <h4 className="text-[22px] font-bold text-white">Latest Job Posts</h4>
               <span className="text-neutral3Color flex gap-2.5 items-center">See All <ChevronDown className="text-neutralColor cursor-pointer"/></span>
           </div>
-          <div className="mt-8 grid lg:grid-cols-40 gap-10 md:grid-cols-1 max-sm:grid-cols-18">
+          <div className="mt-8 grid lg:grid-cols-40 gap-10 md:grid-cols-1 max-sm:grid-cols-18 md:mx-5">
            <LatestJobCard
             title="React Developer"
             description=" Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us."
@@ -44,7 +44,7 @@ const LatestJobPosts = () => {
             salary="4k-5k"
            />
           </div>
-            <div className="mt-[92px] grid grid-cols-30 gap-9 max-sm:flex max-sm:flex-col max-sm:ml-[20px] md:grid-cols-3">
+            <div className="mt-[52px] grid lg:grid-cols-30 gap-9 max-sm:flex max-sm:flex-col max-sm:ml-[20px] md:grid-cols-26 md:mx-5">
               <CompaniesCard
                 image={appleBlack}
                 star={star}
@@ -69,7 +69,7 @@ const LatestJobPosts = () => {
             </div>
         </div>
       {/* Right */}
-      <div className="mr-20">
+      <div className="mr-20 md:mr-5 md:ml-5">
         <div className="flex xl:min-w-[400px] items-center justify-between max-sm:justify-center  max-sm:gap-[13px]">
           <h4 className="text-[22px] font-bold text-white max-sm:ml-[10px]">Recomended For You</h4>
             <span className="text-neutral3Color flex gap-2.5 items-center">See All <ChevronDown className="text-neutralColor cursor-pointer"/></span>
