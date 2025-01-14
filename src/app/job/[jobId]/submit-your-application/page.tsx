@@ -17,7 +17,7 @@ const SubmitYourApplicationPage = () => {
       {/* The big margin here is because if I try to center the container with the button inside 
       the button goes in the center of the screen */}
       <div className="xl:ml-[330px] mt-[51px] md:ml-[26px] lg:ml-32">
-        <button className="max-sm:hidden md:flex p-2.5 bg-cardColorTwo  items-center gap-1.5 rounded-[10px] text-neutralColor text-xxs font-medium" onClick={() => router.push("/job/1")}>
+        <button className="max-sm:hidden md:flex p-2.5 bg-cardColorTwo  items-center gap-1.5 rounded-[10px] text-neutralColor text-xxs font-medium hover:bg-greenButtonColor hover:text-white transition-colors" onClick={() => router.push("/job/1")}>
           <ChevronLeft width={18} height={18}/>
           Back
         </button>

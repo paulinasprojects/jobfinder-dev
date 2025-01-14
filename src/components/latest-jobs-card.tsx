@@ -62,7 +62,7 @@ const LatestJobCard = ({ image, title, description, salary }: LatestJobCardProps
               <span className='text-[#696974] text-lg'>/month</span>
             </span>
            </div>
-           <Button size="green" color='#FFF' className='text-white bg-greenButtonColor' onClick={() => router.push("/job/1/submit-your-application")}>Apply Now</Button>
+           <Button size="green" color='#FFF' className='text-white bg-greenButtonColor hover:border-2 hover:border-greenButtonColor hover:text-greenButtonColor' onClick={() => router.push("/job/1/submit-your-application")}>Apply Now</Button>
           </div>
         </CardContent>
       </Card>

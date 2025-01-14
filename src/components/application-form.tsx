@@ -41,7 +41,7 @@ const ApplicationForm = () => {
       <div className="flex flex-row items-center gap-7 max-sm:flex-col">
       <div className="flex flex-col gap-[9px]">
         <label className="text-neutralColor text-sm" htmlFor="linkedin">Linkedin Profile</label>
-        <button className="text-white text-sm max-sm:w-[374px] lg:w-[374px] md:w-[250px] h-[48px] bg-[#1275B1] rounded-[10px] flex items-center justify-start">
+        <button className="text-white text-sm max-sm:w-[374px] lg:w-[374px] md:w-[250px] h-[48px] bg-[#1275B1] hover:bg-[#1274b1da] rounded-[10px] flex items-center justify-start">
           <Image
             src={linkedin}
             alt="linkedin"
@@ -51,7 +51,7 @@ const ApplicationForm = () => {
         </div>
         <div className="flex flex-col gap-[9px]">
           <label htmlFor="inputField" className="text-neutralColor text-sm">Resume / CV*</label>
-          <label htmlFor="inputField" className="max-sm:w-[374px] lg:w-[374px] md:w-[250px] h-[48px] rounded-[10px] text-neutralColor bg-[#21212B] flex items-center justify-start p-5 text-sm">Attach Resume / CV</label>
+          <label htmlFor="inputField" className="max-sm:w-[374px] lg:w-[374px] md:w-[250px] h-[48px] rounded-[10px] text-neutralColor bg-[#21212B] flex items-center justify-start p-5 text-sm cursor-pointer hover:bg-greenButtonColor hover:text-white transition-colors">Attach Resume / CV</label>
           <input required type="file" className="hidden" title=" " id="inputField" />
         </div>
       </div>
@@ -153,7 +153,7 @@ const ApplicationForm = () => {
               <label className='text-neutralColor text-sm'>I agree with terms & conditions</label>
             </div>
             <div className="mt-8 mb-8">
-                <button type="submit" className="lg:w-[778px] md:w-full h-[52px] max-sm:w-[327px] rounded-[10px] bg-greenButtonColor text-white text-md">Submit Application</button>
+                <button type="submit" className="lg:w-[778px] md:w-full h-[52px] max-sm:w-[327px] rounded-[10px] bg-greenButtonColor text-white text-md hover:bg-transparent hover:border-2 hover:border-greenButtonColor hover:text-greenButtonColor">Submit Application</button>
             </div>
           </form>
         </Form>

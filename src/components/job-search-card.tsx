@@ -41,7 +41,7 @@ const JobSearchCard = () => {
                   </div>
               </div>
               <div>
-                <button className='hidden lg:flex items-center justify-center gap-2 text-neutralColor bg-[#21212b] rounded-[10px] w-[101px] h-[34px] text-sm font-semibold'>Save job <BookmarkMinus color='#92929d' width={19} height={19} className=''/></button>
+                <button className='hidden lg:flex items-center justify-center gap-2 text-neutralColor bg-[#21212b] rounded-[10px] w-[101px] h-[34px] text-sm font-semibold hover:bg-[#27272f]'>Save job <BookmarkMinus color='#92929d' width={19} height={19}/></button>
               </div>
             </div>
             <div className='mt-5'>

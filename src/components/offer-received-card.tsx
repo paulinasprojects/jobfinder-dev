@@ -24,7 +24,7 @@ const OfferReceivedCard = ({  image, role, company, location, contractDuration, 
           <span className="text-white text-sm font-semibold">{company}</span>
           <span className="text-neutralColor text-xxs font-normal">{location}</span>
         </div>
-        <EllipsisVertical className="text-neutralColor ml-auto" width={16} height={16}/>
+        <EllipsisVertical className="text-neutralColor ml-auto cursor-pointer" width={16} height={16}/>
       </div>
       <div className="flex gap-[17px] ml-[14px] mb-4">
         <div className="flex flex-col gap-1">
@@ -42,9 +42,9 @@ const OfferReceivedCard = ({  image, role, company, location, contractDuration, 
         <span className="text-xxs text-neutralColor font-normal">Job Role</span>
         <span className="text-xxs text-[#F1F1F5] font-semibold">{role}</span>
       </div>
-      <div className="flex items-center justify-center gap-4 mb-4">
-        <button className="text-white bg-greenButtonColor rounded-[10px] text-xxs font-semibold py-2 px-7">Accept</button>
-        <button className="text-neutral3Color border border-[#44444F] bg-transparent rounded-[10px] text-xxs font-semibold py-2 px-7">Reject</button>
+      <div className="flex items-center justify-center gap-6 mb-4">
+        <button className="text-white bg-greenButtonColor rounded-[10px] text-xxs font-semibold py-2 px-7 hover:text-greenButtonColor hover:bg-transparent hover:border-2 hover:border-greenButtonColor transition-colors">Accept</button>
+        <button className="text-neutral3Color border border-[#44444F] bg-transparent rounded-[10px] text-xxs font-semibold py-2 px-7 hover:bg-greenButtonColor hover:text-neutralWhite transition-colors">Reject</button>
       </div>
     </div>
   )

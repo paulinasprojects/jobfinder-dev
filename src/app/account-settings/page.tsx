@@ -32,8 +32,8 @@ import PersonalInformationForm from "@/components/personal-information-form";
           <span className='text-neutralColor text-sm'>Washington, United States • 765 Connections</span>
         </div>
           <div className='xl:flex gap-[18px] md:flex mb-12 max-sm:hidden lg:mr-24 lg:hidden md:ml-[26px] lg:ml-0'>
-            <button className='text-neutralColor bg-[#F1F1F5] px-5 py-2 rounded-[10px] text-[15px] font-semibold'>Cancel</button>
-            <button className='text-white bg-greenButtonColor px-6 py-2 rounded-[10px] text-[15px] font-semibold'>Save</button>
+            <button className='text-neutralColor bg-[#F1F1F5] px-5 py-2 rounded-[10px] text-[15px] font-semibold hover:bg-greenButtonColor hover:text-white transition-colors'>Cancel</button>
+            <button className='text-white bg-greenButtonColor px-6 py-2 rounded-[10px] text-[15px] font-semibold hover:bg-white hover:text-greenButtonColor transition-colors'>Save</button>
           </div>
       </div>
       <div className="mt-10 mb-8 flex items-center justify-center">

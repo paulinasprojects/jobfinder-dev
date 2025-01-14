@@ -11,7 +11,7 @@ const HistoryPage = () => {
         <h1 className="text-white text-3xl font-bold">History</h1>
       </div>
       <div>
-        <button className="w-[150px] h-[48px] rounded-[10px] bg-greenButtonColor text-white text-[15px] font-semibold">Manage Job Post</button>
+        <button className="w-[150px] h-[48px] rounded-[10px] bg-greenButtonColor text-white text-[15px] font-semibold hover:text-greenButtonColor hover:bg-transparent hover:border-2 hover:border-greenButtonColor transition-colors">Manage Job Post</button>
       </div>
       </div>
       <div className="xl:flex max-sm:flex xl:flex-row lg:grid lg:grid-cols-2 lg:gap-10 md:grid md:grid-cols-2 md:gap-10 xl:gap-10 max-sm:gap-10 text-white mx-20 mt-10 max-sm:flex-col max-sm:mx-[40px]">

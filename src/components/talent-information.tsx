@@ -15,7 +15,7 @@ const TalentInformation = () => {
   return (
     <div>
       <div className="lg:ml-28 md:ml-[26px] max-sm:ml-5 mt-4">
-        <button className="max-sm:hidden md:flex p-2.5 bg-cardColorTwo  items-center gap-1.5 rounded-[10px] text-neutralColor text-xxs font-medium" onClick={() => router.push("/talent")}>
+        <button className="max-sm:hidden md:flex p-2.5 bg-cardColorTwo  items-center gap-1.5 rounded-[10px] text-neutralColor text-xxs font-medium hover:bg-greenButtonColor hover:text-white transition-colors" onClick={() => router.push("/talent")}>
           <ChevronLeft width={18} height={18}/>
           Back
         </button>
@@ -39,8 +39,8 @@ const TalentInformation = () => {
                 <span className='text-neutralColor text-sm'>{info.location} • {info.connection} Connections</span>
               </div>
               <div className='flex gap-[18px] mb-12 max-sm:hidden md:ml-[26px] lg:ml-24'>
-                <button className='text-neutralColor bg-[#1C1C24] px-3 py-2 rounded-[10px] text-[15px] font-semibold'>Message</button>
-                <button className='text-white bg-greenButtonColor px-3 py-2 rounded-[10px] text-[15px] font-semibold'>Connect</button>
+                <button className='text-neutralColor bg-[#1C1C24] px-3 py-2 rounded-[10px] text-[15px] font-semibold hover:bg-greenButtonColor hover:text-white transition-colors'>Message</button>
+                <button className='text-white bg-greenButtonColor px-3 py-2 rounded-[10px] text-[15px] font-semibold hover:bg-transparent hover:border-2 hover:border-greenButtonColor hover:text-greenButtonColor'>Connect</button>
               </div>
             </div>
             <div className='mt-8'>
@@ -61,7 +61,7 @@ const TalentInformation = () => {
               </div>
               <div className='flex flex-col max-sm:items-center max-sm:justify-center'>
                 <span className='text-neutralColor text-xxs font-medium'>Portfolio Website</span>
-                <span className='text-greenButtonColor text-xxs font-medium'>{info.portfolioWebsite}</span>
+                <span className='text-greenButtonColor text-xxs font-medium cursor-pointer'>{info.portfolioWebsite}</span>
               </div>
             </div>
             <div className='mt-8'>

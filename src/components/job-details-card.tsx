@@ -36,12 +36,12 @@ const JobDetailsCard = () => {
           <CardContent>
             <div className='flex lg:flex-row md:flex-col md:gap-5 lg:gap-0 justify-between  max-sm:flex-col max-sm:gap-4'>
               <div className='flex flex-col mt-8 ml-5 gap-1.5 max-sm:ml-0'>
-                <span className='flex gap-[25px] items-center text-2xl font-bold text-white'>React Developer <Bookmark className='text-neutralColor'/></span>
+                <button className='flex gap-[25px] items-center text-2xl font-bold text-white'>React Developer <Bookmark className='text-neutralColor hover:text-greenButtonColor'/></button>
                 <span className='text-neutral3Color text-md'>UIHUT Technologies LLC • Sylhet, BD • 3 days ago</span>
               </div>
               <div className='flex items-center gap-3.5 md:ml-3 lg:ml-0 max-sm:ml-0'>
                   <JobSearchApplyNowButton className='w-[119px] h-[44px]' onClick={() => router.push('/job/1/submit-your-application')}/>
-                  <JobSearchMessageButton className='border border-white w-[99px] h-[44px]'/>
+                  <JobSearchMessageButton className=' w-[99px] h-[44px]'/>
                   <EllipsisVertical className='cursor-pointer text-neutralColor md:hidden lg:block'/>
               </div>
             </div>
@@ -99,7 +99,7 @@ const JobDetailsCard = () => {
                   <span className='text-white'>UI HUT</span>
                   <span className='text-neutral3Color'>203,765 Followers</span>
                 </div>
-                <button className='border border-greenButtonColor rounded-[10px] text-greenButtonColor flex items-center justify-center gap-1.5 p-1.5 text-xxs'><Plus width={18} height={18} className='cursor-pointer'/>Follow</button>
+                <button className='border border-greenButtonColor rounded-[10px] text-greenButtonColor flex items-center justify-center gap-1.5 p-1.5 text-xxs hover:bg-greenButtonColor hover:text-white transition-colors'><Plus width={18} height={18} className='cursor-pointer'/>Follow</button>
               </div>
               <div className='mt-7'>
                 <span className='text-neutralWhite200'>UIHUT is a design and coding resources platform for designers, developers and entrepreneurs. We&apos;re building a digital marketplace to simplify the creation of websites, apps and software on any device. UIHUT is based in New York City and is privately funded by some of the industry&apos;s leading investors.</span>

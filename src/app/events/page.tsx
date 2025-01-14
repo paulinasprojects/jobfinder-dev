@@ -13,10 +13,10 @@ const EventsPage = () => {
         <h1 className="text-white text-3xl font-bold">Events</h1>
         <div className="flex items-center gap-1">
           <span className="text-neutralColor text-sm font-semibold max-sm:hidden">Sort by:</span>
-          <span className="text-white text-sm font-bold flex items-center gap-[23px]">
+          <button className="text-white text-sm font-bold flex items-center gap-[23px]">
             Relevance
             <ChevronDown className="text-neutralColor"/>
-          </span>
+          </button>
         </div>
       </div>
       <div className="flex gap-[60px] xl:ml-20 md:ml-10 lg:ml-10 mt-10 mb-10 max-sm:ml-[26px]">

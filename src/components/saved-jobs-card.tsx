@@ -26,7 +26,7 @@ const SavedJobsCard = () => {
             ))}
           </div>
           <div className="flex items-center justify-center">
-            <button className="bg-cardColorTwo text-neutralColor w-[262px] py-2 rounded-[10px] mt-2.5 text-[15px] font-semibold">See more</button>
+            <button className="bg-cardColorTwo text-neutralColor w-[262px] py-2 rounded-[10px] mt-2.5 text-[15px] font-semibold hover:bg-greenButtonColor hover:text-white transition-colors">See more</button>
           </div>
         </CardContent>
       </Card>

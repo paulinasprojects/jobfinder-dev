@@ -37,10 +37,10 @@ const TalentCard = () => {
                   <span className="text-white text-lg font-bold max-sm:text-md">{talent.name}</span>
                   <span className="text-sm text-neutralColor max-sm:text-xxs">{talent.twitter} | {talent.position}</span>
                   <span className="text-sm text-neutralColor max-sm:text-xxs">{talent.location}</span>
-                  <button className="max-sm:block lg:hidden md:hidden text-neutralColor rounded-[10px] p-2 mt-2 bg-cardColorTwo">Connect</button>
+                  <button className="max-sm:block lg:hidden md:hidden text-neutralColor rounded-[10px] p-2 mt-2 bg-cardColorTwo hover:bg-greenButtonColor hover:text-neutralWhite transition-colors">Connect</button>
                 </div>
                 <div className="md:ml-auto max-sm:hidden">
-                  <button className="text-neutralColor rounded-[10px] w-[101px] h-[48px] bg-cardColorTwo">Connect</button>
+                  <button className="text-neutralColor rounded-[10px] w-[101px] h-[48px] bg-cardColorTwo hover:bg-greenButtonColor hover:text-neutralWhite transition-colors">Connect</button>
                 </div>
             </div>
           </CardContent>

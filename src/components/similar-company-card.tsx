@@ -21,7 +21,7 @@ const SimilarCompanyCard = () => {
                 <span className="text-neutralColor text-sm font-medium">{company.companyName}</span>
               </div>
               <div className="ml-auto">
-                <button className="text-greenButtonColor border border-greenButtonColor p-2 rounded-[10px] flex items-center gap-1.5">
+                <button className="text-greenButtonColor border border-greenButtonColor p-2 rounded-[10px] flex items-center gap-1.5 hover:bg-greenButtonColor hover:text-white transition-colors">
                 <Plus width={18} height={18}/>Follow
               </button>
             </div>

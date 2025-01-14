@@ -20,7 +20,7 @@ const RecommendedTalentCard = () => {
                   <span className="text-neutralColor text-sm">{talent.desiredPosition}</span>
                 </div>
                 <div className="ml-auto">
-                  <Bookmark className="cursor-pointer text-neutral3Color"/>
+                  <Bookmark className="cursor-pointer text-neutral3Color hover:text-greenButtonColor"/>
                 </div>
               </div>
               <div className="bg-cardColorTwo w-[320px] h-[50px] mt-[24px] ml-5 rounded-[10px]">
@@ -44,7 +44,7 @@ const RecommendedTalentCard = () => {
                   </div>
               </div>
                   <div className="mt-[24px]">
-                    <button className="lg:w-[360px] max-sm:w-[360px] md:w-[300px] h-[40px] rounded-[10px] text-greenButtonColor bg-[#1b2228]">Connect</button>
+                    <button className="lg:w-[360px] max-sm:w-[360px] md:w-[300px] h-[40px] rounded-[10px] text-greenButtonColor bg-[#1b2228] hover:bg-greenButtonColor hover:text-white transition-colors">Connect</button>
                   </div>
             </CardContent>
           </Card>

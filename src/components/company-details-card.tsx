@@ -54,7 +54,7 @@ const CompanyDetailsCard = () => {
               <span className='text-neutralColor text-md max-sm:text-xs'>Design Resources platform • 203,765 Followers</span>
             </div>
             <div className='mt-7'>
-              <button className='hidden lg:flex bg-transparent w-[145px] h-[38px] border rounded-[10px] border-greenButtonColor text-greenButtonColor text-sm  gap-1.5 items-center justify-center'>
+              <button className='hidden lg:flex bg-transparent w-[145px] h-[38px] border rounded-[10px] border-greenButtonColor text-greenButtonColor text-sm  gap-1.5 items-center justify-center hover:bg-greenButtonColor hover:text-white transition-colors'>
                 <Plus width={18} height={18}/>
                 Follow
               </button>
