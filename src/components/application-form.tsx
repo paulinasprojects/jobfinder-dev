@@ -41,7 +41,7 @@ const ApplicationForm = () => {
       <div className="flex flex-row items-center gap-7 max-sm:flex-col">
       <div className="flex flex-col gap-[9px]">
         <label className="text-neutralColor text-sm" htmlFor="linkedin">Linkedin Profile</label>
-        <button className="text-white text-sm max-sm:w-[374px] lg:w-[374px] md:w-[250px] h-[48px] bg-[#1275B1] hover:bg-[#1274b1da] rounded-[10px] flex items-center justify-start">
+        <button className="text-white text-sm max-sm:w-[374px] lg:w-[374px] md:w-[350px] h-[48px] bg-[#1275B1] hover:bg-[#1274b1da] rounded-[10px] flex items-center justify-start">
           <Image
             src={linkedin}
             alt="linkedin"
@@ -51,7 +51,7 @@ const ApplicationForm = () => {
         </div>
         <div className="flex flex-col gap-[9px]">
           <label htmlFor="inputField" className="text-neutralColor text-sm">Resume / CV*</label>
-          <label htmlFor="inputField" className="max-sm:w-[374px] lg:w-[374px] md:w-[250px] h-[48px] rounded-[10px] text-neutralColor bg-[#21212B] flex items-center justify-start p-5 text-sm cursor-pointer hover:bg-greenButtonColor hover:text-white transition-colors">Attach Resume / CV</label>
+          <label htmlFor="inputField" className="max-sm:w-[374px] lg:w-[374px] md:w-[350px] h-[48px] rounded-[10px] text-neutralColor bg-[#21212B] flex items-center justify-start p-5 text-sm cursor-pointer hover:bg-greenButtonColor hover:text-white transition-colors">Attach Resume / CV</label>
           <input required type="file" className="hidden" title=" " id="inputField" />
         </div>
       </div>
@@ -69,7 +69,7 @@ const ApplicationForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-sm">First Name</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="First name" className="max-sm:w-[374px] lg:w-[374px] md:w-[250px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input {...field} placeholder="First name" className="max-sm:w-[374px] lg:w-[374px] md:w-[350px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -82,7 +82,7 @@ const ApplicationForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-sm">Last Name</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Last name" className="max-sm:w-[374px] lg:w-[374px] md:w-[250px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input {...field} placeholder="Last name" className="max-sm:w-[374px] lg:w-[374px] md:w-[350px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -97,7 +97,7 @@ const ApplicationForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-sm">Phone Number</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Phone" className="max-sm:w-[374px] lg:w-[374px] md:w-[250px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor" type="number"/>
+                      <Input {...field} placeholder="Phone" className="max-sm:w-[374px] lg:w-[374px] md:w-[350px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor" type="number"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -110,7 +110,7 @@ const ApplicationForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-sm">Country</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Country" className="max-sm:w-[374px] lg:w-[374px] md:w-[250px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input {...field} placeholder="Country" className="max-sm:w-[374px] lg:w-[374px] md:w-[350px] h-[46px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>

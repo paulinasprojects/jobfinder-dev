@@ -23,7 +23,7 @@ const JobDetailsCard = () => {
         </button>
       </div>
       <div className='mt-5'>
-        <Card className='lg:w-[860px] md:w-[750px] lg:h-[1560px] max-sm:w-[327px] max-sm:h-[2314px] bg-cardColor border-cardColor rounded-[10px]'>
+        <Card className=' bg-cardColor border-cardColor rounded-[10px] xl:pr-10'>
           <div className=''>
           <ImageComponent
             coverImage={jobdetailsimage}

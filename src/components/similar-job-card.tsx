@@ -14,7 +14,7 @@ const SimilarJobCard = () => {
     <>
     {similarJobData.map((data) => (
       <div className="mt-1.5" key={data.jobPosition}>
-        <Card className="w-[380px] h-[146px] bg-cardColor border-cardColorTwo rounded-[10px] cursor-pointer" onClick={() => router.push("/job/1")}>
+        <Card className="xl:w-[380px] h-full bg-cardColor border-cardColorTwo rounded-[10px] cursor-pointer" onClick={() => router.push("/job/1")}>
           <CardContent>
             <div className="flex gap-4 items-center justify-between mt-5">
               <Image

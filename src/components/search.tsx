@@ -4,7 +4,7 @@ import { SearchIcon, MapPin, Briefcase } from "lucide-react";
 
 const Search = () => {
   return (
-    <div className="flex lg:flex-row  xl:ml-20 mt-7 max-sm:flex-col max-sm:ml-[24px] lg:ml-[26px]">
+    <div className="flex lg:flex-row  xl:ml-20 md:mx-10 mt-7 max-sm:flex-col max-sm:ml-[24px] lg:ml-[26px]">
       <div className="relative">
           <SearchIcon className="absolute top-7 text-neutralColor left-3 max-sm:left-9 max-sm:size-7"/>
          <Input className="xl:w-[383px] lg:h-[80px] max-sm:w-[370px] max-sm:h-[52px] bg-cardColor rounded-tl-[20px] border-none text-neutralColor p-10 text-sm font-bold max-sm:pl-20" placeholder="Job Title, Company or Keywords"/>

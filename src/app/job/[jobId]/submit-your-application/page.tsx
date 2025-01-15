@@ -22,7 +22,7 @@ const SubmitYourApplicationPage = () => {
           Back
         </button>
       </div>
-      <div className="flex flex-col max-sm:items-center lg:items-center md:items-start justify-center md:ml-[26px]">
+      <div className="flex flex-col max-sm:items-center lg:items-center md:items-start justify-center md:mx-5">
         <div className="md:mt-5 lg:ml-0">
           <ImageComponent
             coverImage={jobdetailsimage}

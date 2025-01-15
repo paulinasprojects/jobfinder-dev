@@ -40,7 +40,7 @@ const config: Config = {
         50: "repeat(3, 200px)",
         150: "repeat(2, 145px)",
         160: "repeat(2, 110px)",
-        170: "repeat(6, 110px)",
+        170: "repeat(6, 120px)",
       },
       borderRadius: {
         lg: "var(--radius)",

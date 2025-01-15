@@ -873,3 +873,38 @@ export const eventsData = [
     dateDay: "28",
   },
 ];
+
+export const recentlyPostedJobs = [
+  {
+    id: 1,
+    title: "Junior UI Designer",
+    jobdescription:
+      "Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve.",
+    stack: ["PHP", "Laravel", "CSS"],
+    salary: "$15k-20k",
+  },
+  {
+    id: 2,
+    title: "Junior UI Designer",
+    jobdescription:
+      "Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve.",
+    stack: ["PHP", "Laravel", "CSS"],
+    salary: "$15k-20k",
+  },
+  {
+    id: 3,
+    title: "Junior UI Designer",
+    jobdescription:
+      "Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve.",
+    stack: ["PHP", "Laravel", "CSS"],
+    salary: "$15k-20k",
+  },
+  {
+    id: 4,
+    title: "Junior UI Designer",
+    jobdescription:
+      "Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve.",
+    stack: ["PHP", "Laravel", "CSS"],
+    salary: "$15k-20k",
+  },
+];
