@@ -87,7 +87,7 @@ const SignUpForm = () => {
             />
           </div>
           <div className="mt-10">
-            <button type="submit" className="bg-greenButtonColor text-white w-[510px] max-sm:w-[283px] h-[52px] rounded-[10px]">Sign Up</button>
+            <button type="submit" className="bg-greenButtonColor text-white w-[510px] max-sm:w-[283px] h-[52px] rounded-[10px] hover:bg-transparent hover:text-greenButtonColor hover:border-[1.5px] hover:border-greenButtonColor">Sign Up</button>
           </div>
           <div className="mt-[30px] flex gap-2.5 items-center">
             <Checkbox className="w-[24px] h-[24px]"/>

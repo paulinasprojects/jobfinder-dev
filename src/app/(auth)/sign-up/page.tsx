@@ -14,11 +14,11 @@ const SignUpPage = () => {
             <span className="text-lg font-medium text-neutralColor">Find your next opportunity</span>
           </div>
             <div className="flex gap-5 max-sm:flex-col">
-              <button className="text-white text-[15px] flex items-center justify-center gap-2.5 bg-greenButtonColor rounded-[10px] px-5 py-2 max-sm:w-[283px]">
+              <button className="text-white text-[15px] flex items-center justify-center gap-2.5 bg-greenButtonColor rounded-[10px] px-5 py-2 max-sm:w-[283px] hover:bg-transparent hover:text-greenButtonColor hover:border-[1.5px] hover:border-greenButtonColor">
                 <FaGoogle className="w-[24px] h-[24px]"/>
                 Sign up with Google
               </button>
-              <button className="text-white text-[15px] flex items-center justify-center gap-2.5 bg-cardColorTwo rounded-[10px] px-5 py-2 max-sm:w-[283px]">
+              <button className="text-white text-[15px] flex items-center justify-center gap-2.5 bg-cardColorTwo rounded-[10px] px-5 py-2 max-sm:w-[283px] hover:bg-greenButtonColor">
                 <TiSocialLinkedinCircular className="w-[24px] h-[24px]"/>
                 Sign up with Linkedin
               </button>

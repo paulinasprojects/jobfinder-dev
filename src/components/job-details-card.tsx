@@ -17,7 +17,7 @@ const JobDetailsCard = () => {
   return (
     <div className=''>
       <div className='md:ml-5 lg:ml-0'>
-        <button className='max-sm:hidden md:flex p-2.5 bg-cardColorTwo  items-center gap-1.5 rounded-[10px] text-neutralColor text-xxs font-medium' onClick={() => router.push("/job-search")}>
+        <button className='max-sm:hidden md:flex p-2.5 bg-cardColorTwo  items-center gap-1.5 rounded-[10px] text-neutralColor text-xxs font-medium hover:bg-greenButtonColor hover:text-white transition-color' onClick={() => router.push("/job-search")}>
           <ChevronLeft width={18} height={18}/>
           Back
         </button>

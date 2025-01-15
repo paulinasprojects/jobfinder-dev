@@ -59,7 +59,7 @@ const SignInForm = () => {
             />
           </div>
           <div className="mt-10">
-            <button type="submit" className="bg-greenButtonColor text-white w-[510px] max-sm:w-[283px] h-[52px] rounded-[10px]">Sign In</button>
+            <button type="submit" className="bg-greenButtonColor text-white w-[510px] max-sm:w-[283px] h-[52px] rounded-[10px] hover:bg-transparent hover:text-greenButtonColor hover:border-[1.5px] hover:border-greenButtonColor">Sign In</button>
           </div>
           <div className="mt-[30px] flex gap-2 items-center justify-center max-sm:justify-normal max-sm:ml-4">
             <span className="text-neutralColor text-[15px]">Don&apos;t have an account?</span>
