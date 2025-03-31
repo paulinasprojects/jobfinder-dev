@@ -42,6 +42,9 @@ import {
   eventImageSix,
   eventImageSeven,
   eventImageEight,
+  appleBlack,
+  star,
+  gitlab,
 } from "@/lib/images";
 
 export const jobCardData = [
@@ -906,5 +909,67 @@ export const recentlyPostedJobs = [
       "Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve.",
     stack: ["PHP", "Laravel", "CSS"],
     salary: "$15k-20k",
+  },
+];
+
+export const latestJobPostsData = [
+  {
+    id: 1,
+    title: "React Developer",
+    description:
+      "Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us.",
+    image: uihut,
+    salary: "5k-8k",
+  },
+  {
+    id: 2,
+    title: "Web Developer",
+    description:
+      "Here at Microsoft, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us.",
+    image: microsoft,
+    salary: "6k-10k",
+  },
+  {
+    id: 3,
+    title: "Junior UI Designer",
+    description:
+      "Here at Airbnb, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us.",
+    image: airbnb,
+    salary: "5k-9k",
+  },
+  {
+    id: 4,
+    title: "UX Researcher",
+    description:
+      "Here at Slack, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us.",
+    image: slack,
+    salary: "4k-5k",
+  },
+];
+
+export const companiesCardsData = [
+  {
+    id: 5,
+    title: "Apple Inc.",
+    location: "New York, USA",
+    jobVacancy: "05 Job Vacancy",
+    image: appleBlack,
+    star: star,
+  },
+  {
+    id: 6,
+    title: "Mailchimp",
+    location: "San Francisco, USA",
+    jobVacancy: "12 Job Vacancy",
+    image: mailchimp,
+    star: star,
+  },
+  {
+    id: 7,
+    title: "Gitlab",
+    location: "San Francisco, USA",
+    jobVacancy: "21 Job Vacancy",
+    image: gitlab,
+    star: star,
   },
 ];

@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from 'framer-motion';
+import { itemVariants, containerVariants } from '@/lib/constants';
 import Image from 'next/image';
 import { Clock } from 'lucide-react';
 import { googlemeet } from '@/lib/images';
@@ -6,13 +10,19 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const ScheduleCard = () => {
   return (
-    <div>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{once: true, amount: 0.2}}
+      variants={containerVariants}
+    >
       <Card className='bg-cardColor border-cardColor max-sm:w-[400px]'>
        <CardHeader>
         <CardTitle className='text-white'>Schedule</CardTitle>
        </CardHeader>
        {scheduleCardData.map((data) => (
-        <CardContent className='bg-[#13131a] m-5 rounded-[10px]' key={data.date}>
+        <motion.div key={data.date} variants={itemVariants}>
+        <CardContent className='bg-[#13131a] m-5 rounded-[10px]'>
           <div className='flex gap-[15px]'>
             <div className='bg-cardColor w-[55px] h-[55px] rounded-[10px] flex items-center justify-center mt-5'>
               <div className='text-white flex flex-col'>
@@ -33,12 +43,13 @@ const ScheduleCard = () => {
             </div>
           </div>
         </CardContent>
+        </motion.div>
        ))}
        <div className='flex items-center justify-center mb-5'>
         <button className='text-neutralColor text-sm bg-[#13131A] w-[360px] h-[44px] rounded-[10px] hover:bg-greenButtonColor hover:text-neutralWhite transition-colors'>See Full Schedule</button>
        </div>
       </Card>
-    </div>
+    </motion.div>
   )
 }
 

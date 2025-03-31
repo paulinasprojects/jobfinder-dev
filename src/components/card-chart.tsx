@@ -1,13 +1,25 @@
+"use client";
+
+import { motion } from 'framer-motion'
 import { Briefcase, Users, FileText, TrendingUp, TrendingDown } from 'lucide-react'
 import JobCard from './common/jobs-card'
 import { ListingPerformanceChart } from './listing-performance-chart'
+import { containerVariants, itemVariants } from '@/lib/constants'
 
 const CardChart = () => {
   return (
-    <div>
+    <motion.div
+      initial="hidden"
+    >
       <div className='flex xl:flex-row gap-10 mt-10 lg:ml-20 md:flex-col md:ml-10 max-sm:flex-col max-sm:ml-[24px]'>
         {/* Left */}
-        <div className='grid xl:grid-cols-20 lg:grid-cols-2 md:grid-cols-2 md:gap-y-10 max-sm:gap-y-10 gap-x-10  max-sm:grid-cols-19'>
+        <motion.div 
+          className='grid xl:grid-cols-20 lg:grid-cols-2 md:grid-cols-2 md:gap-y-10 max-sm:gap-y-10 gap-x-10  max-sm:grid-cols-19'
+          initial={{ opacity: 0, x: -20 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+        >
           <JobCard
             className='bg-[#C7F4C2] outline-none border-none'
             icon={<Briefcase color='#C7F4C2'/>}
@@ -40,13 +52,18 @@ const CardChart = () => {
             percent='-10%'
             arrow={<TrendingDown color='#FC5A5A' className='-rotate-[250deg]' height={20} width={20}/>}
           />
-        </div>
+        </motion.div>
         {/* Right */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+        >
           <ListingPerformanceChart/>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

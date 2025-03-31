@@ -1,16 +1,25 @@
-import { appleBlack, gitlab, mailchimp, star } from "@/lib/images";
+"use client";
+
+import { motion } from "framer-motion";
+import { containerVariants, itemVariants } from "@/lib/constants";
+import { latestJobPostsData, companiesCardsData } from "@/data/data";
 import { ChevronDown } from "lucide-react";
-import { uihut, microsoft, airbnb, slack } from "@/lib/images";
 import LatestJobCard from "./latest-jobs-card";
 import RecomendedCard from "./recommended-card";
 import Schedule from "./schedule";
-import CompaniesCard from "./companies-card";
+import CompaniesCard from "./companies-card"
 
 
 const LatestJobPosts = () => {
   return (
     <div>
-      <div className="flex xl:flex-row gap-10 mt-[63px] lg:ml-20 md:flex-col md:ml-5 max-sm:flex-col max-sm:ml-4">
+      <motion.div 
+        className="flex xl:flex-row gap-10 mt-[63px] lg:ml-20 md:flex-col md:ml-5 max-sm:flex-col max-sm:ml-4"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: true, amount: 0.2}}
+        variants={containerVariants}
+      >
         {/* Left */}
         <div>
           <div className="flex  xl:justify-between items-center md:justify-between md:mx-10 max-sm:justify-normal max-sm:gap-[54px] max-sm:ml-[24px]">
@@ -18,54 +27,29 @@ const LatestJobPosts = () => {
               <span className="text-neutral3Color flex gap-2.5 items-center">See All <ChevronDown className="text-neutralColor cursor-pointer"/></span>
           </div>
           <div className="mt-8 grid lg:grid-cols-40 gap-10 md:grid-cols-1 max-sm:grid-cols-18 md:mx-5">
-           <LatestJobCard
-            title="React Developer"
-            description=" Here at UIHUT, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us."
-            image={uihut}
-            salary="5k-8k"
-
-           />
-           <LatestJobCard
-            title="Web Developer"
-            description="Here at Microsoft, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us."
-            image={microsoft}
-            salary="6k-10k"
-           />
-           <LatestJobCard
-            title="Junior UI Designer"
-            description="Here at Airbnb, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us."
-            image={airbnb}
-            salary="5k-9k"
-           />
-           <LatestJobCard
-            title="UX Researcher"
-            description="Here at Slack, we are a passionate, fun-loving, growing team. We are looking for passionate programmers who want to solve technical challenges and learn and incorporate new technologies into their skillset to join our team and grow with us."
-            image={slack}
-            salary="4k-5k"
-           />
+            {latestJobPostsData.map((data) => (
+              <motion.div key={data.id} variants={itemVariants}>
+                <LatestJobCard
+                  title={data.title}
+                  description={data.description}
+                  image={data.image}
+                  salary={data.salary}
+                />
+              </motion.div>
+            ))}
           </div>
             <div className="mt-[52px] grid lg:grid-cols-30 gap-9 max-sm:flex max-sm:flex-col max-sm:ml-[20px] md:grid-cols-26 md:mx-5">
-              <CompaniesCard
-                image={appleBlack}
-                star={star}
-                title="Apple Inc."
-                location="New York, USA"
-                jobVacancy="05 Job Vacancy"
-              />
-              <CompaniesCard
-                image={mailchimp}
-                star={star}
-                title="Mailchimp"
-                location="San Francisco, USA"
-                jobVacancy="12 Job Vacancy"
-              />
-              <CompaniesCard
-                image={gitlab}
-                title="Gitlab"
-                star={star}
-                location="San Francisco, USA"
-                jobVacancy="21 Job Vacancy"
-              />
+              {companiesCardsData.map((data) => (
+                <motion.div key={data.id} variants={itemVariants}>
+                  <CompaniesCard
+                    image={data.image}
+                    star={data.star}
+                    title={data.title}
+                    location={data.location}
+                    jobVacancy={data.jobVacancy}
+                  />
+                </motion.div>
+              ))}
             </div>
         </div>
       {/* Right */}
@@ -83,7 +67,7 @@ const LatestJobPosts = () => {
         </div>
         </div>
       </div>
-      </div>
+      </motion.div>
     </div>
   )
 }
