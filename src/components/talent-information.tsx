@@ -38,7 +38,7 @@ const TalentInformation = () => {
                 <span className='text-neutralColor text-lg'>{info.position}</span>
                 <span className='text-neutralColor text-sm'>{info.location} • {info.connection} Connections</span>
               </div>
-              <div className='flex gap-[18px] mb-12 max-sm:hidden md:ml-[26px] lg:ml-24'>
+              <div className='flex gap-[18px] mb-12 max-sm:hidden md:ml-[26px] lg:ml-24 lg:mr-10'>
                 <button className='text-neutralColor bg-[#1C1C24] px-3 py-2 rounded-[10px] text-[15px] font-semibold hover:bg-greenButtonColor hover:text-white transition-colors'>Message</button>
                 <button className='text-white bg-greenButtonColor px-3 py-2 rounded-[10px] text-[15px] font-semibold hover:bg-transparent hover:border-2 hover:border-greenButtonColor hover:text-greenButtonColor'>Connect</button>
               </div>
