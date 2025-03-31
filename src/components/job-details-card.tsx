@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from 'framer-motion'
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Bookmark, ChevronLeft, EllipsisVertical, Plus } from 'lucide-react'
@@ -15,7 +16,12 @@ const JobDetailsCard = () => {
   const router = useRouter();
 
   return (
-    <div className=''>
+    <motion.div
+      initial={{ opacity: 0, x: -20 }}
+      transition={{ duration: 0.8, ease: "easeIn" }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }} 
+    >
       <div className='md:ml-5 lg:ml-0'>
         <button className='max-sm:hidden md:flex p-2.5 bg-cardColorTwo  items-center gap-1.5 rounded-[10px] text-neutralColor text-xxs font-medium hover:bg-greenButtonColor hover:text-white transition-color' onClick={() => router.push("/job-search")}>
           <ChevronLeft width={18} height={18}/>
@@ -108,7 +114,7 @@ const JobDetailsCard = () => {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

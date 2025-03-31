@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { containerVariants, itemVariants } from "@/lib/constants";
 import Image from "next/image";
 import { Bookmark } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -11,9 +13,18 @@ const SimilarJobCard = () => {
   const router = useRouter();
 
   return (
-    <>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{once: true, amount: 0.2}}
+      variants={containerVariants}
+      className="xl:flex xl:flex-col gap-4 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 lg:ml-0 max-sm:mx-5 xl:ml-0"
+    >
     {similarJobData.map((data) => (
-      <div className="mt-1.5" key={data.jobPosition}>
+      <motion.div 
+        className="mt-1.5" key={data.jobPosition}
+        variants={itemVariants}
+      >
         <Card className="xl:w-[380px] h-full bg-cardColor border-cardColorTwo rounded-[10px] cursor-pointer" onClick={() => router.push("/job/1")}>
           <CardContent>
             <div className="flex gap-4 items-center justify-between mt-5">
@@ -38,9 +49,9 @@ const SimilarJobCard = () => {
             </div>
           </CardContent>
         </Card>
-      </div>
+      </motion.div>
     ))}
-    </>
+    </motion.div>
   )
 }
 

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { ChevronLeft } from "lucide-react";
 import { jobdetails, jobdetailsimage, mobileCover } from "@/lib/images";
@@ -13,7 +13,12 @@ const SubmitYourApplicationPage = () => {
 
 
   return (
-    <div className="">
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.8, ease: "easeIn" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }} 
+    >
       {/* The big margin here is because if I try to center the container with the button inside 
       the button goes in the center of the screen */}
       <div className="xl:ml-[330px] mt-[51px] md:ml-[26px] lg:ml-32">
@@ -49,7 +54,7 @@ const SubmitYourApplicationPage = () => {
           <ApplicationForm/>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

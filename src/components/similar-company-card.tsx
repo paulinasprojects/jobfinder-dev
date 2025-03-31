@@ -14,6 +14,7 @@ const SimilarCompanyCard = () => {
       whileInView="visible"
       viewport={{once: true, amount: 0.2}}
       variants={containerVariants}
+      className="xl:flex xl:flex-col lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 md:gap-10 lg:gap-0 lg:ml-10 md:ml-5 md:mr-5 lg:mr-0 xl:ml-0 max-sm:ml-5"
     >
       {similarCompanies.map((company) => (
       <motion.div 
