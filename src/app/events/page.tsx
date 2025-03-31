@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { containerVariants, itemVariants } from "@/lib/constants";
 import ChecboxCard from "@/components/checkbox-card"
 import EventCard from "@/components/event-card"
 import ExperienceLevelChecbox from "@/components/experience-level-checkbox"
@@ -8,7 +12,13 @@ import { ChevronDown } from "lucide-react"
 
 const EventsPage = () => {
   return (
-    <div className="mb-10">
+    <motion.div 
+      className="mb-10"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{once: true, amount: 0.2}}
+      variants={containerVariants}
+    >
       <div className="mt-10 xl:ml-20 lg:ml-10 md:ml-10 mr-20 flex items-center justify-between max-sm:ml-[26px]">
         <h1 className="text-white text-3xl font-bold">Events</h1>
         <div className="flex items-center gap-1">
@@ -21,7 +31,13 @@ const EventsPage = () => {
       </div>
       <div className="flex gap-[60px] xl:ml-20 md:ml-10 lg:ml-10 mt-10 mb-10 max-sm:ml-[26px]">
         {/* Left */}
-        <div className="lg:flex lg:flex-col gap-7 max-sm:hidden md:hidden">
+        <motion.div 
+          className="lg:flex lg:flex-col gap-7 max-sm:hidden md:hidden"
+          initial={{ opacity: 0, x: -20 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+        >
         <OpenedCheckMenu
           title="Categories"
           placeholder="Search from List"
@@ -45,12 +61,15 @@ const EventsPage = () => {
           title="Countries"
           placeholder="Search Countries"
         />
-        </div>
+        </motion.div>
         {/* Right */}
         <div className="text-white grid xl:grid-cols-25 lg:grid-cols-2 md:grid-cols-2 max-sm:grid-cols-19 gap-10">
           {eventsData.map((event) => (
-            <EventCard
-              key={event.id}
+           <motion.div 
+            key={event.id}
+            variants={itemVariants}
+            >
+             <EventCard
               title={event.title}
               image={event.image}
               dateDay={event.dateDay}
@@ -58,10 +77,11 @@ const EventsPage = () => {
               eventBy={event.eventBy}
               time={event.time}
             />
+           </motion.div>
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
