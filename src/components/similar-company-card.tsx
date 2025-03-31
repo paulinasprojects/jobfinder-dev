@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { containerVariants, itemVariants } from "@/lib/constants";
 import { similarCompanies } from "@/data/data";
 import { Card, CardContent } from "./ui/card";
 import Image from "next/image";
@@ -5,9 +9,18 @@ import { Plus } from "lucide-react";
 
 const SimilarCompanyCard = () => {
   return (
-    <>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{once: true, amount: 0.2}}
+      variants={containerVariants}
+    >
       {similarCompanies.map((company) => (
-      <div className="mt-5" key={company.company}>
+      <motion.div 
+        className="mt-5" 
+        key={company.company}
+        variants={itemVariants}
+      >
         <Card className="max-sm:w-[400px] md:w-[350px] lg:w-[400px] h-[90px] bg-cardColor border-cardColor">
           <CardContent>
             <div className="flex items-center mt-5 gap-[18px]">
@@ -27,9 +40,9 @@ const SimilarCompanyCard = () => {
             </div>
           </CardContent>
         </Card>
-      </div>
+      </motion.div>
       ))}
-    </>
+    </motion.div>
   )
 }
 

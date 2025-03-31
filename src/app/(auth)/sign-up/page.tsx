@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { FaGoogle } from "react-icons/fa";
@@ -5,7 +8,12 @@ import SignUpForm from "@/components/sign-up-form";
 
 const SignUpPage = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      transition={{ duration: 1.4, ease: "easeIn" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }} 
+    >
       <Card className="w-[688px] max-sm:w-[410px] h-full bg-[#1C1C24] border-[#1C1C24] max-sm:bg-transparent max-sm:border-none mx-auto rounded-[30px] lg:mt-[78px] md:mt-[78px] max-sm:mt-[78px]">
         <CardContent className="ml-[89px] max-sm:ml-[48px]">
           <div>
@@ -34,7 +42,7 @@ const SignUpPage = () => {
           </div>
         </CardContent>
       </Card>
-    </div>
+    </motion.div>
   )
 }
 

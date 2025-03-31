@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from 'next/image'
 import { ChevronLeft, Plus } from 'lucide-react'
 import { jobdetails, jobdetailsimage, mobileCover, companyFollower, companyFollowerThree, companyFollowerTwo, thirtyFour } from '@/lib/images'
@@ -7,7 +10,12 @@ import ImageComponent from './image-component'
 
 const CompanyDetailsCard = () => {
   return (
-   <div>
+   <motion.div
+    initial={{ opacity: 0, x: -20 }}
+    transition={{ duration: 0.8, ease: "easeIn" }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ once: true }} 
+   >
      <div>
         <button className='max-sm:flex md:flex p-2.5 bg-cardColorTwo  items-center gap-1.5 rounded-[10px] text-neutralColor text-xxs font-medium'>
           <ChevronLeft width={18} height={18}/>
@@ -64,7 +72,7 @@ const CompanyDetailsCard = () => {
               <CompanyTabs/>
             </div>
       </div>
-   </div>
+   </motion.div>
   )
 }
 
