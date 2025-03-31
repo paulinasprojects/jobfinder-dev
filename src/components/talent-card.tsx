@@ -24,17 +24,17 @@ const TalentCard = () => {
           </div>
             <div className='flex gap-2 items-center'>
               <span className='text-sm text-neutralColor font-semibold'>Sort by:</span>
-              <span className='flex gap-1.5 items-center text-sm font-bold text-neutralColor'>Relevance <ChevronDown color='#808191' width={16} height={16}/></span>
+              <button className='flex gap-1.5 items-center text-sm font-bold text-neutralColor'>Relevance <ChevronDown color='#808191' width={16} height={16}/></button>
             </div>
       </div>
       <div>
         {Talents.map((talent) => (
           <motion.div 
             key={talent.name} 
-            className="mt-2.5 max-sm:ml-[24px] md:ml-[30px] lg:ml-0"
+            className="mt-2.5 max-sm:ml-[24px] md:ml-[20px] lg:ml-0"
             variants={itemVariants} 
           >
-            <Card className="xl:w-[950px] h-[118px] bg-cardColor border-cardColor md:w-[650px] max-sm:w-[370px] max-sm:h-[154px] cursor-pointer" onClick={() => router.push("/talent/profile/1")}>
+            <Card className="xl:w-[950px] h-[118px] bg-cardColor border-cardColor md:w-[720px] lg:w-[620px] max-sm:w-[370px] max-sm:h-[154px] cursor-pointer" onClick={() => router.push("/talent/profile/1")}>
               <CardContent>
                 <div className="flex lg:flex-row items-center lg:justify-between gap-5 mt-5 max-sm:justify-normal">
                   <div>

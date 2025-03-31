@@ -12,7 +12,7 @@ const JobSearch = () => {
       <PageHeading
         title="Let's Find Your Dream Job"
         text='Wednesday, 13 July 2024'
-        className='max-sm:ml-[26px] lg:ml-[26px]'
+        className='max-sm:ml-[26px] lg:ml-[26px] md:ml-[30px]'
       />
       <Search/>
       <div>

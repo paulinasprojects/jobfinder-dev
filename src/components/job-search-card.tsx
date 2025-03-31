@@ -15,7 +15,7 @@ const JobSearchCard = () => {
 
   return (
     <motion.div 
-      className='text-white max-sm:ml-[24px]'
+      className='text-white max-sm:ml-[24px] md:mx-[24px]'
       initial="hidden"
       whileInView="visible"
       viewport={{once: true, amount: 0.2}}
@@ -28,7 +28,7 @@ const JobSearchCard = () => {
         </div>
           <div className='flex gap-2 items-center'>
             <span className='text-sm text-neutralColor font-semibold'>Sort by:</span>
-            <span className='flex gap-1.5 items-center text-sm font-bold text-white'>Relevance <ChevronDown color='#808191' width={16} height={16}/></span>
+            <button className='flex gap-1.5 items-center text-sm font-bold text-white'>Relevance <ChevronDown color='#808191' width={16} height={16}/></button>
           </div>
       </div>
       <div className='flex flex-col gap-[22px]'>

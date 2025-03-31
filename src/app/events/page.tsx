@@ -19,13 +19,13 @@ const EventsPage = () => {
       viewport={{once: true, amount: 0.2}}
       variants={containerVariants}
     >
-      <div className="mt-10 xl:ml-20 lg:ml-10 md:ml-10 mr-20 flex items-center justify-between max-sm:ml-[26px]">
+      <div className="mt-10 xl:ml-20 lg:ml-10 md:ml-10 mr-20 flex items-center justify-between max-sm:mx-[26px]">
         <h1 className="text-white text-3xl font-bold">Events</h1>
         <div className="flex items-center gap-1">
           <span className="text-neutralColor text-sm font-semibold max-sm:hidden">Sort by:</span>
-          <button className="text-white text-sm font-bold flex items-center gap-[23px]">
+          <button className="text-white text-sm font-bold flex items-center gap-[10px]">
             Relevance
-            <ChevronDown className="text-neutralColor"/>
+            <ChevronDown className="text-neutralColor size-4"/>
           </button>
         </div>
       </div>

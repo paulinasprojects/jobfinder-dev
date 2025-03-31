@@ -14,7 +14,7 @@ interface EventCardProps {
 const EventCard = ({ image, title, eventBy, time, dateMonth, dateDay }: EventCardProps) => {
   return (
     <div>
-      <Card className=' bg-cardColorTwo border-cardColorTwo rounded-[10px]'>
+      <Card className=' bg-cardColorTwo border-cardColorTwo rounded-[10px] cursor-pointer'>
         <CardContent className=''>
           <div className='mt-4'>
             <Image
