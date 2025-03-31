@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import AppliedJobsCard from "@/components/applied-jobs-card"
 import InterviewingCard from "@/components/interviewing-card"
 import OffersReceivedCard from "@/components/offers-received-card"
@@ -7,12 +10,22 @@ const HistoryPage = () => {
   return (
     <div className="mb-10">
       <div className="mt-10 mx-20 flex items-center justify-between max-sm:mx-[24px] max-sm:justify-evenly max-sm:gap-[79px]">
-      <div>
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        transition={{ duration: 0.8, ease: "easeIn" }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }} 
+      >
         <h1 className="text-white text-3xl font-bold">History</h1>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        transition={{ duration: 0.8, ease: "easeIn" }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }} 
+      >
         <button className="w-[150px] h-[48px] rounded-[10px] bg-greenButtonColor text-white text-[15px] font-semibold hover:text-greenButtonColor hover:bg-transparent hover:border-2 hover:border-greenButtonColor transition-colors">Manage Job Post</button>
-      </div>
+      </motion.div>
       </div>
       <div className="xl:flex max-sm:flex xl:flex-row lg:grid lg:grid-cols-2 lg:gap-10 md:grid md:grid-cols-2 md:gap-10 xl:gap-10 max-sm:gap-10 text-white mx-20 mt-10 max-sm:flex-col max-sm:mx-[40px]">
         <div>

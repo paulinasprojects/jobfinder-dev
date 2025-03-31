@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { containerVariants, itemVariants } from "@/lib/constants";
 import JobHistoryTitlteCard from "./job-history-title-card";
 import SavedJobCard from "./saved-job-card";
 import { Card, CardContent } from "./ui/card";
@@ -5,7 +9,12 @@ import { savedJobsData } from "@/data/data";
 
 const SavedJobsCard = () => {
   return (
-    <div>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{once: true, amount: 0.2}}
+      variants={containerVariants}
+      >
       <Card className="w-[290px] max-sm:w-[340px] h-full bg-cardColor border-cardColor rounded-[20px]">
         <CardContent>
           <div>
@@ -16,13 +25,14 @@ const SavedJobsCard = () => {
           </div>
           <div className="flex flex-col gap-2.5">
             {savedJobsData.map((jobs) => (
-            <SavedJobCard
-              key={jobs.company}
-              title={jobs.title}
-              company={jobs.company}
-              image={jobs.image}
-              location={jobs.location}
-            />
+            <motion.div key={jobs.company} variants={itemVariants}>
+              <SavedJobCard    
+                title={jobs.title}
+                company={jobs.company}
+                image={jobs.image}
+                location={jobs.location}
+              />
+            </motion.div>
             ))}
           </div>
           <div className="flex items-center justify-center">
@@ -30,7 +40,7 @@ const SavedJobsCard = () => {
           </div>
         </CardContent>
       </Card>
-    </div>
+    </motion.div>
   )
 }
 
