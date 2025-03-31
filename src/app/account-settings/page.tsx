@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from 'framer-motion';
 import { useRouter } from "next/navigation";
 import { profileCover, talencovermobile, talentcircle } from "@/lib/images" 
 import ImageComponent from "@/components/image-component"
@@ -11,7 +12,13 @@ import PersonalInformationForm from "@/components/personal-information-form";
     const router = useRouter();
 
   return (
-    <div className="md:ml-[26px] lg:ml-0 max-sm:ml-0">
+    <motion.div 
+      className="md:ml-[26px] lg:ml-0 max-sm:ml-0"
+      initial={{ opacity: 0, y: -20 }}
+      transition={{ duration: 1.4, ease: "easeIn" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }} 
+    >
       <div className="flex items-center gap-[22px] xl:ml-20 mt-[42px] max-sm:ml-[26px] lg:ml-10">
         <ArrowLeft className="cursor-pointer" onClick={() => router.push('/')}/>
         <h1 className="text-3xl font-bold text-white">Account Settings</h1>
@@ -42,7 +49,7 @@ import PersonalInformationForm from "@/components/personal-information-form";
       <div className="mb-10">
         <PersonalInformationForm/>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

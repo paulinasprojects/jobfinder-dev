@@ -461,7 +461,7 @@ const PersonalInformationForm = () => {
               />
             </div>
           </div>
-          <div className="flex lg:items-center lg:justify-center max-sm:ml-[24px] md:mr-[24px] lg:mr-0">
+          <div className="flex lg:items-center lg:justify-center  max-sm:ml-[24px] md:mr-[24px] lg:mr-0">
             <Button type="submit" className="bg-greenButtonColor text-white max-sm:w-[370px] lg:w-[850px] md:w-full h-[48px] hover:border-2 hover:border-greenButtonColor">Submit</Button>
           </div>
         </form>

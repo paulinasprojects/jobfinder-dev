@@ -867,7 +867,7 @@ export const eventsData = [
     dateDay: "27",
   },
   {
-    id: 8,
+    id: 9,
     image: eventImageEight,
     title: "Design Tour - 22",
     eventBy: "Dribbble",
