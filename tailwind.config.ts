@@ -36,6 +36,7 @@ const config: Config = {
         30: "repeat(3, 256px)",
         35: "repeat(3, 200px)",
         40: "repeat(2, 400px)",
+        41: "repeat(2, 375px)",
         45: "repeat(3, 105px)",
         50: "repeat(3, 200px)",
         150: "repeat(2, 145px)",

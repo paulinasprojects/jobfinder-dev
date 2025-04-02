@@ -4,17 +4,16 @@ import { motion } from 'framer-motion'
 import { Briefcase, Users, FileText, TrendingUp, TrendingDown } from 'lucide-react'
 import JobCard from './common/jobs-card'
 import { ListingPerformanceChart } from './listing-performance-chart'
-import { containerVariants, itemVariants } from '@/lib/constants'
 
 const CardChart = () => {
   return (
     <motion.div
       initial="hidden"
     >
-      <div className='flex xl:flex-row gap-10 mt-10 lg:mx-6 md:flex-col md:ml-10 max-sm:flex-col max-sm:ml-[24px]'>
+      <div className='flex xl:flex-row gap-10 mt-10 xl:ml-20 lg:mx-6 md:flex-col md:ml-6 max-sm:flex-col max-sm:ml-[24px]'>
         {/* Left */}
         <motion.div 
-          className='grid xl:grid-cols-20 lg:grid-cols-3 md:grid-cols-2 md:gap-y-10 max-sm:gap-y-10 gap-x-10  max-sm:grid-cols-19'
+          className='grid xl:grid-cols-20 lg:grid-cols-3 md:grid-cols-41 md:gap-y-10  max-sm:gap-y-10 gap-x-10  max-sm:grid-cols-19'
           initial={{ opacity: 0, x: -20 }}
           transition={{ duration: 0.8, ease: "easeIn" }}
           whileInView={{ opacity: 1, x: 0 }}

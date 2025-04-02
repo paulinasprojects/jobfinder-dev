@@ -14,7 +14,7 @@ const LatestJobPosts = () => {
   return (
     <div>
       <motion.div 
-        className="flex xl:flex-row gap-10 mt-[63px] xl:ml-10 md:flex-col lg:ml-0 md:ml-5 max-sm:flex-col max-sm:ml-4"
+        className="flex xl:flex-row gap-10 mt-[63px] xl:ml-10 md:flex-col lg:ml-0  max-sm:flex-col max-sm:ml-4"
         initial="hidden"
         whileInView="visible"
         viewport={{once: true, amount: 0.2}}
@@ -38,7 +38,7 @@ const LatestJobPosts = () => {
               </motion.div>
             ))}
           </div>
-            <div className="mt-[52px] grid xl:grid-cols-30 lg:grid-cols-3 gap-9 max-sm:flex max-sm:flex-col max-sm:ml-[5px] md:grid-cols-26 md:mx-5">
+            <div className="mt-[52px] grid xl:grid-cols-30 lg:grid-cols-3 gap-9 max-sm:flex max-sm:flex-col max-sm:ml-[5px] md:grid-cols-2 md:mx-5">
               {companiesCardsData.map((data) => (
                 <motion.div key={data.id} variants={itemVariants}>
                   <CompaniesCard
@@ -54,7 +54,7 @@ const LatestJobPosts = () => {
         </div>
       {/* Right */}
       <div className="mr-20 md:mr-5 md:ml-5">
-        <div className="flex items-center justify-between max-sm:justify-between  max-sm:gap-[13px]">
+        <div className="flex items-center justify-between max-sm:justify-between  max-sm:gap-[13px] md:mx-2 lg:mx-0">
           <h4 className="text-[22px] max-sm:text-md font-bold text-white max-sm:ml-[10px]">Recomended For You</h4>
             <button className="text-neutral3Color">
               See All
