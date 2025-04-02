@@ -8,101 +8,122 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-      fontSize: {
-        md: "16px",
-        xxs: "13px",
-      },
-      screens: {
-        xxs: "375px",
-        md: "768px",
-      },
-      gridTemplateColumns: {
-        111: "repeat(3, 92px)",
-        15: "repeat(2, 373px)",
-        17: "repeat(1, 300px)",
-        18: "repeat(1, 327px)",
-        19: "repeat(1, 370px)",
-        20: "repeat(2, 290px)",
-        21: "repeat(2, 300px)",
-        31: "repeat(1, 327px)",
-        25: "repeat(3, 290px)",
-        26: "repeat(2, 335px)",
-        30: "repeat(3, 256px)",
-        35: "repeat(3, 200px)",
-        40: "repeat(2, 400px)",
-        41: "repeat(2, 375px)",
-        42: "repeat(2, 325px)",
-        45: "repeat(3, 105px)",
-        50: "repeat(3, 200px)",
-        150: "repeat(2, 145px)",
-        160: "repeat(2, 110px)",
-        170: "repeat(6, 120px)",
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
-      colors: {
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        chart: {
-          "1": "hsl(var(--chart-1))",
-          "2": "hsl(var(--chart-2))",
-          "3": "hsl(var(--chart-3))",
-          "4": "hsl(var(--chart-4))",
-          "5": "hsl(var(--chart-5))",
-        },
-        greenCard: "#C7F4C2",
-        purpleCard: "#D7D0FF",
-        yellowCard: "#FDDD8C",
-        pinkCard: "#FFBBD7",
-        greenButtonColor: "#0BAB7C",
-        neutralColor: "#92929D",
-        neutral3Color: "#696974",
-        neutralWhite: "#F5F5F8",
-        neutralWhite200: "#E2E2EA",
-        cardColor: "#1c1c24",
-        cardColorTwo: "#21212b",
-      },
-    },
+  	extend: {
+  		backgroundImage: {
+  			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+  			'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
+  		},
+  		fontSize: {
+  			md: '16px',
+  			xxs: '13px'
+  		},
+  		screens: {
+  			xxs: '375px',
+  			md: '768px'
+  		},
+  		gridTemplateColumns: {
+  			'15': 'repeat(2, 373px)',
+  			'17': 'repeat(1, 300px)',
+  			'18': 'repeat(1, 327px)',
+  			'19': 'repeat(1, 370px)',
+  			'20': 'repeat(2, 290px)',
+  			'21': 'repeat(2, 300px)',
+  			'25': 'repeat(3, 290px)',
+  			'26': 'repeat(2, 335px)',
+  			'30': 'repeat(3, 256px)',
+  			'31': 'repeat(1, 327px)',
+  			'35': 'repeat(3, 200px)',
+  			'40': 'repeat(2, 400px)',
+  			'41': 'repeat(2, 375px)',
+  			'42': 'repeat(2, 325px)',
+  			'45': 'repeat(3, 105px)',
+  			'50': 'repeat(3, 200px)',
+  			'111': 'repeat(3, 92px)',
+  			'150': 'repeat(2, 145px)',
+  			'160': 'repeat(2, 110px)',
+  			'170': 'repeat(6, 120px)'
+  		},
+  		borderRadius: {
+  			lg: 'var(--radius)',
+  			md: 'calc(var(--radius) - 2px)',
+  			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		colors: {
+  			background: 'hsl(var(--background))',
+  			foreground: 'hsl(var(--foreground))',
+  			card: {
+  				DEFAULT: 'hsl(var(--card))',
+  				foreground: 'hsl(var(--card-foreground))'
+  			},
+  			popover: {
+  				DEFAULT: 'hsl(var(--popover))',
+  				foreground: 'hsl(var(--popover-foreground))'
+  			},
+  			primary: {
+  				DEFAULT: 'hsl(var(--primary))',
+  				foreground: 'hsl(var(--primary-foreground))'
+  			},
+  			secondary: {
+  				DEFAULT: 'hsl(var(--secondary))',
+  				foreground: 'hsl(var(--secondary-foreground))'
+  			},
+  			muted: {
+  				DEFAULT: 'hsl(var(--muted))',
+  				foreground: 'hsl(var(--muted-foreground))'
+  			},
+  			accent: {
+  				DEFAULT: 'hsl(var(--accent))',
+  				foreground: 'hsl(var(--accent-foreground))'
+  			},
+  			destructive: {
+  				DEFAULT: 'hsl(var(--destructive))',
+  				foreground: 'hsl(var(--destructive-foreground))'
+  			},
+  			border: 'hsl(var(--border))',
+  			input: 'hsl(var(--input))',
+  			ring: 'hsl(var(--ring))',
+  			chart: {
+  				'1': 'hsl(var(--chart-1))',
+  				'2': 'hsl(var(--chart-2))',
+  				'3': 'hsl(var(--chart-3))',
+  				'4': 'hsl(var(--chart-4))',
+  				'5': 'hsl(var(--chart-5))'
+  			},
+  			greenCard: '#C7F4C2',
+  			purpleCard: '#D7D0FF',
+  			yellowCard: '#FDDD8C',
+  			pinkCard: '#FFBBD7',
+  			greenButtonColor: '#0BAB7C',
+  			neutralColor: '#92929D',
+  			neutral3Color: '#696974',
+  			neutralWhite: '#F5F5F8',
+  			neutralWhite200: '#E2E2EA',
+  			cardColor: '#1c1c24',
+  			cardColorTwo: '#21212b'
+  		},
+  		keyframes: {
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
+  		}
+  	}
   },
   plugins: [require("tailwindcss-animate")],
 };
