@@ -12,7 +12,7 @@ const AddJobPage = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }} 
     >
-      <div className="mt-10 lg:ml-20 md:ml-10 max-sm:ml-6">
+      <div className="mt-10 lg:ml-6 xl:ml-20 md:ml-5 max-sm:ml-6">
         <h1 className="text-white text-3xl font-bold">Add New Jobs</h1>
       </div>
       <div>

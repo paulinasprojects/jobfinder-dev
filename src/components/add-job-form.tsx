@@ -61,9 +61,9 @@ const AddJobForm = () => {
       <div>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)}>
-            <div className="lg:ml-20 md:ml-10 mt-10 flex flex-col max-sm:ml-5">  
+            <div className="xl:ml-20 lg:ml-6 md:mx-5 lg:mr-5 mt-10 flex flex-col max-sm:mx-7">  
             <span className="text-neutralColor text-[15px] font-semibold">Add Header Image</span>
-            <div className="mt-3.5 lg:w-[840px] md:w-[560px] h-[112px] max-sm:w-[400px] bg-cardColor rounded-[10px] outline-dotted outline-1 outline-white flex flex-col gap-1 items-center justify-center">
+            <div className="mt-3.5 lg:w-[840px] md:w-[560px] h-[112px] max-sm:w-[370px] bg-cardColor rounded-[10px] outline-dotted outline-1 outline-white flex flex-col gap-1 items-center justify-center">
               <label htmlFor="inputField">
                 <Image
                   src={imageicon}
@@ -82,7 +82,7 @@ const AddJobForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Role</FormLabel>
                     <FormControl>
-                      <Input {...field} className="bg-cardColor lg:w-[840px] md:w-[560px] h-[48px] max-sm:w-[400px] rounded-[10px] text-neutralColor  border border-neutralColor focus-visible:border-greenButtonColor outline-none" placeholder="Senior User Experience Designer"/>
+                      <Input {...field} className="bg-cardColor lg:w-[840px] md:w-[560px] h-[48px] max-sm:w-[380px] rounded-[10px] text-neutralColor  border border-neutralColor focus-visible:border-greenButtonColor outline-none" placeholder="Senior User Experience Designer"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -96,7 +96,7 @@ const AddJobForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Job Description</FormLabel>
                     <FormControl>
-                    <Textarea {...field} className="resize-none lg:w-[840px] md:w-[560px] h-[190px] max-sm:w-[327px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                    <Textarea {...field} className="resize-none lg:w-[840px] md:w-[560px] h-[190px] max-sm:w-[370px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -114,7 +114,7 @@ const AddJobForm = () => {
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Department</FormLabel>
                     <Select onValueChange={field.onChange} defaultValue={field.value}>
                       <FormControl>
-                        <SelectTrigger className="w-[400px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
+                        <SelectTrigger className="md:w-full lg:w-[400px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
                           <SelectValue placeholder="Select option"/>
                         </SelectTrigger>
                       </FormControl>
@@ -137,7 +137,7 @@ const AddJobForm = () => {
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Hiring Manager</FormLabel>
                     <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
-                    <SelectTrigger className="w-[400px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
+                    <SelectTrigger className="md:w-full lg:w-[400px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
                       <SelectValue placeholder="Select option"/>
                     </SelectTrigger>
                     </FormControl>
@@ -162,7 +162,7 @@ const AddJobForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Recruitment Period</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Select period" type='date' className="w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input {...field} placeholder="Select period" type='date' className="md:w-full lg:w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -176,7 +176,7 @@ const AddJobForm = () => {
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Job Type</FormLabel>
                     <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
-                    <SelectTrigger className="w-[400px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
+                    <SelectTrigger className="md:w-full lg:w-[400px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
                       <SelectValue placeholder="Full Time"/>
                     </SelectTrigger>
                     </FormControl>
@@ -202,7 +202,7 @@ const AddJobForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Recruitment Quota</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Select period" className="w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input {...field} placeholder="Select period" className="md:w-full lg:w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -215,7 +215,7 @@ const AddJobForm = () => {
                   <FormItem>
                   <FormLabel className="text-neutralColor text-[15px] font-semibold">Experience in Years</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="5 Years" className="w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                    <Input {...field} placeholder="5 Years" className="md:w-full lg:w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                   </FormControl>
                   <FormMessage/>
                 </FormItem>
@@ -230,7 +230,7 @@ const AddJobForm = () => {
                   <FormItem>
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Expected Salary</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Enter Salary" type='number' className="w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input {...field} placeholder="Enter Salary" type='number' className="md:w-full lg:w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -244,7 +244,7 @@ const AddJobForm = () => {
                     <FormLabel className="text-neutralColor text-[15px] font-semibold">Locations</FormLabel>
                     <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
-                    <SelectTrigger className="w-[400px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
+                    <SelectTrigger className="md:w-full lg:w-[400px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
                       <SelectValue placeholder="Choose Location"/>
                     </SelectTrigger>
                     </FormControl>
@@ -269,7 +269,7 @@ const AddJobForm = () => {
                   <FormItem>
                   <FormLabel className="text-neutralColor text-[15px] font-semibold">Skill Sets</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="e.g   figma, adobe xd, photoshop" type='number' className="w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                    <Input {...field} placeholder="e.g   figma, adobe xd, photoshop" type='number' className="md:w-full lg:w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
                   </FormControl>
                   <FormMessage/>
                 </FormItem>
@@ -291,7 +291,7 @@ const AddJobForm = () => {
               </div>
             </div>
             <div className='mt-10'>
-              <button type='submit' className='text-white w-[400px] h-[48px] bg-greenButtonColor rounded-[10px]'>Publish This Job</button>
+              <button type='submit' className='text-white xl:w-[400px] md:w-full max-sm:w-full h-[48px] bg-greenButtonColor rounded-[10px]'>Publish This Job</button>
             </div>
             </div>
           </form>
