@@ -63,7 +63,7 @@ const EventsPage = () => {
         />
         </motion.div>
         {/* Right */}
-        <div className="text-white grid xl:grid-cols-25 lg:grid-cols-2 md:grid-cols-2 max-sm:grid-cols-19 gap-10">
+        <div className="text-white grid xl:grid-cols-25 lg:grid-cols-2 md:grid-cols-42 max-sm:grid-cols-19 gap-10">
           {eventsData.map((event) => (
            <motion.div 
             key={event.id}

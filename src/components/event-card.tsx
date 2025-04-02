@@ -20,10 +20,10 @@ const EventCard = ({ image, title, eventBy, time, dateMonth, dateDay }: EventCar
             <Image
               src={image}
               alt='event image'
-              className='w-[258px] h-[158px] max-sm:w-[320px]'
+              className='w-[258px] h-[158px] max-sm:w-[320px] md:w-full'
             />
           </div>
-          <div className='flex items-center justify-between mt-2'>
+          <div className='flex items-center justify-between mt-3.5'>
             <div className='flex flex-col gap-0.5'>
             <span className='text-white text-md font-semibold'>{title}</span>
             <span className='text-[12px] text-neutral3Color font-medium'>Event By: {eventBy}</span>
