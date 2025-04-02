@@ -18,7 +18,7 @@ const JobIdPage = () => {
           <JobDetailsCard/>
         </div>
         {/* Right */}
-        <div className="mt-[52px] lg:mx-5 md:mx-6 xl:ml-0">
+        <div className="mt-[52px] lg:mx-5 md:mx-6 xl:ml-0 mb-5">
           <SimilarJobsCard/>
         </div>
       </div>

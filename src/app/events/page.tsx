@@ -47,23 +47,22 @@ const EventsPage = () => {
           placeholder="Search from List"
           isCategory={true}
         />
-
         <ChecboxCard
-        title='Type Of Employment'
-      />
+            title='Type Of Employment'
+          />
          <ExperienceLevelChecbox
-        title='Experience Level'
-      />
+            title='Experience Level'
+          />
         <SalaryRangeCard
-        title='Salary Range'
-      />
+          title='Salary Range'
+        />
        <OpenedCheckMenu
           title="Countries"
           placeholder="Search Countries"
         />
         </motion.div>
         {/* Right */}
-        <div className="text-white grid xl:grid-cols-25 lg:grid-cols-2 md:grid-cols-42 max-sm:grid-cols-19 gap-10">
+        <div className="text-white grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-42 max-sm:grid-cols-19 gap-10">
           {eventsData.map((event) => (
            <motion.div 
             key={event.id}
