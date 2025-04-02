@@ -21,7 +21,7 @@ const TalentInformation = () => {
         </button>
       </div>
       <div>
-        <div className='lg:ml-20 md:ml-[26px] max-sm:ml-5'>
+        <div className='lg:ml-20 md:ml-[15px] max-sm:ml-5'>
           <ImageComponent
             coverImage={talencover}
             mobileCoverImage={talencovermobile}

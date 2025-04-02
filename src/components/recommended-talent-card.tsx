@@ -39,7 +39,7 @@ const RecommendedTalentCard = () => {
                     <Bookmark className="cursor-pointer text-neutral3Color hover:text-greenButtonColor"/>
                   </div>
                 </div>
-                <div className="bg-cardColorTwo w-[320px] h-[50px] mt-[24px] ml-5 rounded-[10px]">
+                <div className="bg-cardColorTwo lg:w-[320px] md:w-[300px] h-[50px] mt-[24px] lg:ml-5 rounded-[10px]">
                   <div className="flex items-center gap-[27px]">
                     <div className="flex flex-col items-start ml-3 mt-[4px]">
                       <span className="text-xxs text-neutralColor">Exp</span>

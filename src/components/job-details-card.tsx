@@ -36,7 +36,7 @@ const JobDetailsCard = () => {
             mobileCoverImage={mobileCover}
             profileImage={jobdetails}
             className='ml-10 -mt-5'
-            className2="md:w-[670px] lg:w-[820px]"
+            className2="md:w-[650px] lg:w-[890px]"
           />
           </div>
           <CardContent>
