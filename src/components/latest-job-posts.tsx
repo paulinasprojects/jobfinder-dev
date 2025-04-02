@@ -14,7 +14,7 @@ const LatestJobPosts = () => {
   return (
     <div>
       <motion.div 
-        className="flex xl:flex-row gap-10 mt-[63px] lg:ml-20 md:flex-col md:ml-5 max-sm:flex-col max-sm:ml-4"
+        className="flex xl:flex-row gap-10 mt-[63px] xl:ml-10 md:flex-col lg:ml-0 md:ml-5 max-sm:flex-col max-sm:ml-4"
         initial="hidden"
         whileInView="visible"
         viewport={{once: true, amount: 0.2}}
@@ -26,7 +26,7 @@ const LatestJobPosts = () => {
             <h4 className="text-[22px] font-bold text-white">Latest Job Posts</h4>
               <button className="text-neutral3Color">See All</button>
           </div>
-          <div className="mt-8 grid lg:grid-cols-40 gap-10 md:grid-cols-1 max-sm:grid-cols-18 md:mx-5">
+          <div className="mt-8 grid xl:grid-cols-40 lg:grid-cols-2 gap-10 md:grid-cols-1 max-sm:grid-cols-18 md:mx-5">
             {latestJobPostsData.map((data) => (
               <motion.div key={data.id} variants={itemVariants}>
                 <LatestJobCard
@@ -38,7 +38,7 @@ const LatestJobPosts = () => {
               </motion.div>
             ))}
           </div>
-            <div className="mt-[52px] grid lg:grid-cols-30 gap-9 max-sm:flex max-sm:flex-col max-sm:ml-[5px] md:grid-cols-26 md:mx-5">
+            <div className="mt-[52px] grid xl:grid-cols-30 lg:grid-cols-3 gap-9 max-sm:flex max-sm:flex-col max-sm:ml-[5px] md:grid-cols-26 md:mx-5">
               {companiesCardsData.map((data) => (
                 <motion.div key={data.id} variants={itemVariants}>
                   <CompaniesCard
