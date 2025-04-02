@@ -41,7 +41,11 @@ const SignUpForm = () => {
               render={({field}) => (
                 <FormItem>
                   <FormControl>
-                    <Input {...field} className="w-[240px] max-sm:w-[283px] h-[52px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor" placeholder="First Name"/>
+                    <Input 
+                      {...field} 
+                      className="w-[240px] max-sm:w-[283px] h-[52px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor" 
+                      placeholder="First Name"
+                    />
                   </FormControl>
                   <FormMessage/>
                 </FormItem>
@@ -53,7 +57,11 @@ const SignUpForm = () => {
               render={({field}) => (
                 <FormItem>
                   <FormControl>
-                    <Input {...field} className="w-[240px] max-sm:w-[283px] h-[52px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor" placeholder="Last Name"/>
+                    <Input 
+                      {...field} 
+                      className="w-[240px] max-sm:w-[283px] h-[52px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"
+                      placeholder="Last Name"
+                    />
                   </FormControl>
                   <FormMessage/>
                 </FormItem>
@@ -67,7 +75,12 @@ const SignUpForm = () => {
               render={({field}) => (
                 <FormItem>
                   <FormControl>
-                    <Input type="email" {...field} className="w-[510px] h-[52px] max-sm:w-[283px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor" placeholder="Enter your email"/>
+                    <Input 
+                      {...field} 
+                      type="email" 
+                      className="w-[510px] h-[52px] max-sm:w-[283px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor" 
+                      placeholder="Enter your email"
+                    />
                   </FormControl>
                   <FormMessage/>
                 </FormItem>
@@ -79,7 +92,12 @@ const SignUpForm = () => {
               render={({field}) => (
                 <FormItem>
                   <FormControl>
-                    <Input type="password" {...field} className="w-[510px] h-[52px] max-sm:w-[283px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor" placeholder="Password"/>
+                    <Input 
+                      {...field} 
+                      type="password" 
+                      className="w-[510px] h-[52px] max-sm:w-[283px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor" 
+                      placeholder="Password"
+                    />
                   </FormControl>
                   <FormMessage/>
                 </FormItem>
@@ -87,15 +105,25 @@ const SignUpForm = () => {
             />
           </div>
           <div className="mt-10">
-            <button type="submit" className="bg-greenButtonColor text-white w-[510px] max-sm:w-[283px] h-[52px] rounded-[10px] hover:bg-transparent hover:text-greenButtonColor hover:border-[1.5px] hover:border-greenButtonColor">Sign Up</button>
+            <button 
+              type="submit" 
+              className="bg-greenButtonColor text-white w-[510px] max-sm:w-[283px] h-[52px] rounded-[10px] hover:bg-transparent hover:text-greenButtonColor hover:border-[1.5px] hover:border-greenButtonColor">
+              Sign Up
+            </button>
           </div>
           <div className="mt-[30px] flex gap-2.5 items-center">
             <Checkbox className="w-[24px] h-[24px]"/>
-            <label className="text-neutralColor text-[15px]">By continuing you accept our standard terms and conditions <br /> and our privecy policy</label>
+            <label className="text-neutralColor text-[15px]">
+              By continuing you accept our standard terms and conditions <br /> and our privecy policy
+            </label>
           </div>
           <div className="mt-[30px] flex gap-2 items-center justify-center max-sm:justify-normal max-sm:ml-4">
             <span className="text-neutralColor text-[15px]">Already have an account?</span>
-            <Link href="/sign-in" className="text-greenButtonColor hover:border-b hover:border-b-greenButtonColor">Login</Link>
+            <Link 
+              href="/sign-in" 
+              className="text-greenButtonColor hover:border-b hover:border-b-greenButtonColor">
+              Login
+            </Link>
           </div>
         </form>
       </Form>

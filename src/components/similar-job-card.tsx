@@ -25,7 +25,10 @@ const SimilarJobCard = () => {
         className="mt-1.5" key={data.jobPosition}
         variants={itemVariants}
       >
-        <Card className="xl:w-[380px] h-full bg-cardColor border-cardColorTwo rounded-[10px] cursor-pointer" onClick={() => router.push("/job/1")}>
+        <Card 
+          className="xl:w-[380px] h-full bg-cardColor border-cardColorTwo rounded-[10px] cursor-pointer" 
+          onClick={() => router.push("/job/1")}
+        >
           <CardContent>
             <div className="flex gap-4 items-center justify-between mt-5">
               <Image
@@ -43,8 +46,10 @@ const SimilarJobCard = () => {
             <div className="text-white flex items-center justify-between mt-5">
               <span className="text-sm text-neutralColor font-medium">{data.jobTimeLeft}</span>
               <div className="flex items-center gap-[11px]">
-              <Bookmark className="cursor-pointer text-neutral3Color hover:text-greenButtonColor" width={19} height={19}/>
-              <button className="text-greenButtonColor text-sm font-medium bg-[#1b2a2d] p-2.5 rounded-[7px] hover:bg-greenButtonColor hover:text-white transition-colors">View</button>
+                <Bookmark className="cursor-pointer text-neutral3Color hover:text-greenButtonColor" width={19} height={19}/>
+                <button className="text-greenButtonColor text-sm font-medium bg-[#1b2a2d] p-2.5 rounded-[7px] hover:bg-greenButtonColor hover:text-white transition-colors">
+                  View
+                </button>
               </div>
             </div>
           </CardContent>

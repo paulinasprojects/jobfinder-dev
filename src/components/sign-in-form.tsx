@@ -39,7 +39,12 @@ const SignInForm = () => {
               render={({field}) => (
                 <FormItem>
                   <FormControl>
-                    <Input {...field} type="email" className="w-[510px] h-[52px] max-sm:w-[283px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor" placeholder="Your Email Address"/>
+                    <Input 
+                      {...field} 
+                      type="email" 
+                      className="w-[510px] h-[52px] max-sm:w-[283px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor" 
+                      placeholder="Your Email Address"
+                    />
                   </FormControl>
                   <FormMessage/>
                 </FormItem>
@@ -51,7 +56,12 @@ const SignInForm = () => {
               render={({field}) => (
                 <FormItem>
                   <FormControl>
-                    <Input type="password" {...field} className="w-[510px] h-[52px] max-sm:w-[283px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor" placeholder="Password"/>
+                    <Input 
+                      {...field} 
+                      type="password" 
+                      className="w-[510px] h-[52px] max-sm:w-[283px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor" 
+                      placeholder="Password"
+                    />
                   </FormControl>
                   <FormMessage/>
                 </FormItem>
@@ -59,11 +69,19 @@ const SignInForm = () => {
             />
           </div>
           <div className="mt-10">
-            <button type="submit" className="bg-greenButtonColor text-white w-[510px] max-sm:w-[283px] h-[52px] rounded-[10px] hover:bg-transparent hover:text-greenButtonColor hover:border-[1.5px] hover:border-greenButtonColor">Sign In</button>
+            <button 
+              type="submit" 
+              className="bg-greenButtonColor text-white w-[510px] max-sm:w-[283px] h-[52px] rounded-[10px] hover:bg-transparent hover:text-greenButtonColor hover:border-[1.5px] hover:border-greenButtonColor">
+              Sign In
+            </button>
           </div>
           <div className="mt-[30px] flex gap-2 items-center justify-center max-sm:justify-normal max-sm:ml-4">
             <span className="text-neutralColor text-[15px]">Don&apos;t have an account?</span>
-            <Link href="/sign-up" className="text-greenButtonColor hover:border-b hover:border-b-greenButtonColor">Register</Link>
+            <Link 
+              href="/sign-up" 
+              className="text-greenButtonColor hover:border-b hover:border-b-greenButtonColor">
+              Register
+            </Link>
           </div>
         </form>
       </Form>

@@ -70,7 +70,10 @@ const AddJobForm = () => {
                   alt="image"
                 />
               </label>
-                <span className="text-[#44444F] text-sm">Drop Your image here, or <span className='text-greenButtonColor'>browse</span></span>
+                <span className="text-[#44444F] text-sm">
+                  Drop Your image here, or 
+                  <span className='text-greenButtonColor'>browse</span>
+                </span>
                 <span className="text-neutralColor text-xxs">Supports: JPG, JPEG200, PNG</span>
               <input type="file" title=" " style={{display: "none"}} id="inputField"/>
             </div>
@@ -80,9 +83,15 @@ const AddJobForm = () => {
                 name="role"
                 render={({field}) => (
                   <FormItem>
-                    <FormLabel className="text-neutralColor text-[15px] font-semibold">Role</FormLabel>
+                    <FormLabel className="text-neutralColor text-[15px] font-semibold">
+                      Role
+                    </FormLabel>
                     <FormControl>
-                      <Input {...field} className="bg-cardColor lg:w-[840px] md:w-[560px] h-[48px] max-sm:w-[380px] rounded-[10px] text-neutralColor  border border-neutralColor focus-visible:border-greenButtonColor outline-none" placeholder="Senior User Experience Designer"/>
+                      <Input 
+                        {...field} 
+                        placeholder="Senior User Experience Designer"
+                        className="bg-cardColor lg:w-[840px] md:w-[560px] h-[48px] max-sm:w-[380px] rounded-[10px] text-neutralColor  border border-neutralColor focus-visible:border-greenButtonColor outline-none" 
+                      />
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -94,9 +103,14 @@ const AddJobForm = () => {
                 name="jobDescription"
                 render={({field}) => (
                   <FormItem>
-                    <FormLabel className="text-neutralColor text-[15px] font-semibold">Job Description</FormLabel>
+                    <FormLabel className="text-neutralColor text-[15px] font-semibold">
+                      Job Description
+                    </FormLabel>
                     <FormControl>
-                    <Textarea {...field} className="resize-none lg:w-[840px] md:w-[560px] h-[190px] max-sm:w-[370px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                    <Textarea 
+                      {...field} 
+                      className="resize-none lg:w-[840px] md:w-[560px] h-[190px] max-sm:w-[370px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"
+                    />
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -111,18 +125,39 @@ const AddJobForm = () => {
                 name="department"
                 render={({field}) => (
                   <FormItem>
-                    <FormLabel className="text-neutralColor text-[15px] font-semibold">Department</FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <FormLabel className="text-neutralColor text-[15px] font-semibold">
+                      Department
+                    </FormLabel>
+                    <Select 
+                      onValueChange={field.onChange} 
+                      defaultValue={field.value}
+                    >
                       <FormControl>
                         <SelectTrigger className="md:w-full lg:w-[400px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
                           <SelectValue placeholder="Select option"/>
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="Design">Design</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="Developer">Developer</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="Cto">CTO</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="Marketing">Marketing</SelectItem>
+                        <SelectItem 
+                          className="bg-cardColor border-none outline-none text-neutralColor" 
+                          value="Design">
+                          Design
+                        </SelectItem>
+                        <SelectItem 
+                          className="bg-cardColor border-none outline-none text-neutralColor" 
+                          value="Developer">
+                          Developer
+                        </SelectItem>
+                        <SelectItem 
+                          className="bg-cardColor border-none outline-none text-neutralColor" 
+                          value="Cto">
+                          CTO
+                        </SelectItem>
+                        <SelectItem 
+                          className="bg-cardColor border-none outline-none text-neutralColor" 
+                          value="Marketing">
+                          Marketing
+                        </SelectItem>
                       </SelectContent>
                     </Select>
                     <FormMessage/>
@@ -134,20 +169,45 @@ const AddJobForm = () => {
                 name="hiringManagers"
                 render={({field}) => (
                   <FormItem>
-                    <FormLabel className="text-neutralColor text-[15px] font-semibold">Hiring Manager</FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
-                    <FormControl>
-                    <SelectTrigger className="md:w-full lg:w-[400px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
-                      <SelectValue placeholder="Select option"/>
-                    </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="Thomas Fletcher">Thomas Fletcher</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="Paul Smith">Paul Smith</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="John Doe">John Doe</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="James Thomas">James Thomas</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="Jack Willson">Jack Willson</SelectItem>
-                      </SelectContent>
+                    <FormLabel className="text-neutralColor text-[15px] font-semibold">
+                      Hiring Manager
+                    </FormLabel>
+                    <Select 
+                      onValueChange={field.onChange} 
+                      defaultValue={field.value}
+                    >
+                      <FormControl>
+                      <SelectTrigger className="md:w-full lg:w-[400px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
+                        <SelectValue placeholder="Select option"/>
+                      </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                          <SelectItem 
+                            className="bg-cardColor border-none outline-none text-neutralColor" 
+                            value="Thomas Fletcher">
+                            Thomas Fletcher
+                            </SelectItem>
+                          <SelectItem 
+                            className="bg-cardColor border-none outline-none text-neutralColor" 
+                            value="Paul Smith">
+                            Paul Smith
+                            </SelectItem>
+                          <SelectItem 
+                            className="bg-cardColor border-none outline-none text-neutralColor" 
+                            value="John Doe">
+                            John Doe
+                            </SelectItem>
+                          <SelectItem 
+                            className="bg-cardColor border-none outline-none text-neutralColor" 
+                            value="James Thomas">
+                            James Thomas
+                            </SelectItem>
+                          <SelectItem 
+                            className="bg-cardColor border-none outline-none text-neutralColor" 
+                            value="Jack Willson">
+                            Jack Willson
+                            </SelectItem>
+                        </SelectContent>
                     </Select>
                     <FormMessage/>
                   </FormItem>
@@ -160,9 +220,16 @@ const AddJobForm = () => {
                 name="recruitmentPeriod"
                 render={({field}) => (
                   <FormItem>
-                    <FormLabel className="text-neutralColor text-[15px] font-semibold">Recruitment Period</FormLabel>
+                    <FormLabel className="text-neutralColor text-[15px] font-semibold">
+                      Recruitment Period
+                    </FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Select period" type='date' className="md:w-full lg:w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input 
+                        {...field} 
+                        placeholder="Select period" 
+                        type='date' 
+                        className="md:w-full lg:w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"
+                      />
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -173,21 +240,44 @@ const AddJobForm = () => {
                 name="jobFormType"
                 render={({field}) => (
                   <FormItem>
-                    <FormLabel className="text-neutralColor text-[15px] font-semibold">Job Type</FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
-                    <FormControl>
-                    <SelectTrigger className="md:w-full lg:w-[400px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
-                      <SelectValue placeholder="Full Time"/>
-                    </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="Full Time">Full Time</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="Part Time">Part Time</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="Internship">Internship</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="Remote">Remote</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="Freelance">Freelance</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="Contract">Contract</SelectItem>
-                      </SelectContent>
+                    <FormLabel className="text-neutralColor text-[15px] font-semibold">
+                      Job Type
+                    </FormLabel>
+                    <Select 
+                      onValueChange={field.onChange} 
+                      defaultValue={field.value}
+                    >
+                      <FormControl>
+                      <SelectTrigger className="md:w-full lg:w-[400px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
+                        <SelectValue placeholder="Full Time"/>
+                      </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                          <SelectItem 
+                            className="bg-cardColor border-none outline-none text-neutralColor" value="Full Time">
+                            Full Time
+                          </SelectItem>
+                          <SelectItem 
+                            className="bg-cardColor border-none outline-none text-neutralColor" value="Part Time">
+                            Part Time
+                          </SelectItem>
+                          <SelectItem 
+                            className="bg-cardColor border-none outline-none text-neutralColor" value="Internship">
+                            Internship
+                          </SelectItem>
+                          <SelectItem 
+                            className="bg-cardColor border-none outline-none text-neutralColor" value="Remote">
+                            Remote
+                          </SelectItem>
+                          <SelectItem 
+                            className="bg-cardColor border-none outline-none text-neutralColor" value="Freelance">
+                            Freelance
+                          </SelectItem>
+                          <SelectItem 
+                            className="bg-cardColor border-none outline-none text-neutralColor" value="Contract">
+                            Contract
+                          </SelectItem>
+                        </SelectContent>
                     </Select>
                     <FormMessage/>
                   </FormItem>
@@ -200,9 +290,15 @@ const AddJobForm = () => {
                 name="recruitmentQuota"
                 render={({field}) => (
                   <FormItem>
-                    <FormLabel className="text-neutralColor text-[15px] font-semibold">Recruitment Quota</FormLabel>
+                    <FormLabel className="text-neutralColor text-[15px] font-semibold">
+                      Recruitment Quota
+                    </FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Select period" className="md:w-full lg:w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input 
+                        {...field} 
+                        placeholder="Select period" 
+                        className="md:w-full lg:w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"
+                      />
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -213,9 +309,15 @@ const AddJobForm = () => {
                 name="experience"
                 render={({field}) => (
                   <FormItem>
-                  <FormLabel className="text-neutralColor text-[15px] font-semibold">Experience in Years</FormLabel>
+                  <FormLabel className="text-neutralColor text-[15px] font-semibold">
+                    Experience in Years
+                  </FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="5 Years" className="md:w-full lg:w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                    <Input 
+                      {...field} 
+                      placeholder="5 Years" 
+                      className="md:w-full lg:w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"
+                    />
                   </FormControl>
                   <FormMessage/>
                 </FormItem>
@@ -228,9 +330,16 @@ const AddJobForm = () => {
                 name="salary"
                 render={({field}) => (
                   <FormItem>
-                    <FormLabel className="text-neutralColor text-[15px] font-semibold">Expected Salary</FormLabel>
+                    <FormLabel className="text-neutralColor text-[15px] font-semibold">
+                      Expected Salary
+                    </FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Enter Salary" type='number' className="md:w-full lg:w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                      <Input 
+                        {...field} 
+                        placeholder="Enter Salary" 
+                        type='number' 
+                        className="md:w-full lg:w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"
+                      />
                     </FormControl>
                     <FormMessage/>
                   </FormItem>
@@ -241,19 +350,39 @@ const AddJobForm = () => {
                 name="locations"
                 render={({field}) => (
                   <FormItem>
-                    <FormLabel className="text-neutralColor text-[15px] font-semibold">Locations</FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <FormLabel className="text-neutralColor text-[15px] font-semibold">
+                      Locations
+                    </FormLabel>
+                    <Select 
+                      onValueChange={field.onChange} 
+                      defaultValue={field.value}
+                    >
                     <FormControl>
                     <SelectTrigger className="md:w-full lg:w-[400px] h-[48px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
                       <SelectValue placeholder="Choose Location"/>
                     </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="New York, USA">New York, USA</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="los Angeles, USA">Los Angeles, USA</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="San Francisco, USA">San Francisco, USA</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="Boston, USA">Boston, USA</SelectItem>
-                        <SelectItem className="bg-cardColor border-none outline-none text-neutralColor" value="Ottawa, Canada">Ottawa, Canada</SelectItem>
+                        <SelectItem 
+                          className="bg-cardColor border-none outline-none text-neutralColor" 
+                          value="New York, USA">New York, USA
+                        </SelectItem>
+                        <SelectItem 
+                          className="bg-cardColor border-none outline-none text-neutralColor" 
+                          value="los Angeles, USA">Los Angeles, USA
+                        </SelectItem>
+                        <SelectItem 
+                          className="bg-cardColor border-none outline-none text-neutralColor" 
+                          value="San Francisco, USA">San Francisco, USA
+                        </SelectItem>
+                        <SelectItem 
+                          className="bg-cardColor border-none outline-none text-neutralColor" 
+                          value="Boston, USA">Boston, USA
+                        </SelectItem>
+                        <SelectItem 
+                          className="bg-cardColor border-none outline-none text-neutralColor" 
+                          value="Ottawa, Canada">Ottawa, Canada
+                        </SelectItem>
                       </SelectContent>
                     </Select>
                     <FormMessage/>
@@ -267,9 +396,16 @@ const AddJobForm = () => {
                 name="skillsSets"
                 render={({field}) => (
                   <FormItem>
-                  <FormLabel className="text-neutralColor text-[15px] font-semibold">Skill Sets</FormLabel>
+                  <FormLabel className="text-neutralColor text-[15px] font-semibold">
+                    Skill Sets
+                  </FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="e.g   figma, adobe xd, photoshop" type='number' className="md:w-full lg:w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"/>
+                    <Input 
+                      {...field}
+                       placeholder="e.g figma, adobe xd, photoshop" 
+                       type='number' 
+                       className="md:w-full lg:w-[400px] h-[48px] rounded-[10px] bg-cardColor border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"
+                      />
                   </FormControl>
                   <FormMessage/>
                 </FormItem>
@@ -291,7 +427,11 @@ const AddJobForm = () => {
               </div>
             </div>
             <div className='mt-10'>
-              <button type='submit' className='text-white xl:w-[400px] md:w-full max-sm:w-full h-[48px] bg-greenButtonColor rounded-[10px]'>Publish This Job</button>
+              <button  
+                type='submit' 
+                className='text-white xl:w-[400px] md:w-full max-sm:w-full h-[48px] bg-greenButtonColor rounded-[10px]'>
+                Publish This Job
+              </button>
             </div>
             </div>
           </form>
