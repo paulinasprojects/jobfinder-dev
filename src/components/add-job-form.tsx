@@ -429,7 +429,7 @@ const AddJobForm = () => {
             <div className='mt-10'>
               <button  
                 type='submit' 
-                className='text-white xl:w-[400px] md:w-full max-sm:w-full h-[48px] bg-greenButtonColor rounded-[10px]'>
+                className='text-white xl:w-[400px] md:w-full max-sm:w-full h-[48px] bg-greenButtonColor rounded-[10px] hover:bg-transparent hover:border-2 hover:border-greenButtonColor hover:text-greenButtonColor transition-all duration-300'>
                 Publish This Job
               </button>
             </div>

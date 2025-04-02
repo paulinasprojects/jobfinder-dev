@@ -1,11 +1,11 @@
 "use client";
 
+import Image from "next/image";
+import { Plus } from "lucide-react";
 import { motion } from "framer-motion";
 import { containerVariants, itemVariants } from "@/lib/constants";
 import { similarCompanies } from "@/data/data";
 import { Card, CardContent } from "./ui/card";
-import Image from "next/image";
-import { Plus } from "lucide-react";
 
 const SimilarCompanyCard = () => {
   return (

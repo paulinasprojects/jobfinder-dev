@@ -46,7 +46,7 @@ const ScheduleCard = () => {
         </motion.div>
        ))}
        <div className='flex items-center justify-center mb-5'>
-        <button className='text-neutralColor text-sm bg-[#13131A] w-[360px] h-[44px] rounded-[10px] hover:bg-greenButtonColor hover:text-neutralWhite transition-colors'>See Full Schedule</button>
+        <button className='text-neutralColor text-sm bg-[#13131A] w-[360px] h-[44px] rounded-[10px] hover:bg-greenButtonColor hover:text-neutralWhite transition-all duration-500'>See Full Schedule</button>
        </div>
       </Card>
     </motion.div>

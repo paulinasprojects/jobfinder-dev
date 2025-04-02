@@ -43,8 +43,8 @@ const OfferReceivedCard = ({  image, role, company, location, contractDuration, 
         <span className="text-xxs text-[#F1F1F5] font-semibold">{role}</span>
       </div>
       <div className="flex items-center justify-center gap-6 mb-4">
-        <button className="text-white bg-greenButtonColor rounded-[10px] text-xxs font-semibold py-2 px-7 hover:text-greenButtonColor hover:bg-transparent hover:border-2 hover:border-greenButtonColor transition-colors">Accept</button>
-        <button className="text-neutral3Color border border-[#44444F] bg-transparent rounded-[10px] text-xxs font-semibold py-2 px-7 hover:bg-greenButtonColor hover:text-neutralWhite transition-colors">Reject</button>
+        <button className="text-white bg-greenButtonColor rounded-[10px] text-xxs font-semibold py-2 px-7 hover:text-greenButtonColor hover:bg-transparent hover:border-[1px] hover:border-greenButtonColor transition-all duration-300">Accept</button>
+        <button className="text-neutral3Color border border-[#44444F] bg-transparent rounded-[10px] text-xxs font-semibold py-2 px-7 hover:bg-red-500 hover:text-neutralWhite transition-colors duration-300">Reject</button>
       </div>
     </div>
   )

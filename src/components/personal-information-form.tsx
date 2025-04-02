@@ -78,7 +78,7 @@ const PersonalInformationForm = () => {
     <div>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
-          <div className="flex xl:flex-row lg:items-center lg:justify-normal lg:ml-[26px] xl:ml-0 xl:justify-center max-sm:flex-col  gap-10 max-sm:ml-[24px]">
+          <div className="flex xl:flex-row lg:items-center lg:justify-normal lg:ml-[26px]  xl:ml-0 xl:justify-center max-sm:flex-col  gap-10 max-sm:ml-[24px]">
           <FormField
             control={form.control}
             name="firstName"
@@ -138,76 +138,76 @@ const PersonalInformationForm = () => {
               )}
             />
             <FormField
-                control={form.control}
-                name="bio"
-                render={({field}) => (
-                  <FormItem className="lg:ml-[26px] max-sm:ml-[26px] xl:ml-[135px] flex flex-col mt-[32px]">
-                    <FormLabel className="text-neutralColor text-sm">
-                      Biography
-                    </FormLabel>
-                    <FormControl>
-                      <Textarea 
-                        {...field} 
-                        className="resize-none xl:w-[1170px] lg:w-[840px] md:w-full h-[190px] max-sm:w-[327px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"
-                      />
-                    </FormControl>
-                    <FormMessage/>
-                  </FormItem>
-                )}
-              />
+              control={form.control}
+              name="bio"
+              render={({field}) => (
+                <FormItem className="lg:ml-[26px] max-sm:ml-[26px] xl:ml-[135px] flex flex-col mt-[32px]">
+                  <FormLabel className="text-neutralColor text-sm">
+                    Biography
+                  </FormLabel>
+                  <FormControl>
+                    <Textarea 
+                      {...field} 
+                      className="resize-none xl:w-[1170px] lg:w-[840px] md:w-full h-[190px] max-sm:w-[327px] rounded-[10px] bg-transparent border border-neutralColor focus-visible:border-greenButtonColor outline-none text-neutralColor"
+                    />
+                  </FormControl>
+                  <FormMessage/>
+                </FormItem>
+              )}
+            />
           <div className="mt-14 mb-8 flex items-center justify-center">
             <Separator className="bg-[#21212B] xl:w-[1170px] max-sm:w-[327px] lg:w-[840px] md:w-[420px]"/>
           </div>
           <div className="flex flex-row lg:items-center xl:justify-between lg:justify-normal max-sm:ml-[24px] max-sm:mr-[24px] xl:mr-[135px] xl:ml-[135px] lg:ml-[26px] max-sm:flex-col gap-10">
           <FormField
-                control={form.control}
-                name="skillLevel"
-                render={({field}) => (
-                  <FormItem>
-                    <FormLabel className="text-neutralColor text-[15px] font-semibold">
-                      Skill Level
-                    </FormLabel>
-                    <Select 
-                      onValueChange={field.onChange} 
-                      defaultValue={field.value}
-                    >
-                      <FormControl>
-                        <SelectTrigger className="xl:w-[565px] lg:w-[400px] h-[48px] max-sm:w-[327px] md:w-[327px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
-                          <SelectValue placeholder="Senior Designer"/>
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <SelectItem 
-                          className="bg-cardColor border-none outline-none text-neutralColor" 
-                          value="Intern">
-                          Intern
-                          </SelectItem>
-                        <SelectItem 
-                          className="bg-cardColor border-none outline-none text-neutralColor" 
-                          value="Junior">
-                          Junior
-                          </SelectItem>
-                        <SelectItem 
-                          className="bg-cardColor border-none outline-none text-neutralColor" 
-                          value="Mid">
-                          Mid
-                          </SelectItem>
-                        <SelectItem 
-                          className="bg-cardColor border-none outline-none text-neutralColor" 
-                          value="Senior">
-                          Senior
-                          </SelectItem>
-                        <SelectItem 
-                          className="bg-cardColor border-none outline-none text-neutralColor" 
-                          value="CTO">
-                          CTO
-                          </SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <FormMessage/>
+            control={form.control}
+            name="skillLevel"
+            render={({field}) => (
+              <FormItem>
+                <FormLabel className="text-neutralColor text-[15px] font-semibold">
+                  Skill Level
+                </FormLabel>
+                <Select 
+                  onValueChange={field.onChange} 
+                  defaultValue={field.value}
+                >
+                  <FormControl>
+                    <SelectTrigger className="xl:w-[565px] lg:w-[400px] h-[48px] max-sm:w-[327px] md:w-[327px] rounded-[12px] bg-cardColor text-neutralColor border border-neutralColor focus-visible:border-greenButtonColor outline-none">
+                      <SelectValue placeholder="Senior Designer"/>
+                    </SelectTrigger>
+                  </FormControl>
+                  <SelectContent>
+                    <SelectItem 
+                      className="bg-cardColor border-none outline-none text-neutralColor" 
+                      value="Intern">
+                      Intern
+                      </SelectItem>
+                    <SelectItem 
+                      className="bg-cardColor border-none outline-none text-neutralColor" 
+                      value="Junior">
+                      Junior
+                      </SelectItem>
+                    <SelectItem 
+                      className="bg-cardColor border-none outline-none text-neutralColor" 
+                      value="Mid">
+                      Mid
+                      </SelectItem>
+                    <SelectItem 
+                      className="bg-cardColor border-none outline-none text-neutralColor" 
+                      value="Senior">
+                      Senior
+                      </SelectItem>
+                    <SelectItem 
+                      className="bg-cardColor border-none outline-none text-neutralColor" 
+                      value="CTO">
+                      CTO
+                      </SelectItem>
+                  </SelectContent>
+                </Select>
+                <FormMessage/>
                   </FormItem>
                 )}
-              />
+          />
               <div className="flex flex-col">
                 <span className="text-neutralColor text-[15px] font-semibold">Software Skills</span>
                 <span className="flex gap-2 text-greenButtonColor text-[15px] mt-2.5">
@@ -247,7 +247,7 @@ const PersonalInformationForm = () => {
               </FormItem>
               )}
             />
-               <FormField
+            <FormField
                 control={form.control}
                 name="jobFormType"
                 render={({field}) => (
@@ -397,7 +397,7 @@ const PersonalInformationForm = () => {
                 )}
               />
           </div>
-          <div className="mt-[30px] flex items-center gap-2 lg:ml-[134px] md:ml-[24px] max-sm:ml-[24px]">
+          <div className="mt-[30px] flex items-center gap-2 xl:ml-[134px] lg:ml-10 md:ml-0 max-sm:ml-[24px]">
             <Checkbox
             />
             <label className='text-neutralColor text-sm font-semibold'>
@@ -673,7 +673,7 @@ const PersonalInformationForm = () => {
           <div className="flex lg:items-center lg:justify-center  max-sm:ml-[24px] md:mr-[24px] lg:mr-0">
             <Button 
               type="submit"
-              className="bg-greenButtonColor text-white max-sm:w-[370px] lg:w-[850px] md:w-full h-[48px] hover:border-2 hover:border-greenButtonColor">
+              className="bg-greenButtonColor text-white max-sm:w-[370px] lg:w-[850px] md:w-full h-[48px] hover:border-2 hover:border-greenButtonColor hover:bg-transparent hover:text-greenButtonColor transition-all duration-500">
               Submit
             </Button>
           </div>

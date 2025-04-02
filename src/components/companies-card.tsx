@@ -43,7 +43,7 @@ const CompaniesCard = ({ image,  star, title, location, jobVacancy}: CompaniesCa
             </span>
           </div>
             <div className="flex items-center justify-center mt-6">
-              <button className="text-neutralColor w-[216px] max-sm:w-[287px] h-[44px] rounded-[10px] text-sm bg-[#21212b] hover:bg-greenButtonColor hover:text-neutralWhite transition-colors">See all</button>
+              <button className="text-neutralColor w-[216px] max-sm:w-[287px] h-[44px] rounded-[10px] text-sm bg-[#21212b] hover:bg-greenButtonColor hover:text-neutralWhite transition-all duration-300">See all</button>
             </div>
         </CardContent>
       </Card>
